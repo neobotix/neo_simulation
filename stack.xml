@@ -1,0 +1,9 @@
+<stack>
+  <description brief="neo_simulation">neo_simulation</description>
+  <author>Maintained by neobotix</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/neo_simulation</url>
+  <depend stack="ros" />
+
+</stack>
