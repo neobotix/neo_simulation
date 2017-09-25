@@ -25,7 +25,7 @@ Package to simulate Neobotix robots
 
     - Plugin name: Planar Move *(geometry_msgs/twist)*
 
-    __NOTE__: With this the robot can move in all directions and also able rotate along the Z-direction.
+   __NOTE__: With this the robot can move in all directions and also able rotate along the Z-direction.
 
 
 2. **/sick_s300_laser/back/scan**  *(sensor_msgs/LaserScan)*
@@ -34,7 +34,7 @@ Package to simulate Neobotix robots
 
      - Plugin name: GPU Laser
 
-     __NOTE__: Laser scan cover an angle of 270 degrees
+    __NOTE__: Laser scan cover an angle of 270 degrees
 
 
 Node: scan_unifier_node
