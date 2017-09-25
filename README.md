@@ -61,7 +61,7 @@ To simulate the robot in gazebo run:
 
 3. **/sick_s300_laser/front/scan** *(sensor_msgs/LaserScan)*
 
-   **Frame name**: sick_s300_laser_back_link
+   **Frame name**: sick_s300_laser_front_link
 
      - Plugin name: GPU Laser
 
