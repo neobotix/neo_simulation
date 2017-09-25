@@ -6,10 +6,10 @@ This package contains robot description of mpo_500, launch file to simulate the 
 
 ## Parameters to be set before the bringing up the robot in gazebo 
 
-**robotname**
+1. **robotname**
 set the name of the robot you wish to simulate in gazebo.
 
-**robotworld**
+2. **robotworld**
 set the world in which the robot is to be simulated.
 
 ## Launch file
@@ -21,16 +21,18 @@ To simulate the robot in gazebo run:
 
 ## Published topics
 
-**/cmd_vel**
-Plugin name: Planar Move *(geometry_msgs/twist)
+1. **/cmd_vel**
+
+    Plugin name: Planar Move *(geometry_msgs/twist)
 
 __NOTE__: With this the robot can move in all directions and also able rotate along the Z-direction.
 
 
-**/sick_s300_laser/back/scan**  *(sensor_msgs/LaserScan)*
+2. **/sick_s300_laser/back/scan**  *(sensor_msgs/LaserScan)*
 
-**/sick_s300_laser/front/scan** *(sensor_msgs/LaserScan)*
-plugin name: GPU Laser
+3. **/sick_s300_laser/front/scan** *(sensor_msgs/LaserScan)*
+
+   Plugin name: GPU Laser
 
 __NOTE__: Laser scan cover an angle of 270 degrees
 
