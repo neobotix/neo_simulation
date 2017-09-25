@@ -37,9 +37,4 @@ To simulate the robot in gazebo run:
    __NOTE__: Laser scan cover an angle of 270 degrees
 
 
-Node: scan_unifier_node
----------------------
-This node unifies the front and back laser scans
-
-
 http://www.neobotix-robots.com
