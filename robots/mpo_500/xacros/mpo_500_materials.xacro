@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <material name="Neobotix/Black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="Neobotix/Blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+
+  <material name="Neobotix/Green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+
+  <material name="Neobotix/Grey">
+    <color rgba="0.7 0.7 0.7 1.0"/>
+  </material>
+
+  <material name="Neobotix/Grey2">
+    <color rgba="0.9 0.9 0.9 1.0"/>
+  </material>
+
+  <material name="Neobotix/Red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="Neobotix/White">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="Neobotix/Yellow">
+    <color rgba="1.0 1.0 0 10"/>
+  </material>
+</robot>

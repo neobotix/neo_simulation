@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="robotname" default="mpo_500"/>
+  <arg name="robotworld" default="construction_barrel.world"/>
+
+  <param name="robot" value="(arg robotname)"/>
+  <param name="world"  value="(arg robotworld)"/>
+ 
+  <arg name="world" default="empty"/> 
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+   
+    <arg name="world_name" value="$(find neo_simulation)/worlds/$(arg robotworld)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro'"/>
+
+  <node name="$(arg robotname)_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+  args="-urdf -param robot_description -model $(arg robotname) " />
+
+  <!-- Publish the joint state -->
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+	<param name="rate" value="20.0"/>
+  </node>
+
+  <!-- Publish the robot state -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+	<param name="publish_frequency" value="20.0"/>
+  </node>
+
+</launch>
