@@ -7,10 +7,10 @@ This package contains robot description of mpo_500, launch file to simulate the 
 ## Parameters to be set before the bringing up the robot in gazebo 
 
 1. **robotname**
-set the name of the robot you wish to simulate in gazebo.
+- set the name of the robot you wish to simulate in gazebo.
 
 2. **robotworld**
-set the world in which the robot is to be simulated.
+- set the world in which the robot is to be simulated.
 
 ## Launch file
 
@@ -36,8 +36,6 @@ To simulate the robot in gazebo run:
 
      __NOTE__: Laser scan cover an angle of 270 degrees
 
-
-[In order to merge the Front and Back Laser Scans]
 
 Node: scan_unifier_node
 ---------------------
