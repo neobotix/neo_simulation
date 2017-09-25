@@ -6,7 +6,6 @@ This package contains robot description of mpo_500, launch file to simulate the 
 
 ## Parameters to be set before the bringing up the robot in gazebo 
 
-## Parametrs
 **robotname**
 set the name of the robot you wish to simulate in gazebo.
 
