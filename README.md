@@ -34,7 +34,7 @@ To simulate the robot in gazebo run:
 
      - Plugin name: GPU Laser
 
-  __NOTE__: Laser scan cover an angle of 270 degrees
+   __NOTE__: Laser scan cover an angle of 270 degrees
 
 
 http://www.neobotix-robots.com
