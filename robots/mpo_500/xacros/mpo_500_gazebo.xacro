@@ -1,12 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>mpo_500</robotNamespace>
-      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-    </plugin>
-  </gazebo>
 
    <gazebo reference="base_link">
     <gravity>true</gravity>
