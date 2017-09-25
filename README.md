@@ -9,7 +9,7 @@ Package to simulate Neobotix robots
 1. **robotname**
 - set the name of the robot you wish to simulate in gazebo.
 
-[__Example__]: If you opt to simulate the robot mpo_500, in the **simulation.launch** file:
+[__Exam_ple__]: If you opt to simulate the robot mpo_500, in the **simulation.launch** file:
 
 Change the default name to mpo_500 in the argument **robotname**
 
