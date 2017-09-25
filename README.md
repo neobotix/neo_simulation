@@ -68,4 +68,4 @@ To simulate the robot in gazebo run:
    __NOTE__: Laser scan cover an angle of 270 degrees
 
 
-http://www.neobotix-robots.com
+ http://www.neobotix-robots.com
