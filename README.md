@@ -4,7 +4,7 @@ Package to simulate Neobotix robots
 This package contains robot description of mpo_500, launch file to simulate the robot in Gazebo and Worlds for simulating the robot in Gazebo.
 
 
-##Parameters to be set before the bringing up the robot in gazebo 
+## Parameters to be set before the bringing up the robot in gazebo 
 
 ## Parametrs
 **robotname**
