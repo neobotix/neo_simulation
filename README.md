@@ -23,18 +23,18 @@ To simulate the robot in gazebo run:
 
 1. **/cmd_vel**
 
-  Plugin name: Planar Move *(geometry_msgs/twist)
+    Plugin name: Planar Move *(geometry_msgs/twist)*
 
- __NOTE__: With this the robot can move in all directions and also able rotate along the Z-direction.
+    __NOTE__: With this the robot can move in all directions and also able rotate along the Z-direction.
 
 
 2. **/sick_s300_laser/back/scan**  *(sensor_msgs/LaserScan)*
 
 3. **/sick_s300_laser/front/scan** *(sensor_msgs/LaserScan)*
 
-  Plugin name: GPU Laser
+     Plugin name: GPU Laser
 
- __NOTE__: Laser scan cover an angle of 270 degrees
+     __NOTE__: Laser scan cover an angle of 270 degrees
 
 
 [In order to merge the Front and Back Laser Scans]
