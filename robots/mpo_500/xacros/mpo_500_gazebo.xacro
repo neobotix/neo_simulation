@@ -32,46 +32,6 @@
     <material value="Gazebo/Black"/>
   </gazebo>
 
-  <transmission name="wheel_front_left_trans">
-	<type>transmission_interface/SimpleTransmission</type>
-	<actuator name="wheel_front_left_motor">
-		<mechanicalReduction>1</mechanicalReduction>
-	</actuator>
-	<joint name="wheel_front_left_joint">
-		<hardwareInterface>VelocityJointInterface</hardwareInterface>
-	</joint>
-  </transmission>
-
-  <transmission name="wheel_front_right_trans">
-	<type>transmission_interface/SimpleTransmission</type>
-	<actuator name="wheel_front_right_motor">
-		<mechanicalReduction>1</mechanicalReduction>
-	</actuator>
-	<joint name="wheel_front_right_joint">
-		<hardwareInterface>VelocityJointInterface</hardwareInterface>
-	</joint>
-  </transmission>
-
-  <transmission name="wheel_back_left_trans">
-	<type>transmission_interface/SimpleTransmission</type>
-	<actuator name="wheel_back_left_motor">
-		<mechanicalReduction>1</mechanicalReduction>
-	</actuator>
-	<joint name="wheel_back_left_joint">
-		<hardwareInterface>VelocityJointInterface</hardwareInterface>
-	</joint>
-  </transmission>
-
-  <transmission name="wheel_back_right_trans">
-	<type>transmission_interface/SimpleTransmission</type>
-	<actuator name="wheel_back_right_motor">
-		<mechanicalReduction>1</mechanicalReduction>
-	</actuator>
-	<joint name="wheel_back_right_joint">
-		<hardwareInterface>VelocityJointInterface</hardwareInterface>
-	</joint>
-  </transmission>
-
   <gazebo reference="sick_s300_laser_front_link">
       <material value="Gazebo/Yellow"/>
       <sensor type="ray" name="sick_s300_laser_front_sensor">
