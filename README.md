@@ -5,9 +5,9 @@ This simulation package provides a quick and easy way to try out the autonomous 
 ![neo_simulation](http://www.neobotix-roboter.de/fileadmin/files/downloads/ROS-extern/neo_simulation_mpo_500.png)
 
 Neobotix offers a wide range of mobile robots for different applications:
-* **MP-400**: Small and cost-saving robot with differential drive for both industrial transport applications and basic research.
-* **MPO-500**: Omnidirectional robot with Mecanum wheels for all kinds of service robotics research
-* **MPO-700**: Omnidirectional robot with Omni-Drive-Modules, offering very high payload and smooth movements. Great for both research and demanding industrial applications.
+* [MP-400](http://www.neobotix-robots.com/mobile-robot-mp-400.html): Small and cost-saving robot with differential drive for both industrial transport applications and basic research.
+* [MPO-500](http://www.neobotix-robots.com/mecanum-robot-mpo-500.html): Omnidirectional robot with Mecanum wheels for all kinds of service robotics research
+* [MPO-700](http://www.neobotix-robots.com/omnidirectional-robot-mpo-700.html): Omnidirectional robot with Omni-Drive-Modules, offering very high payload and smooth movements. Great for both research and demanding industrial applications.
 
 # Contact information
 
