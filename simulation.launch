@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-  <arg name="robotname" default="mpo_500"/>
-  <arg name="robotworld" default="construction_barrel.world"/>
+  <!--set to the required robot and world-->
+  <arg name="robotname" value="mpo_500"/>
+  <arg name="robotworld" value="empty.world"/>
+  
+  <!--To launch RVIZ set the value to true-->
+  <arg name="rviz" value="true"/>
 
-  <param name="robot" value="(arg robotname)"/>
-  <param name="world"  value="(arg robotworld)"/>
- 
+  <!--To launch scanunifier set the value to true-->
+  <arg name="scanunifier" value="true"/>
+
+  <!--Gazebo Variables-->
   <arg name="world" default="empty"/> 
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
@@ -24,20 +29,39 @@
     <arg name="debug" value="$(arg debug)"/>
   </include>
   
+  <!--Robot description to param server-->
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro'"/>
 
   <node name="$(arg robotname)_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model $(arg robotname) " />
-
-  <!-- Publish the joint state -->
-
+  
+  <!--To publish Joint and Robot state-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
 	<param name="rate" value="20.0"/>
   </node>
 
-  <!-- Publish the robot state -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
 	<param name="publish_frequency" value="20.0"/>
   </node>
+
+ <!--if RVIZ is to true-->
+
+ <group if="$(arg rviz)">
+
+ <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro' name:=$(arg robotname)"/> 
+
+ <arg name="rvizconfig" default="$(find neo_simulation)/robots/mpo_500/scanunifier_$(arg robotname)_config.rviz" />
+
+ <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
+
+ </group>
+ 
+  <!--if SCAN-UNIFIER is to true-->
+
+ <group if="$(arg scanunifier)">
+ 
+ <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch" ns="cob_scan_unifier"/>
+
+ </group>
 
 </launch>
