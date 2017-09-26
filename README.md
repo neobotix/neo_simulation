@@ -1,7 +1,24 @@
-# neo_simulation
-Package to simulate Neobotix robots 
+# ROS simulation for Neobotix mobile robots
 
-**Instructions to Download the Package**
+This simulation package provides a quick and easy way to try out the autonomous mobile robots from Neobotix. It comes with the most commonly used configuration but is open for any kind of modification.
+
+![neo_simulation](http://www.neobotix-roboter.de/fileadmin/files/downloads/ROS-extern/neo_simulation_mpo_500.png)
+
+Neobotix offers a wide range of mobile robots for different applications:
+* **MP-400**: Small and cost-saving robot with differential drive for both industrial transport applications and basic research.
+* **MPO-500**: Omnidirectional robot with Mecanum wheels for all kinds of service robotics research
+* **MPO-700**: Omnidirectional robot with Omni-Drive-Modules, offering very high payload and smooth movements. Great for both research and demanding industrial applications.
+
+# Contact information
+
+For more information please visit our website at www.neobotix-robots.com. 
+If you have any questions, just get in touch with us:
+* General information: http://www.neobotix-robots.com/company-contact.html
+* ROS related questions: ros@neobotix.de
+
+# neo_simulation
+
+## Instructions to Download the Package
 
 1. First step is to create a catkin workspace
 
@@ -22,22 +39,22 @@ Package to simulate Neobotix robots
 ## Parameters to be set before the bringing up the robot in gazebo 
 
 1. **robotname**
-- set the name of the robot you wish to simulate in gazebo.
+   - set the name of the robot you wish to simulate in gazebo.
 
-  [Example]: If you opt to simulate the robot mpo_500, in the *simulation.launch* file:
+      [Example]: If you opt to simulate the robot mpo_500, in the *simulation.launch* file:
 
-  Change the default name of the argument *robotname* to mpo_500.
+      Change the default name of the argument *robotname* to mpo_500.
 
-  ```arg name="robotname" default="mpo_500"```
+      ```arg name="robotname" default="mpo_500"```
 
 2. **robotworld**
-- set the world in which the robot is to be simulated.
+   - set the world in which the robot is to be simulated.
 
-  [Example]: If you opt to simulate the robot in different world, in the *simulation.launch* file:
+      [Example]: If you opt to simulate the robot in different world, in the *simulation.launch* file:
 
-  Change the default name in the argument *robotworld* to construction_barrel.world. 
+      Change the default name in the argument *robotworld* to construction_barrel.world. 
 
-  ```arg name="robotworld" default="empty.world"```
+      ```arg name="robotworld" default="empty.world"```
 
 ## Launch file
 
@@ -57,15 +74,17 @@ To simulate the robot in gazebo run:
 
 2. **/sick_s300_laser/back/scan**  *(sensor_msgs/LaserScan)*
 
-   **Frame name**: sick_s300_laser_back_link
+   * Frame name: sick_s300_laser_back_link
+   
+   * Plugin name: GPU Laser
+   
+   __NOTE__: Laser scan covers an angle of 270 degrees
 
 3. **/sick_s300_laser/front/scan** *(sensor_msgs/LaserScan)*
 
-   **Frame name**: sick_s300_laser_front_link
+   * Frame name: sick_s300_laser_front_link
 
-     - Plugin name: GPU Laser
+   * Plugin name: GPU Laser
 
-   __NOTE__: Laser scan cover an angle of 270 degrees
+   __NOTE__: Laser scan covers an angle of 270 degrees
 
-
- http://www.neobotix-robots.com
