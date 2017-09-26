@@ -50,7 +50,7 @@
 
  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro' name:=$(arg robotname)"/> 
 
- <arg name="rvizconfig" default="$(find neo_simulation)/robots/mpo_500/scanunifier_$(arg robotname)_config.rviz" />
+ <arg name="rvizconfig" default="$(find neo_simulation)/robots/$(arg robotname)/scanunifier_$(arg robotname)_config.rviz" />
 
  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
 
