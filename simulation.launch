@@ -3,7 +3,7 @@
 
   <!--set to the required robot and world-->
   <arg name="robotname" value="mpo_500"/>
-  <arg name="robotworld" value="empty.world"/>
+  <arg name="robotworld" value="neobotix_env2.world"/>
   
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="true"/>
@@ -11,8 +11,10 @@
   <!--To launch scanunifier set the value to true-->
   <arg name="scanunifier" value="true"/>
 
-  <!--Gazebo Variables-->
-  <arg name="world" default="empty"/> 
+  <!--To move robot using teleop_keyboard-->
+  <arg name="teleop_keyboard" value="true"/>
+
+  <!--Gazebo Variables--> 
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
@@ -61,6 +63,14 @@
  <group if="$(arg scanunifier)">
  
  <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch" ns="cob_scan_unifier"/>
+
+ </group>
+
+ <!--if TELEOP_KEYBOARD is to true-->
+
+ <group if="$(arg teleop_keyboard)">
+ 
+ <include file="$(find neo_teleop)/ros/launch/teleop_keyboard.launch"/>
 
  </group>
 
