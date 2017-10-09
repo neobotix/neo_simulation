@@ -2,7 +2,7 @@
 
 <launch>
 
-  <arg name="env_map" default="$(find neo_maps)/maps/$(env MAP_NAME).yaml" />
+  <arg name="env_map" default="$(find neo_simulation)/maps/$(env MAP_NAME).yaml" />
 
   <!-- MAP SERVER -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
