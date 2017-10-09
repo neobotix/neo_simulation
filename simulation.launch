@@ -12,7 +12,7 @@
   <arg name="scanunifier" value="true"/>
 
   <!--To move robot using teleop_keyboard-->
-  <arg name="teleop_keyboard" value="true"/>
+  <arg name="teleop_keyboard" value="false"/>
    
   <!--To move robot using joystick-->
   <arg name="joystick" value="false"/>
