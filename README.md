@@ -54,7 +54,7 @@ In the **simulation.launch** file
 
       [Example]: If you opt to simulate the robot in different world:
 
-      Change the *value* of the argument *robotworld* to **construction_barrel.world**. 
+      Change the *value* of the argument *robotworld* to **construction_barrel.world**.
 
       ```arg name="robotworld" value="empty.world"```
       
@@ -71,6 +71,8 @@ In the **simulation.launch** file
     - To launch the scan unifier node set the value of the arguement *scanunifier* to **true** else **false**.
     
       ```arg name="scanunifier" value="true"```
+      
+      __NOTE__: To use scan unifier node a package called *cob_scan_unifier* must be downloaded from the metapackage neo_driver (https://github.com/neobotix/neo_driver)
  
 5.  **gmapping**
 
