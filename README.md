@@ -98,7 +98,7 @@ To simulate the robot in gazebo run:
 `roslaunch neo_simulation simulation.launch`
 
 
-## Published topics
+## Topics
 
 1. **/cmd_vel**
 
@@ -123,7 +123,7 @@ To simulate the robot in gazebo run:
 
    __NOTE__: Laser scan covers an angle of 270 degrees
    
-4. **/map** *(nav_msgs/OccupancyGrid)*
+4. **map** *(nav_msgs/OccupancyGrid)*
 
    __NOTE__: This topic publishes the data of the map.
 
