@@ -71,8 +71,26 @@ In the **simulation.launch** file
     - To launch the scan unifier node set the value of the arguement *scanunifier* to **true** else **false**.
     
       ```arg name="scanunifier" value="true"```
-    
+ 
+5.  **gmapping**
 
+    - To launch the slam_gmapping node to create a map set the argument *gmappping* to **true** else **false**.
+    - Before changing the *arg gmapping* set the argument of *amcl* and *navigation* to false.
+    
+      ```arg name="gmapping" value="false"```
+      
+6.  **amcl**
+    
+    - To launch the amcl node for localization of the robot set the argument *amcl* to **true** else **false**.
+     
+      ```arg name="amcl" value=false"```
+      
+7.  **navigation**
+
+     - To launch the move_base node for navigating the robot to reach the desired location set the argument *navigation* to     **true** else **false**.
+     - Local planner - DWA Planner
+     
+     
 ## Launch file
 
 To simulate the robot in gazebo run:
@@ -105,7 +123,19 @@ To simulate the robot in gazebo run:
 
    __NOTE__: Laser scan covers an angle of 270 degrees
    
-4. **cob_scan_unifier/cob_scan_unifier/scan_unified** *(sensor_msgs/LaserScan)*
+4. **/map** *(nav_msgs/OccupancyGrid)*
 
-   * Node name: scan_unifier_node
+   __NOTE__: This topic publishes the data of the map.
 
+5. **amcl_pose** *(geometry_msgs/PoseWithCovarianceStamped)*
+
+   __NOTE__: This topic gives the estimated pose of the robot on map.
+   
+6. **tf** *(tf2_msgs/TFMessage)*
+
+   __NOTE__: This topic publishes transform from /odom to /map.
+   
+7. **particle cloud** *(geometry_msgs/PoseArray)*
+
+   __NOTE__: This topic publishes a set of pose estimates.
+   
