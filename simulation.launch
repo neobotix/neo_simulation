@@ -16,8 +16,23 @@
    
   <!--To move robot using joystick-->
   <arg name="joystick" value="false"/>
+ 
+  <!--__For the Navigation Package__-->
+  
+  <!--To launch gmapping to create a map-->
+  <!--Before changing the value to true both arg 'amcl' and 'move_base' must be set to false-->
+  <arg name="gmapping" value="false"/> 
+
+  <!--To launch amcl--> 
+  <arg name="amcl" value="false"/>
+
+  <!--To launch move base with dwa local planner-->
+  <arg name="navigation" value="true"/> 
+
+<!---=================================================================================================================================================================-->
 
   <!--Gazebo Variables--> 
+  <arg name="world" default="empty"/> 
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
@@ -33,7 +48,8 @@
     <arg name="headless" value="$(arg headless)"/>
     <arg name="debug" value="$(arg debug)"/>
   </include>
-  
+<!---=================================================================================================================================================================-->
+
   <!--Robot description to param server-->
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro'"/>
 
@@ -49,40 +65,59 @@
 	<param name="publish_frequency" value="20.0"/>
   </node>
 
- <!--if arg RVIZ is set to true-->
+<!---=================================================================================================================================================================-->
+
+ <!--if arg rviz is set to true-->
 
  <group if="$(arg rviz)">
-
  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro' name:=$(arg robotname)"/> 
-
- <arg name="rvizconfig" default="$(find neo_simulation)/robots/$(arg robotname)/scanunifier_$(arg robotname)_config.rviz" />
-
+ <arg name="rvizconfig" default="$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname)_config.rviz" />
  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
-
  </group>
  
-  <!--if arg SCAN-UNIFIER is set to true-->
+  <!--if arg scan-unifier is set to true-->
 
  <group if="$(arg scanunifier)">
- 
  <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch" ns="cob_scan_unifier"/>
+ </group>   
 
- </group>
-
- <!--if arg TELEOP_KEYBOARD is set to true-->
+<!---=================================================================================================================================================================-->
+ 
+ <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 
+ 
+ <!--if arg teleop-keyboard is set to true-->
 
  <group if="$(arg teleop_keyboard)">
- 
  <include file="$(find neo_teleop)/ros/launch/teleop_keyboard.launch"/>
-
  </group>
 
- <!--if arg JOYSTICK is set to true (default=false)-->
+ <!--if arg joystick is set to true (default=false)-->
 
  <group if="$(arg joystick)">
- 
  <include file="$(find neo_teleop)/ros/launch/teleop.launch"/>
-
  </group>
+
+<!---=================================================================================================================================================================-->
+
+ <!--Naviagation Package-->
+
+ <!--if arg gmapping is set to true (default=false)-->
+
+ <group if="$(arg gmapping)">
+ <include file="$(find neo_simulation)/config/$(arg robotname)/gmapping/launch/$(arg robotname)_gmapping.launch"/>
+ </group>
+
+ <!--if arg amcl is set to true (default=false)-->
+
+ <group if="$(arg amcl)">
+ <include file="$(find neo_simulation)/config/$(arg robotname)/amcl/launch/$(arg robotname)_amcl.launch"/>
+ </group>
+
+ <!--if arg move_base is set to true-->
+
+ <group if="$(arg navigation)">
+ <include file="$(find neo_simulation)/config/$(arg robotname)/navigation/dwa_local_planner/$(arg robotname)_movebase_dwa.launch"/>
+ </group> 
+
 
 </launch>
