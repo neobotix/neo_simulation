@@ -1,0 +1,21 @@
+arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+     - ur10shoulder_pan_joint
+     - ur10shoulder_lift_joint
+     - ur10elbow_joint
+     - ur10wrist_1_joint
+     - ur10wrist_2_joint
+     - ur10wrist_3_joint
+  constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 0.05
+      ur10shoulder_pan_joint: {trajectory: 0.1, goal: 0.1}
+      ur10shoulder_lift_joint: {trajectory: 0.1, goal: 0.1}
+      ur10elbow_joint: {trajectory: 0.1, goal: 0.1}
+      ur10wrist_1_joint: {trajectory: 0.1, goal: 0.1}
+      ur10wrist_2_joint: {trajectory: 0.1, goal: 0.1}
+      ur10wrist_3_joint: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate:  25
+  action_monitor_rate: 10
