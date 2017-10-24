@@ -41,7 +41,7 @@ If you have any questions, just get in touch with us:
 In the **simulation.launch** file
 
 1. **robotname**
-   - set the name of the robot you wish to simulate in gazebo.
+   - set the name of the robot you wish to simulate in gazebo. Available robot models are mpo_500 and mmo_500.
 
       [Example]: If you opt to simulate the robot mpo_500:
 
@@ -85,14 +85,22 @@ In the **simulation.launch** file
     
     - To launch the amcl node for localization of the robot set the argument *amcl* to **true** else **false**.
      
-      ```arg name="amcl" value=false"```
+      ```arg name="amcl" value="false"```
       
 7.  **navigation**
 
      - To launch the move_base node for navigating the robot to reach the desired location set the argument *navigation* to     **true** else **false**.
-     - Local planner - DWA Planner
      
+      ```arg name="navigation" value="true"```
      
+8.  **localplanner**
+
+    - With this parameter suitable local planner for the robot can be selected. Available local planners are Teb, DWA, EBand, Trajectory.
+    
+    - To set the local planner as Teb
+    
+     ```arg name="localplanner" value="teb"```
+    
 ## Launch file
 
 To simulate the robot in gazebo run:
