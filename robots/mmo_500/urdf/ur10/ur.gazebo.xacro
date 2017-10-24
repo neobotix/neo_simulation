@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="mmo_500">
+
+  <xacro:macro name="ur_arm_gazebo" params="prefix">
+
+   <gazebo reference="ur10base_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Black"/>
+  </gazebo>
+
+   <gazebo reference="ur10forearm_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Grey"/>
+  </gazebo>
+
+  <gazebo reference="ur10shoulder_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Black"/>
+  </gazebo>
+
+  <gazebo reference="ur10upper_arm_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Grey"/>
+  </gazebo>
+
+  <gazebo reference="ur10wrist_1_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Black"/>
+  </gazebo>
+
+  <gazebo reference="ur10wrist_2_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Grey"/>
+  </gazebo>
+
+  <gazebo reference="ur10wrist_3_link">
+    <gravity>true</gravity>
+    <self_collide>false</self_collide>
+    <material value="Gazebo/Black"/>
+  </gazebo>
+
+  </xacro:macro>
+</robot>

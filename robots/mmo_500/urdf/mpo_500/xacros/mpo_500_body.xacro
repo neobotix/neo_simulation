@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mmo_500">
+
+  <xacro:macro name="mpo_500_base" params="name">
+    <link name="${name}">
+      <inertial>
+        <mass value="50" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="2.8567" ixy="0.0" ixz="0.0"
+                 iyy="1.476" iyz="0.0" 
+                 izz="4.2875" />
+      </inertial>
+      <visual>
+        <origin xyz="0. 0. 0.215" rpy="0 0 1.571" />
+        <geometry>
+            <mesh filename="package://neo_simulation/robots/mmo_500/meshes/mpo_500/MPO-500-BODY.STL"/>
+        </geometry>
+        <material name="Neobotix/Grey" />
+      </visual>
+      <collision>
+        <origin xyz="0. 0. 0.2" rpy="0 0 0" />
+        <geometry>
+          <!--<box size="0.68 0.41 0.25"/> -->
+          <box size="0.769 0.51 0.307" />
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+  
+</robot>

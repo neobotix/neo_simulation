@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mmo_500">
+
+  <xacro:macro name="omni_wheel_250" params="name parent suffix *origin">
+   <joint name="${name}_joint" type="continuous">
+    <insert_block name="origin" />
+    <axis xyz="0 1 0" />
+    <joint_properties damping="1" friction="1" />
+    <parent link="${parent}" />
+    <child link="${name}_link" />
+   </joint>
+
+   <link name="${name}_link" type="wheel">
+    <inertial>
+      <mass value="0.5" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="0.0022166" ixy="0" ixz="0" iyy="0.0022166" iyz="0" izz="0.0036" />
+    </inertial>
+
+    <visual>
+     <origin xyz="0 0 0" rpy="0 0 1.571" />
+     <geometry>
+        <mesh filename="package://neo_simulation/robots/mmo_500/meshes/mpo_500/Mecanum-Rad ${suffix}.stl" scale="0.001 0.001 0.001"/>
+     </geometry>
+     <material name="Neobotix/Black" />
+    </visual>
+
+    <collision>
+     <origin xyz="0 0 0" rpy="1.59 0 0" />
+     <geometry>
+        <cylinder radius="0.12" length="0.1"/>
+     </geometry>
+    </collision>
+   </link>
+   
+  </xacro:macro>
+  
+</robot>
+
+

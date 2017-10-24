@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!--GAZEBO REFERENCES -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_gazebo.xacro" />
+
+  <!-- MATERIALS -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_materials.xacro" />
+
+  <!-- BODY -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_body.xacro" />
+ 
+  <!-- WHEELS -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/omni_wheel.xacro" />
+
+  <!-- SENSORS --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/sick_s300_laser.xacro" />
+
+
+  <!-- Base Macro-->
+  <xacro:mpo_500_base name="base_link">
+  </xacro:mpo_500_base>
+
+  <!-- Wheel Macro -->
+  <xacro:omni_wheel_250 name="wheel_front_left" parent="base_link">
+  	<origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link">
+  	<origin xyz="0.25 -0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
+  	<origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link">
+  	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <!-- Sensors -->
+  <xacro:sick_s300_laser_v0 name="sick_s300_laser_front" parent="base_link" ros_topic="sick_s300_laser/front/scan">
+  	<origin xyz="0.442 0 0.420" rpy="0 0 0" />
+  </xacro:sick_s300_laser_v0>
+
+  <xacro:sick_s300_laser_v0 name="sick_s300_laser_back" parent="base_link" ros_topic="sick_s300_laser/back/scan">
+  	<origin xyz="-0.442 0 0.420" rpy="0 0 3.14" />
+  </xacro:sick_s300_laser_v0>
+
+</robot>
