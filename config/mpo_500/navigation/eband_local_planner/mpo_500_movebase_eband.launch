@@ -11,7 +11,7 @@
     <rosparam file="$(find neo_simulation)/config/mpo_500/navigation/costmaps/$(env ROBOT)_costmap_common.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find neo_simulation)/config/mpo_500/navigation/costmaps/$(env ROBOT)_costmap_local.yaml" command="load" />
     <rosparam file="$(find neo_simulation)/config/mpo_500/navigation/costmaps/$(env ROBOT)_costmap_global.yaml" command="load" />
-    <rosparam file="$(find neo_simulation)/config/mpo_500/navigation/eband_local_planner/$(env ROBOT)_planner_eband.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/mpo_500/navigation/eband_local_planner/$(env ROBOT)_planner_eband_new.yaml" command="load" />
   </node>
 
 </launch>

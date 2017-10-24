@@ -2,8 +2,7 @@ DWAPlannerROS:
 
 ###Robot Configuration Parameters
 
-
-  acc_lim_xn : 2.5
+  acc_lim_x : 2.5
 
     #The x acceleration limit of the robot in meters/sec^2 
 
@@ -11,7 +10,7 @@ DWAPlannerROS:
 
     #The y acceleration limit of the robot in meters/sec^2 
 
-  acc_lim_th : 3
+  acc_lim_theta : 3
 
     #The rotational acceleration limit of the robot in radians/sec^2 
 
@@ -56,7 +55,7 @@ DWAPlannerROS:
 
     #The tolerance in radians for the controller in yaw/rotation when achieving its goal 
 
-  xy_goal_tolerance : 0.10
+  xy_goal_tolerance : 0.1
 
     #The tolerance in meters for the controller in the x & y distance when achieving a goal 
 
@@ -89,10 +88,6 @@ DWAPlannerROS:
 
     #The number of samples to use when exploring the theta velocity space 
 
-  controller_frequency : 2.0
-
-    #The frequency at which this controller will be called in Hz. Uses searchParam to read the parameter from parent namespaces if not set in the namespace of the controller. For use with move_base, #this   means that you only need to set its "controller_frequency" parameter and can safely leave this one unset. 
-
 
 
 ###Trajectory Scoring Parameters
@@ -102,7 +97,7 @@ DWAPlannerROS:
 
     #The weighting for how much the controller should stay close to the path it was given 
 
-  goal_distance_bias : 28
+  goal_distance_bias : 88
 
     #The weighting for how much the controller should attempt to reach its local goal, also controls speed 
 
@@ -134,8 +129,6 @@ DWAPlannerROS:
   oscillation_reset_dist : 0.05
 
     #How far the robot must travel in meters before oscillation flags are reset
-
-
 
 
 ##Global Plan Parameters
