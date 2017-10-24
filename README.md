@@ -91,7 +91,7 @@ In the **simulation.launch** file
 
      - To launch the move_base node for navigating the robot to reach the desired location set the argument *navigation* to     **true** else **false**.
      
-      ```arg name="navigation" value="true"```
+        ```arg name="navigation" value="true"```
      
 8.  **localplanner**
 
@@ -99,7 +99,7 @@ In the **simulation.launch** file
     
     - To set the local planner as Teb
     
-     ```arg name="localplanner" value="teb"```
+       ```arg name="localplanner" value="teb"```
     
 ## Launch file
 
