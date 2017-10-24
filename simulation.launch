@@ -2,7 +2,7 @@
 <launch>
 
   <!--set to the required robot and world-->
-  <arg name="robotname" value="mmo_500"/>
+  <arg name="robotname" value="mpo_500"/>
   <arg name="robotworld" value="neobotix_env2.world"/>
   
   <!--To launch RVIZ set the value to true-->
