@@ -11,9 +11,10 @@ Panels:
         - /RobotModel1
         - /LaserScan1
         - /Map1
-        - /Path1
-        - /PoseArray1
-        - /Map2
+        - /GlobalPath1
+        - /AMCLPoseArray1
+        - /LocalMap1
+        - /LocalPath1
       Splitter Ratio: 0.5
     Tree Height: 775
   - Class: rviz/Selection
@@ -171,7 +172,7 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 999999
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 4.48416e-44
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -203,7 +204,7 @@ Visualization Manager:
       Length: 0.3
       Line Style: Lines
       Line Width: 0.03
-      Name: Path
+      Name: GlobalPath
       Offset:
         X: 0
         Y: 0
@@ -220,7 +221,7 @@ Visualization Manager:
       Class: rviz/PoseArray
       Color: 255; 25; 0
       Enabled: true
-      Name: PoseArray
+      Name: AMCLPoseArray
       Topic: /particlecloud
       Unreliable: false
       Value: true
@@ -229,8 +230,31 @@ Visualization Manager:
       Color Scheme: map
       Draw Behind: false
       Enabled: true
-      Name: Map
+      Name: LocalMap
       Topic: /move_base/local_costmap/costmap
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.3
+      Head Length: 0.2
+      Length: 0.3
+      Line Style: Lines
+      Line Width: 0.03
+      Name: LocalPath
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.03
+      Shaft Diameter: 0.1
+      Shaft Length: 0.1
+      Topic: /move_base/TebLocalPlannerROS/local_plan
       Unreliable: false
       Value: true
   Enabled: true
@@ -257,7 +281,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 28.2761
+      Distance: 41.985
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
