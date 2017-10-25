@@ -172,7 +172,7 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 999999
       Min Color: 0; 0; 0
-      Min Intensity: 4.48416e-44
+      Min Intensity: 0
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -237,13 +237,13 @@ Visualization Manager:
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
-      Color: 25; 255; 0
+      Color: 0; 0; 255
       Enabled: true
       Head Diameter: 0.3
       Head Length: 0.2
       Length: 0.3
-      Line Style: Lines
-      Line Width: 0.03
+      Line Style: Billboards
+      Line Width: 0.1
       Name: LocalPath
       Offset:
         X: 0
@@ -281,22 +281,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 41.985
+      Distance: 24.8156
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -0.427463
+        Y: -0.271281
+        Z: 0.0973601
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.0198
+      Pitch: 1.2248
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.53357
+      Yaw: 1.54857
     Saved: ~
 Window Geometry:
   Displays:
