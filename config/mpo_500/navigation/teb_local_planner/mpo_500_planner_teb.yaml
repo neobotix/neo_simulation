@@ -18,7 +18,7 @@ TebLocalPlannerROS:
 
     #Maximum absolute translational velocity of the robot while driving backwards in meters/sec. See optimization parameter weight_kinematics_forward_drive 
 
- max_vel_theta : 0.4
+ max_vel_theta : 0.8
 
     #Maximum angular velocity of the robot in radians/sec 
 
@@ -80,9 +80,13 @@ TebLocalPlannerROS:
  
       #allows backward motion incase the goal behind start
 
+ exact_arc_length : true
+
+ max_global_plan_lookahead_dist : 2
+
 #Obstacle Parameters
 
- min_obstacle_dist : 0.6 
+ min_obstacle_dist : 0.55 
 
     #Minimum desired separation from obstacles in meters 
 
