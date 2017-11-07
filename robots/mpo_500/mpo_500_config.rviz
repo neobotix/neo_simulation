@@ -64,8 +64,6 @@ Visualization Manager:
         All Enabled: true
         base_link:
           Value: true
-        map:
-          Value: true
         odom:
           Value: true
         sick_s300_laser_back_link:
@@ -86,8 +84,6 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        map:
-          {}
         odom:
           base_link:
             sick_s300_laser_back_link:
@@ -180,7 +176,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.5
       Style: Boxes
-      Topic: /cob_scan_unifier/cob_scan_unifier/scan_unified
+      Topic: /cob_scan_unifier/scan_unified
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -293,7 +289,7 @@ Visualization Manager:
         Z: 0.0973601
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.2248
+      Pitch: 0.454801
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
       Yaw: 1.54857

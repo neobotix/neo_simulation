@@ -87,7 +87,7 @@
   <!--if arg scan-unifier is set to true-->
 
  <group if="$(arg scanunifier)">
- <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch" ns="cob_scan_unifier"/>
+ <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch"/>
  </group>   
 
 <!---=================================================================================================================================================================-->

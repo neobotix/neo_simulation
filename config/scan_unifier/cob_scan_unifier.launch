@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-<!-- FRONT laserscanner   -->
-
 	<!-- parameters -->
 	<rosparam command="load" ns="cob_scan_unifier" file="$(find neo_simulation)/config/scan_unifier/mpo_500_unifier.yaml"/>
 	<!-- start node -->
