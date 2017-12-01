@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<robot name="mpo_700" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- MATERIALS -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_materials.xacro" />
+
+  <!-- BODY -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_body.xacro" />
+
+  <!-- SENSORS --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/sick_s300_laser.xacro" />
+
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_gazebo.xacro" />
+
+
+  <!-- Base Macro-->
+  <xacro:mpo_700_base name="base_link">
+  </xacro:mpo_700_base>
+
+
+  <!-- Sensors -->
+  <xacro:sick_s300_laser_v0 name="sick_s300_laser_front" parent="base_link" ros_topic="sick_s300_front/scan">
+  	<origin xyz="0.360 0 0.223" rpy="3.14 0 1.57" />
+  </xacro:sick_s300_laser_v0>
+
+  <xacro:sick_s300_laser_v0 name="sick_s300_laser_back" parent="base_link" ros_topic="sick_s300_back/scan">
+  	<origin xyz="-0.360 0 0.223" rpy="3.14 0 -1.57" />
+  </xacro:sick_s300_laser_v0>
+
+</robot>

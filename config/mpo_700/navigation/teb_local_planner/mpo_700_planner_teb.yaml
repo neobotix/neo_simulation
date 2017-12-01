@@ -1,0 +1,126 @@
+TebLocalPlannerROS:
+
+#Robot configuration 
+
+ acc_lim_x : 0.4
+
+    #Maximum translational acceleration of the robot in meters/sec^2 
+
+ acc_lim_theta : 0.2
+
+    #Maximum angular acceleration of the robot in radians/sec^2 
+
+ max_vel_x : 0.8
+
+    #Maximum translational velocity of the robot in meters/sec 
+
+ max_vel_x_backwards : 0.8
+
+    #Maximum absolute translational velocity of the robot while driving backwards in meters/sec. See optimization parameter weight_kinematics_forward_drive 
+
+ max_vel_theta : 0.8
+
+    #Maximum angular velocity of the robot in radians/sec 
+
+#Goal Tolerance Parameters 
+
+ xy_goal_tolerance : 0.05
+
+    #Allowed final euclidean distance to the goal position in meters 
+
+ yaw_goal_tolerance : 0.1
+
+    #Allowed final orientation error in radians 
+
+ free_goal_vel : false
+
+    #Remove the goal velocity constraint such that the robot can arrive at the goal with maximum speed
+
+###For Holonomic robots
+
+ max_vel_y : 0.8
+
+ acc_lim_y : 0.4
+ 
+ footprint_model/type : "line"
+
+
+ footprint_model/line_start : [-0.4, 0.0] 
+
+    #This parameter is only relevant for type "line". It contains the start coordinates of the line segment. 
+
+
+ footprint_model/line_end : [0.4, 0.0] 
+
+    #This parameter is only relevant for type "line". It contains the end coordinates of the line segment. 
+
+#Trajectory Configuration Parameters
+
+ dt_ref : 0.3
+
+     #Desired temporal resolution of the trajectory 
+
+ min_samples  : 3
+
+     #Minimum number of samples 
+
+ force_reinit_new_goal_dist : 1.0
+
+      #Reinitialize the trajectory if a previous goal is updated with a separation of more than the specified value in meters 
+
+ feasibility_check_no_poses  : 4
+
+      #Specify up to which pose on the predicted plan the feasibility should be checked each sampling interval. 
+
+ publish_feedback : false
+
+      #Publish planner feedback containing the full trajectory and a list of active obstacles (should be enabled only for evaluation or debugging. See list of publishers above. 
+
+ allow_init_with_backwards_motion : true
+ 
+      #allows backward motion incase the goal behind start
+
+ exact_arc_length : true
+
+ max_global_plan_lookahead_dist : 2
+
+#Obstacle Parameters
+
+ min_obstacle_dist : 0.55 
+
+    #Minimum desired separation from obstacles in meters 
+
+ include_costmap_obstacles : true  
+
+#Optimization Parameters
+
+ penalty_epsilon : 0.1  
+
+    #small safety margin to penalty functions for hard-constraint approximations
+
+ weight_max_vel_x : 2.0 
+
+    #Optimization weight for satisfying the maximum allowed translational velocity 
+
+ weight_max_vel_theta : 1.0 
+
+    #Optimization weight for satisfying the maximum allowed angular velocity 
+
+ weight_acc_lim_x : 1.0 
+
+    #Optimization weight for satisfying the maximum allowed translational acceleration 
+
+ weight_acc_lim_theta : 1.0 
+
+    #Optimization weight for satisfying the maximum allowed angular acceleration 
+
+ Weight_acc_lim_y : 0
+
+ weight_kinematics_nh : 1 # WE HAVE A HOLONOMIC ROBOT, JUST ADD A SMALL PENALTY
+
+ weight_kinematics_forward_drive : 1
+
+
+
+
+
