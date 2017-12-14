@@ -64,7 +64,7 @@
             </noise>
           </ray>
           <plugin name="sick_s300_laser_front" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_laser/front/scan</topicName>
+            <topicName>sick_s300_front/scan</topicName>
             <frameName>sick_s300_laser_front_link</frameName>
           </plugin>
         </sensor>
@@ -101,7 +101,7 @@
             </noise>
           </ray>
           <plugin name="sick_s300_laser_back" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_laser/back/scan</topicName>
+            <topicName>sick_s300_back/scan</topicName>
             <frameName>sick_s300_laser_back_link</frameName>
           </plugin>
         </sensor>

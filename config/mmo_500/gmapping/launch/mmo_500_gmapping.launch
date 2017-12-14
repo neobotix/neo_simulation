@@ -4,7 +4,7 @@
  <arg name="joystick" value="false"/>
   
   <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
-    <remap from="scan" to="cob_scan_unifier/cob_scan_unifier/scan_unified"/>
+    <remap from="scan" to="cob_scan_unifier/scan_unified"/>
     <rosparam file="$(find neo_simulation)/config/mmo_500/gmapping/yaml/gmapping_config.yaml" command="load" />
   </node>
 
