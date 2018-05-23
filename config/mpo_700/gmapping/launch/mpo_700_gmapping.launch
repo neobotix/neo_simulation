@@ -8,11 +8,4 @@
     <rosparam file="$(find neo_simulation)/config/mpo_700/gmapping/yaml/gmapping_config.yaml" command="load" />
   </node>
 
- <!-- Launch robot control-->
- <group if="$(arg joystick)">
- 
- <include file="$(find neo_teleop)/ros/launch/teleop.launch"/>
-
- </group>
-
 </launch>
