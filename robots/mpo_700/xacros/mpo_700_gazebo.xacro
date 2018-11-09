@@ -13,7 +13,7 @@
       <material value="Gazebo/Yellow"/>
       <sensor type="ray" name="sick_s300_laser_front_sensor">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>true</visualize>
+          <visualize>false</visualize>
           <update_rate>40</update_rate>
           <ray>
             <scan>
@@ -50,7 +50,7 @@
       <material value="Gazebo/Yellow"/>
       <sensor type="ray" name="sick_s300_laser_back_sensor">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>true</visualize>
+          <visualize>false</visualize>
           <update_rate>40</update_rate>
           <ray>
             <scan>
