@@ -1,4 +1,4 @@
-image: /home/harsha_nagaraja/catkin_ws/src/neo_simulation/maps/env2map.pgm
+image: env2map.pgm
 resolution: 0.050000
 origin: [-100.000000, -100.000000, 0.000000]
 negate: 0
