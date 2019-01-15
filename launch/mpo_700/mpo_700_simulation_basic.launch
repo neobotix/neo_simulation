@@ -2,20 +2,16 @@
 <launch>
 
   <!--set to the required robot and world-->
-  <arg name="robotname" value="mpo_700"/>
-  <arg name="robotworld" value="neobotix_env2.world"/>
+  <arg name="robotworld" value="neo_track1.world"/>
   
   <!--To launch RVIZ set the value to true-->
-  <arg name="rviz" value="true"/>
+  <arg name="rviz" value="false"/>
 
   <!--To launch scanunifier set the value to true-->
   <arg name="scanunifier" value="true"/>
 
   <!--To move robot using teleop_keyboard-->
-  <arg name="teleop_keyboard" value="true"/>
-   
-  <!--To move robot using joystick-->
-  <arg name="joystick" value="false"/>
+  <arg name="software_joystick" value="true"/>
 
 <!---=================================================================================================================================================================-->
 
@@ -39,10 +35,10 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mpo_700/mpo_700.urdf.xacro'"/>
 
-  <node name="$(arg robotname)_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
-  args="-urdf -param robot_description -model $(arg robotname) " />
+  <node name="mpo_700_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+  args="-urdf -param robot_description -model mpo_700" />
   
   <!--To publish Joint and Robot state-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
@@ -54,39 +50,25 @@
   </node>
 
 <!---=================================================================================================================================================================-->
-
- <!--if arg rviz is set to true-->
-
- <group if="$(arg rviz)">
- <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname).urdf.xacro' name:=$(arg robotname)"/> 
- <arg name="rvizconfig" default="$(find neo_simulation)/robots/$(arg robotname)/$(arg robotname)_config.rviz" />
- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
- </group>
  
   <!--if arg scan-unifier is set to true-->
 
  <group if="$(arg scanunifier)">
- <include file="$(find neo_simulation)/config/scan_unifier/cob_scan_unifier.launch"/>
+ 	<include file="$(find neo_simulation)/config/mpo_700/scan_unifier/mpo_700_scan_unifier.launch"/>
  </group>   
 
 <!---=================================================================================================================================================================-->
  
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 
  
- <!--if arg teleop-keyboard is set to true-->
+ <!--if arg software_joystick is set to true-->
 
- <group if="$(arg teleop_keyboard)">
+ <group if="$(arg software_joystick)">
    <node pkg="turtlebot_teleop" type="turtlebot_teleop_key" name="turtlebot_teleop_keyboard"  output="screen">
     <param name="scale_linear" value="0.5" type="double"/>
     <param name="scale_angular" value="1.5" type="double"/>
     <remap from="turtlebot_teleop_keyboard/cmd_vel" to="cmd_vel"/>
   </node>
- </group>
-
- <!--if arg joystick is set to true (default=false)-->
-
- <group if="$(arg joystick)">
- <include file="$(find neo_teleop)/ros/launch/teleop.launch"/>
  </group>
 
 <!---=================================================================================================================================================================-->

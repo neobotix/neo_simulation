@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+  <!--To launch RVIZ set the value to true-->
+  <arg name="rviz" value="true"/>
+
+  <!--Define configuration-->
+  <!--"empty" = empty config-->
+  <!--"basic" = robot model + scan data-->
+  <!--"navigation" = robot model + scan data + navigation data-->
+  <arg name="config" value="navigation"/>
+
+
+<!---=================================================================================================================================================================-->
+
+<!--if arg rviz is set to true-->
+
+ <group if="$(arg rviz)">
+ 	<arg name="rvizconfig" default="$(find neo_simulation)/config/mpo_700/rviz/$(arg config)_config.rviz" />
+ 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
+ </group>
+<!---=================================================================================================================================================================-->
+
+</launch>
