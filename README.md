@@ -39,6 +39,32 @@ If you have any questions, just get in touch with us:
     `$ source devel/setup.bash`
     
  3. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
+
+ ## Additional Packages that are required for the simulation
+
+      3.1 # Turtle bot teleop 
+
+      '$ sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs'
+
+      3.2 # Control package 
+
+      '$ sudo apt-get install ros-kinetic-ros-control'
+
+      3.3 # ROS Navigation package
+
+      '$ sudo apt-get install ros-kinetic-navigation'
+
+      3.4 # ROS eband local planning packages
+
+      '$ sudo apt-get install ros-kinetic-eband-local-planner'
+
+      3.5 # ROS Gmapping
+
+      '$ sudo apt-get install ros-kinetic-openslam-gmapping'
+
+      3.6 # Cob_scanner (Just the file cob_scan_unifier)
+
+      `$ git clone https://github.com/neobotix/neo_driver.git`
     
 ## Launch a mobile Robot
 
