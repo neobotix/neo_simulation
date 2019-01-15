@@ -37,8 +37,8 @@
   <!--Robot description to param server-->
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mpo_500/mpo_500.urdf.xacro'"/>
 
-  <node name="mpo_700_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
-  args="-urdf -param robot_description -model mpo_700" />
+  <node name="mpo_500_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+  args="-urdf -param robot_description -model mpo_500" />
   
   <!--To publish Joint and Robot state-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
