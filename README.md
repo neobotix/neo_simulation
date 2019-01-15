@@ -39,89 +39,21 @@ If you have any questions, just get in touch with us:
     `$ source devel/setup.bash`
     
  3. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
-
-## Parameters to be set before the bringing up the robot in gazebo
-
-1. In the **.bashrc** file
-
-      1.1 **ROBOT and MAP_NAME**
-  
-   -  open bashrc file by commanding in the terminal ```sudo gedit ~/.bashrc``` and add the following lines:
-
-       export ROBOT = mpo_500
-
-       export MAP_NAME = env2map
-
-2. In the **simulation.launch** file
-
-      2.1 **robotname**
-  
-   -  set the name of the robot you wish to simulate in gazebo. Available robot models are mpo_500 and mmo_500.
-
-      [Example]: If you opt to simulate the robot mpo_500:
-
-      Change the *value* of the argument *robotname* to **mpo_500**.
-
-      ```arg name="robotname" value="mpo_500"```
-
-     2.2 **robotworld**
-  
-   - set the world in which the robot is to be simulated.
-
-      [Example]: If you opt to simulate the robot in different world:
-
-      Change the *value* of the argument *robotworld* to **construction_barrel.world**.
-
-      ```arg name="robotworld" value="empty.world"```
-      
-    2.3  **rviz**
-
-    - To visualize the robot in *rviz* set the value of the argument *rviz* to **true** else **false**.
     
-      ```arg name="rviz" value="true"```
-   
-     2.4  **scanunifier**
-
-    - Scan Unifier Node can unify any number of given input laser scans.
-    
-    - To launch the scan unifier node set the value of the arguement *scanunifier* to **true** else **false**.
-    
-      ```arg name="scanunifier" value="true"```
-      
-      __NOTE__: To use scan unifier node a package called *cob_scan_unifier* must be downloaded from the metapackage neo_driver (https://github.com/neobotix/neo_driver)
- 
-     2.5  **gmapping**
-
-    - To launch the slam_gmapping node to create a map set the argument *gmappping* to **true** else **false**.
-    - Before changing the *arg gmapping* set the argument of *amcl* and *navigation* to false.
-    
-      ```arg name="gmapping" value="false"```
-      
-     2.6  **amcl**
-    
-    - To launch the amcl node for localization of the robot set the argument *amcl* to **true** else **false**.
-     
-      ```arg name="amcl" value="false"```
-      
-     2.7  **navigation**
-
-     - To launch the move_base node for navigating the robot to reach the desired location set the argument *navigation* to     **true** else **false**.
-     
-        ```arg name="navigation" value="true"```
-     
-     2.8  **localplanner**
-
-    - With this parameter suitable local planner for the robot can be selected. Available local planners are Teb, DWA, EBand, Trajectory.
-    
-    - To set the local planner as Teb
-    
-       ```arg name="localplanner" value="teb"```
-    
-## Launch file
+## Launch a mobile Robot
 
 To simulate the robot in gazebo run:
 
 `roslaunch neo_simulation simulation.launch`
+
+### Parameters
+
+| Parameter | Description | Options |
+| --- | --- | --- |
+| robot_type | robot type used in simulation | mpo_500, mmo_500, mpo_700 |
+| robot_world | name of the .world file located in folder "world"  | neo_track1, neo_track2 |
+| rviz | indicates if rviz should be started with the simulation  | true, false |
+| autonomous_navigation | indicates if move base and gmapping or amcl should be started with the simulation  | true, false |
 
 
 ## Topics
