@@ -1790,10 +1790,10 @@
       <pose frame=''>9.61273 0.053111 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>260 283000000</sim_time>
-      <real_time>195 263715215</real_time>
-      <wall_time>1547715440 802416851</wall_time>
-      <iterations>194929</iterations>
+      <sim_time>1187 207000000</sim_time>
+      <real_time>53 767343627</real_time>
+      <wall_time>1547720416 441143516</wall_time>
+      <iterations>53653</iterations>
       <model name='Construction Barrel'>
         <pose frame=''>-14.5057 1.82601 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2110,21 +2110,11 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='ground_plane'>
-        <pose frame=''>-0.46143 3.48082 0 0 -0 0</pose>
+      <model name='neobotix_ground_plane'>
+        <pose frame=''>15.5395 -0.113375 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-0.46143 3.48082 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='my_ground_plane_0'>
-        <pose frame=''>-2.1164 -0.026722 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-2.1164 -0.026722 0 0 -0 0</pose>
+          <pose frame=''>15.5395 -0.113375 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2136,12 +2126,12 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>23.0622 -12.0436 170.175 1e-06 1.5178 1.52521</pose>
+        <pose frame=''>-15.3949 -183.349 139.356 0 0.581798 1.64122</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='ground_plane'>
+    <model name='neobotix_ground_plane'>
       <static>1</static>
       <link name='link'>
         <collision name='collision'>
@@ -2178,8 +2168,9 @@
           </geometry>
           <material>
             <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
+              <uri>model://neobotix_ground_plane/materials/scripts</uri>
+              <uri>model://neobotix_ground_plane/materials/textures/</uri>
+              <name>NeobotixGroundPlane/Image</name>
             </script>
           </material>
         </visual>
@@ -2187,56 +2178,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.46143 3.48082 0 0 -0 0</pose>
-    </model>
-    <model name='my_ground_plane_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>15 15</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://my_ground_plane/materials/scripts</uri>
-              <uri>model://my_ground_plane/materials/textures/</uri>
-              <name>MyGroundPlane/Image</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>-2.1164 -0.026722 0 0 -0 0</pose>
+      <pose frame=''>15.5395 -0.113375 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
