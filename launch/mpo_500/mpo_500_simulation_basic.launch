@@ -42,11 +42,11 @@
   
   <!--To publish Joint and Robot state-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-	<param name="rate" value="20.0"/>
+  <param name="rate" value="20.0"/>
   </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
-	<param name="publish_frequency" value="20.0"/>
+  <param name="publish_frequency" value="20.0"/>
   </node>
 
 <!---=================================================================================================================================================================-->
@@ -54,7 +54,7 @@
   <!--if arg scan-unifier is set to true-->
 
  <group if="$(arg scanunifier)">
- 	<include file="$(find neo_simulation)/config/mpo_500/scan_unifier/mpo_500_scan_unifier.launch"/>
+  <include file="$(find neo_simulation)/config/mpo_500/scan_unifier/mpo_500_scan_unifier.launch"/>
  </group>   
 
 <!---=================================================================================================================================================================-->
