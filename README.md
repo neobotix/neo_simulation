@@ -40,7 +40,9 @@ If you have any questions, just get in touch with us:
 
 3. Now we need to add the path of our custom gazebo models into the bashrc
       
-    i.  gedit ~/.bashrc
+    i. In your command line terminal
+
+        $ gedit ~/.bashrc
 
     ii. Add this to your bashrc
 
