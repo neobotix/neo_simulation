@@ -52,27 +52,28 @@ If you have any questions, just get in touch with us:
 
  ## Additional Packages that are required for the simulation
 
-  1. Turtle bot teleop 
+  1. Teleoperation
 
-    $ sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
+    $ sudo apt-get install ros-kinetic-teleop-twist-keyboard
 
-  2 Control package 
+  2. Control package 
 
     $ sudo apt-get install ros-kinetic-ros-control
 
-  3 ROS Navigation package
+  3. Navigation
 
     $ sudo apt-get install ros-kinetic-navigation
 
-  4 ROS eband local planning packages
+  3.1 Local Planner
 
     $ sudo apt-get install ros-kinetic-eband-local-planner
 
-  5 ROS Gmapping
+  3.2 Localization
 
     $ sudo apt-get install ros-kinetic-openslam-gmapping
+    $ sudo apt-get install ros-kinetic-amcl
 
-  6 Cob_scanner (Just the folder cob_scan_unifier)
+  4. Scan Unifier (Just the folder cob_scan_unifier)
 
     $ git clone https://github.com/neobotix/neo_driver.git
     
@@ -87,7 +88,7 @@ To simulate the robot in gazebo run:
 | Parameter | Description | Options |
 | --- | --- | --- |
 | robot_type | robot type used in simulation | mpo_500, mmo_500, mpo_700 |
-| robot_world | name of the .world file located in folder "world"  | neo_track1, neo_track2 |
+| robot_world | name of the .world file located in folder "worlds"  | neo_track1, neo_track2 |
 | rviz | indicates if rviz should be started with the simulation  | true, false |
 | autonomous_navigation | indicates if move base and gmapping or amcl should be started with the simulation  | true, false |
 
