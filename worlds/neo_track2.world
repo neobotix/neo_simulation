@@ -34,867 +34,867 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>10468 972000000</sim_time>
-      <real_time>6702 663663388</real_time>
-      <wall_time>1547818224 105172637</wall_time>
-      <iterations>5027887</iterations>
+      <sim_time>11694 992000000</sim_time>
+      <real_time>1265 809926566</real_time>
+      <wall_time>1547822771 781469249</wall_time>
+      <iterations>1226020</iterations>
       <model name='drc_practice_angled_barrier_135_1'>
-        <pose frame=''>-2.74553 -14.0737 0 0 -0 0</pose>
+        <pose frame=''>-3.15623 -25.0441 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>7.40407 -8.55758 0 0 0 -0.785398</pose>
+          <pose frame=''>6.99337 -19.528 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>3.64287 -12.283 0 0 0 -0.785398</pose>
+          <pose frame=''>3.23217 -23.2534 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>2.38878 -13.5253 0 0 0 -0.785398</pose>
+          <pose frame=''>1.97808 -24.4957 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>8.28327 -7.63169 0 0 -0 0</pose>
+          <pose frame=''>7.87257 -18.6021 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='one::link'>
-          <pose frame=''>-2.74553 -14.0737 0 0 0 -1.5707</pose>
+          <pose frame=''>-3.15623 -25.0441 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>6.15058 -9.79843 0 0 0 -0.785398</pose>
+          <pose frame=''>5.73988 -20.7688 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>4.89677 -11.0411 0 0 0 -0.785398</pose>
+          <pose frame=''>4.48607 -22.0115 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>8.28327 -7.63169 0.866 0 -0 0</pose>
+          <pose frame=''>7.87257 -18.6021 0.866 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='three::link'>
-          <pose frame=''>0.78369 -14.0899 0 0 0 -1.5707</pose>
+          <pose frame=''>0.372994 -25.0603 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='two::link'>
-          <pose frame=''>-0.98093 -14.0823 0 0 0 -1.5707</pose>
+          <pose frame=''>-1.39163 -25.0527 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_angled_barrier_135_1_clone'>
-        <pose frame=''>-0.795834 -17.9115 0 0 -0 0</pose>
+        <pose frame=''>-0.8244 -28.3819 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>9.35377 -12.3953 0 0 0 -0.785398</pose>
+          <pose frame=''>9.3252 -22.8657 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>5.59257 -16.1207 0 0 0 -0.785398</pose>
+          <pose frame=''>5.564 -26.5911 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>4.33848 -17.3631 0 0 0 -0.785398</pose>
+          <pose frame=''>4.30991 -27.8335 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>10.2329 -11.4695 0 0 -0 0</pose>
+          <pose frame=''>10.2043 -21.9399 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='one::link'>
-          <pose frame=''>-0.795834 -17.9115 0 0 0 -1.5707</pose>
+          <pose frame=''>-0.8244 -28.3819 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>8.10028 -13.6362 0 0 0 -0.785398</pose>
+          <pose frame=''>8.07171 -24.1066 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>6.84647 -14.8789 0 0 0 -0.785398</pose>
+          <pose frame=''>6.8179 -25.3493 0 0 0 -0.785398</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>10.2329 -11.4695 0.866 0 -0 0</pose>
+          <pose frame=''>10.2043 -21.9399 0.866 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='three::link'>
-          <pose frame=''>2.73339 -17.9277 0 0 0 -1.5707</pose>
+          <pose frame=''>2.70482 -28.3981 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='two::link'>
-          <pose frame=''>0.968766 -17.9201 0 0 0 -1.5707</pose>
+          <pose frame=''>0.9402 -28.3905 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_angled_barrier_45_1'>
-        <pose frame=''>-2.92661 8.78277 0 0 -0 0</pose>
+        <pose frame=''>-2.84019 -0.916494 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>7.29819 3.17299 0 0 0 -2.3562</pose>
+          <pose frame=''>7.38461 -6.52627 0 0 0 -2.3562</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>3.57157 6.93273 0 0 0 -2.3562</pose>
+          <pose frame=''>3.65799 -2.76653 0 0 0 -2.3562</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>2.32929 8.1861 0 0 0 -2.3562</pose>
+          <pose frame=''>2.41571 -1.51316 0 0 0 -2.3562</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>8.10219 2.34074 0 0 -0 0</pose>
+          <pose frame=''>8.18861 -7.35852 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='one::link'>
-          <pose frame=''>-2.92661 8.78277 0 0 0 -1.5707</pose>
+          <pose frame=''>-2.84019 -0.916494 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>6.05595 4.42667 0 0 0 -2.3562</pose>
+          <pose frame=''>6.14237 -5.27259 0 0 0 -2.3562</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>4.8137 5.68016 0 0 0 -2.3562</pose>
+          <pose frame=''>4.90012 -4.0191 0 0 0 -2.3562</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>8.10219 2.34074 0.866 0 -0 0</pose>
+          <pose frame=''>8.18861 -7.35852 0.866 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='three::link'>
-          <pose frame=''>0.60261 8.7666 0 0 0 -1.5707</pose>
+          <pose frame=''>0.689031 -0.932664 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='two::link'>
-          <pose frame=''>-1.16201 8.77421 0 0 0 -1.5707</pose>
+          <pose frame=''>-1.07559 -0.925054 0 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone'>
-        <pose frame=''>-7.92406 11.4416 0 0 -0 0</pose>
+        <pose frame=''>-6.3315 2.40094 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-7.92406 11.4416 0 0 -0 0</pose>
+          <pose frame=''>-6.3315 2.40094 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0'>
-        <pose frame=''>11.7785 4.4737 0 0 -0 0</pose>
+        <pose frame=''>11.7251 -5.29445 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>11.7785 4.4737 0 0 -0 0</pose>
+          <pose frame=''>11.7251 -5.29445 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0_clone'>
-        <pose frame=''>11.9629 3.79861 0 0 -0 0</pose>
+        <pose frame=''>12.0029 -5.96754 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>11.9629 3.79861 0 0 -0 0</pose>
+          <pose frame=''>12.0029 -5.96754 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0_clone_clone'>
-        <pose frame=''>12.3388 -8.6592 0 0 -0 0</pose>
+        <pose frame=''>12.0895 -8.82275 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>12.3388 -8.6592 0 0 -0 0</pose>
+          <pose frame=''>12.0895 -8.82275 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0_clone_clone_0'>
-        <pose frame=''>11.9274 -9.36058 0 0 -0 0</pose>
+        <pose frame=''>11.9261 -18.9664 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>11.9274 -9.36058 0 0 -0 0</pose>
+          <pose frame=''>11.9261 -18.9664 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0_clone_clone_1'>
-        <pose frame=''>-14.2019 -10.1276 0 0 -0 0</pose>
+        <pose frame=''>-14.4854 -20.168 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-14.2019 -10.1276 0 0 -0 0</pose>
+          <pose frame=''>-14.4854 -20.168 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_0_clone_clone_2'>
-        <pose frame=''>-14.7278 -9.56563 0 0 -0 0</pose>
+        <pose frame=''>-14.8538 -19.195 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-14.7278 -9.56563 0 0 -0 0</pose>
+          <pose frame=''>-14.8538 -19.195 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_1'>
-        <pose frame=''>4.43255 11.411 0 0 -0 0</pose>
+        <pose frame=''>3.98802 2.26716 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4.43255 11.411 0 0 -0 0</pose>
+          <pose frame=''>3.98802 2.26716 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_1_clone'>
-        <pose frame=''>3.9976 11.9193 0 0 -0 0</pose>
+        <pose frame=''>4.38874 1.87024 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>3.9976 11.9193 0 0 -0 0</pose>
+          <pose frame=''>4.38874 1.87024 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_1_clone_0'>
-        <pose frame=''>3.47485 12.4102 0 0 -0 0</pose>
+        <pose frame=''>10.5734 -21.3348 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>3.47485 12.4102 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='drc_practice_blue_cylinder_0_clone_clone'>
-        <pose frame=''>-6.72903 12.3768 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-6.72903 12.3768 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='drc_practice_blue_cylinder_0_clone_clone_0'>
-        <pose frame=''>-7.31137 11.9568 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-7.31137 11.9568 0 0 -0 0</pose>
+          <pose frame=''>10.5734 -21.3348 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_0_clone_clone_0_clone'>
-        <pose frame=''>-15.1719 3.70564 0 0 -0 0</pose>
+        <pose frame=''>-14.0036 -5.03798 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-15.1719 3.70564 0 0 -0 0</pose>
+          <pose frame=''>-14.0036 -5.03798 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_1'>
-        <pose frame=''>-4.22321 8.81492 0 0 -0 0</pose>
+        <pose frame=''>-4.25423 -1.23155 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-4.22321 8.81492 0 0 -0 0</pose>
+          <pose frame=''>-4.25423 -1.23155 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_blue_cylinder_2'>
-        <pose frame=''>-15.3925 2.79735 0 0 -0 0</pose>
+        <pose frame=''>-14.5281 -5.71475 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-15.3925 2.79735 0 0 -0 0</pose>
+          <pose frame=''>-14.5281 -5.71475 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='drc_practice_blue_cylinder_2_clone'>
+        <pose frame=''>8.30128 -8.15018 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>8.30128 -8.15018 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='drc_practice_blue_cylinder_2_clone_0'>
+        <pose frame=''>-15.1652 -8.44333 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-15.1652 -8.44333 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight'>
-        <pose frame=''>-14.3284 -10.5412 0 0 -0 0.798854</pose>
+        <pose frame=''>-14.4908 -21.2116 0 0 -0 0.798854</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-11.2014 0.579276 0 0 -0 0.013456</pose>
+          <pose frame=''>-11.3638 -10.0912 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-11.1555 -4.71441 0 0 -0 0.013456</pose>
+          <pose frame=''>-11.3179 -15.3849 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-11.14 -6.47963 0 0 -0 0.013456</pose>
+          <pose frame=''>-11.3024 -17.1501 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-11.2516 1.85511 0 0 -0 0.798854</pose>
+          <pose frame=''>-11.414 -8.81536 0 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-11.1866 -1.18445 0 0 -0 0.013456</pose>
+          <pose frame=''>-11.349 -11.8549 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-11.1707 -2.9497 0 0 -0 0.013456</pose>
+          <pose frame=''>-11.3331 -13.6202 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-11.2516 1.85511 0.866 0 -0 0.798854</pose>
+          <pose frame=''>-11.414 -8.81536 0.866 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone'>
-        <pose frame=''>5.04999 -10.0369 0 0 -0 0.798854</pose>
+        <pose frame=''>5.0375 -21.3773 0 0 -0 0.798854</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>8.17699 1.08353 0 0 -0 0.013456</pose>
+          <pose frame=''>8.16451 -10.2568 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>8.22291 -4.21015 0 0 -0 0.013456</pose>
+          <pose frame=''>8.21043 -15.5505 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>8.23838 -5.97537 0 0 -0 0.013456</pose>
+          <pose frame=''>8.2259 -17.3157 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>8.12681 2.35936 0 0 -0 0.798854</pose>
+          <pose frame=''>8.11433 -8.981 0 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>8.19179 -0.680192 0 0 -0 0.013456</pose>
+          <pose frame=''>8.17931 -12.0206 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>8.20769 -2.44544 0 0 -0 0.013456</pose>
+          <pose frame=''>8.19521 -13.7858 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>8.12681 2.35936 0.866 0 -0 0.798854</pose>
+          <pose frame=''>8.11433 -8.981 0.866 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_0'>
-        <pose frame=''>4.73919 15.5559 0 0 0 -1.54316</pose>
+        <pose frame=''>4.75705 6.28029 0 0 0 -1.54316</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>10.5337 5.56258 0 0 0 -2.32856</pose>
+          <pose frame=''>10.5515 -3.71303 0 0 0 -2.32856</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>6.70576 9.21941 0 0 0 -2.32856</pose>
+          <pose frame=''>6.72359 -0.056195 0 0 0 -2.32856</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>5.42922 10.4387 0 0 0 -2.32856</pose>
+          <pose frame=''>5.44705 1.16309 0 0 0 -2.32856</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>11.4835 4.7093 0 0 0 -1.54316</pose>
+          <pose frame=''>11.5013 -4.5663 0 0 0 -1.54316</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>9.25865 6.78131 0 0 0 -2.32856</pose>
+          <pose frame=''>9.27648 -2.4943 0 0 0 -2.32856</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>7.98178 8.0003 0 0 0 -2.32856</pose>
+          <pose frame=''>7.99961 -1.2753 0 0 0 -2.32856</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>11.4835 4.7093 0.866 0 0 -1.54316</pose>
+          <pose frame=''>11.5013 -4.5663 0.866 0 0 -1.54316</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_1'>
-        <pose frame=''>-11.0054 -3.43062 0 0 0 -1.5289</pose>
+        <pose frame=''>-11.2322 -13.8675 0 0 0 -1.5289</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-5.06901 -13.3403 0 0 0 -2.3143</pose>
+          <pose frame=''>-5.29584 -23.7771 0 0 0 -2.3143</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-8.94865 -9.73835 0 0 0 -2.3143</pose>
+          <pose frame=''>-9.17548 -20.1752 0 0 0 -2.3143</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-10.2425 -8.53739 0 0 0 -2.3143</pose>
+          <pose frame=''>-10.4693 -18.9742 0 0 0 -2.3143</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-4.10711 -14.1799 0 0 0 -1.52891</pose>
+          <pose frame=''>-4.33394 -24.6167 0 0 0 -1.52891</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-6.36126 -12.1398 0 0 0 -2.3143</pose>
+          <pose frame=''>-6.58809 -22.5766 0 0 0 -2.3143</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-7.65539 -10.9392 0 0 0 -2.3143</pose>
+          <pose frame=''>-7.88222 -21.376 0 0 0 -2.3143</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-4.10711 -14.1799 0.866 0 0 -1.52891</pose>
+          <pose frame=''>-4.33394 -24.6167 0.866 0 0 -1.52891</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_1_clone'>
-        <pose frame=''>-0.273779 8.96025 0 0 0 -3.10275</pose>
+        <pose frame=''>-0.235623 -1.21745 0 0 0 -3.10275</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-10.2015 3.05411 0 0 -0 2.39504</pose>
+          <pose frame=''>-10.1633 -7.12359 0 0 -0 2.39504</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-6.58776 6.92275 0 0 -0 2.39504</pose>
+          <pose frame=''>-6.5496 -3.25495 0 0 -0 2.39504</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-5.38286 8.21288 0 0 -0 2.39504</pose>
+          <pose frame=''>-5.3447 -1.96482 0 0 -0 2.39504</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-11.0441 2.09478 0 0 0 -3.10275</pose>
+          <pose frame=''>-11.0059 -8.08292 0 0 0 -3.10275</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-8.99711 4.3427 0 0 -0 2.39504</pose>
+          <pose frame=''>-8.95895 -5.835 0 0 -0 2.39504</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-7.7925 5.63316 0 0 -0 2.39504</pose>
+          <pose frame=''>-7.75434 -4.54454 0 0 -0 2.39504</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-11.0441 2.09478 0.866 0 0 -3.10275</pose>
+          <pose frame=''>-11.0059 -8.08292 0.866 0 0 -3.10275</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_1_clone_0'>
-        <pose frame=''>-13.079 -7.39597 0 0 0 -1.49134</pose>
+        <pose frame=''>-13.1015 -17.5473 0 0 0 -1.49134</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-6.77462 -17.0757 0 0 0 -2.27674</pose>
+          <pose frame=''>-6.79718 -27.2271 0 0 0 -2.27674</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-10.7868 -13.6221 0 0 0 -2.27674</pose>
+          <pose frame=''>-10.8094 -23.7735 0 0 0 -2.27674</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-12.1248 -12.4705 0 0 0 -2.27674</pose>
+          <pose frame=''>-12.1474 -22.6219 0 0 0 -2.27674</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-5.78187 -17.8786 0 0 0 -1.49135</pose>
+          <pose frame=''>-5.80443 -28.03 0 0 0 -1.49135</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-8.11104 -15.9247 0 0 0 -2.27674</pose>
+          <pose frame=''>-8.1336 -26.0761 0 0 0 -2.27674</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-9.44934 -14.7735 0 0 0 -2.27674</pose>
+          <pose frame=''>-9.4719 -24.9249 0 0 0 -2.27674</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-5.78187 -17.8786 0.866 0 0 -1.49135</pose>
+          <pose frame=''>-5.80443 -28.03 0.866 0 0 -1.49135</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_1_clone_clone'>
-        <pose frame=''>-3.8236 11.0441 0 0 0 -3.14149</pose>
+        <pose frame=''>-2.27557 2.05286 0 0 0 -3.14149</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-13.9726 5.52691 0 0 -0 2.3563</pose>
+          <pose frame=''>-12.4246 -3.46435 0 0 -0 2.3563</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-10.2118 9.25269 0 0 -0 2.3563</pose>
+          <pose frame=''>-8.66379 0.261426 0 0 -0 2.3563</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-8.95786 10.4952 0 0 -0 2.3563</pose>
+          <pose frame=''>-7.40985 1.50394 0 0 -0 2.3563</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-14.8517 4.60093 0 0 0 -3.14149</pose>
+          <pose frame=''>-13.3037 -4.39033 0 0 0 -3.14149</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-12.7193 6.76788 0 0 -0 2.3563</pose>
+          <pose frame=''>-11.1713 -2.22338 0 0 -0 2.3563</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-11.4656 8.01072 0 0 -0 2.3563</pose>
+          <pose frame=''>-9.91759 -0.980544 0 0 -0 2.3563</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-14.8517 4.60093 0.866 0 0 -3.14149</pose>
+          <pose frame=''>-13.3037 -4.39033 0.866 0 0 -3.14149</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_1_clone_clone_clone'>
-        <pose frame=''>6.18736 9.49769 0 0 -0 2.35582</pose>
+        <pose frame=''>6.7034 -0.600646 0 0 -0 2.35582</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-4.88877 12.7782 0 0 -0 1.57042</pose>
+          <pose frame=''>-4.37272 2.67988 0 0 -0 1.57042</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>0.405051 12.7509 0 0 -0 1.57042</pose>
+          <pose frame=''>0.921099 2.65258 0 0 -0 1.57042</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>2.17031 12.7419 0 0 -0 1.57042</pose>
+          <pose frame=''>2.68636 2.64357 0 0 -0 1.57042</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-6.16517 12.7456 0 0 -0 2.35582</pose>
+          <pose frame=''>-5.64912 2.64728 0 0 -0 2.35582</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-3.125 12.7686 0 0 -0 1.57042</pose>
+          <pose frame=''>-2.60895 2.67028 0 0 -0 1.57042</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-1.3597 12.7601 0 0 -0 1.57042</pose>
+          <pose frame=''>-0.843652 2.66178 0 0 -0 1.57042</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-6.16517 12.7456 0.866 0 -0 2.35582</pose>
+          <pose frame=''>-5.64912 2.64728 0.866 0 -0 2.35582</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_clone_0'>
-        <pose frame=''>9.18153 -11.497 0 0 -0 0.798854</pose>
+        <pose frame=''>8.95276 -21.8247 0 0 -0 0.798854</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>12.3085 -0.376548 0 0 -0 0.013456</pose>
+          <pose frame=''>12.0798 -10.7042 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>12.3544 -5.67024 0 0 -0 0.013456</pose>
+          <pose frame=''>12.1257 -15.9979 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>12.3699 -7.43545 0 0 -0 0.013456</pose>
+          <pose frame=''>12.1412 -17.7631 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>12.2583 0.899283 0 0 -0 0.798854</pose>
+          <pose frame=''>12.0296 -9.4284 0 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>12.3233 -2.14027 0 0 -0 0.013456</pose>
+          <pose frame=''>12.0946 -12.468 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>12.3392 -3.90553 0 0 -0 0.013456</pose>
+          <pose frame=''>12.1105 -14.2332 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>12.2583 0.899283 0.866 0 -0 0.798854</pose>
+          <pose frame=''>12.0296 -9.4284 0.866 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_straight_clone_clone_0_clone'>
-        <pose frame=''>-18.4703 -12.2354 0 0 -0 0.798854</pose>
+        <pose frame=''>-18.2291 -21.6463 0 0 -0 0.798854</pose>
         <scale>1 1 1</scale>
         <link name='eight::link'>
-          <pose frame=''>-15.3433 -1.115 0 0 -0 0.013456</pose>
+          <pose frame=''>-15.1021 -10.5259 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='five::link'>
-          <pose frame=''>-15.2974 -6.4087 0 0 -0 0.013456</pose>
+          <pose frame=''>-15.0562 -15.8196 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='four::link'>
-          <pose frame=''>-15.282 -8.17391 0 0 -0 0.013456</pose>
+          <pose frame=''>-15.0408 -17.5848 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='nine::link'>
-          <pose frame=''>-15.3935 0.160828 0 0 -0 0.798854</pose>
+          <pose frame=''>-15.1523 -9.25006 0 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='seven::link'>
-          <pose frame=''>-15.3285 -2.87873 0 0 -0 0.013456</pose>
+          <pose frame=''>-15.0873 -12.2896 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='six::link'>
-          <pose frame=''>-15.3126 -4.64399 0 0 -0 0.013456</pose>
+          <pose frame=''>-15.0714 -14.0549 0 0 -0 0.013456</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='ten::link'>
-          <pose frame=''>-15.3935 0.160828 0.866 0 -0 0.798854</pose>
+          <pose frame=''>-15.1523 -9.25006 0.866 0 -0 0.798854</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3'>
-        <pose frame=''>-2.53915 -17.8949 0 0 0 -1.58109</pose>
+        <pose frame=''>-2.69879 -28.3248 0 0 0 -1.58109</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-2.53915 -17.8949 0 0 0 -1.58109</pose>
+          <pose frame=''>-2.69879 -28.3248 0 0 0 -1.58109</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3_clone'>
-        <pose frame=''>-4.27451 -17.8634 0 0 0 -1.59957</pose>
+        <pose frame=''>-4.49451 -28.2405 0 0 0 -1.59957</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-4.27451 -17.8634 0 0 0 -1.59957</pose>
+          <pose frame=''>-4.49451 -28.2405 0 0 0 -1.59957</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3_clone_clone'>
-        <pose frame=''>-13.4483 -11.2988 0 0 0 -2.32259</pose>
+        <pose frame=''>-13.5093 -21.4166 0 0 0 -2.32259</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-13.4483 -11.2988 0 0 0 -2.32259</pose>
+          <pose frame=''>-13.5093 -21.4166 0 0 0 -2.32259</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3_clone_clone_clone_clone'>
-        <pose frame=''>10.8651 -10.4728 0 0 -0 2.44628</pose>
+        <pose frame=''>11.2867 -20.2573 0 0 -0 2.44628</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.8651 -10.4728 0 0 -0 2.44628</pose>
+          <pose frame=''>11.2867 -20.2573 0 0 -0 2.44628</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3_clone_clone_clone_clone_1_clone_0_clone'>
-        <pose frame=''>12.142 2.20162 0 0 0 -3.09213</pose>
+        <pose frame=''>12.0459 -7.54423 0 0 0 -3.09213</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>12.142 2.20162 0 0 0 -3.09213</pose>
+          <pose frame=''>12.0459 -7.54423 0 0 0 -3.09213</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='drc_practice_white_jersey_barrier_3_clone_clone_clone_clone_1_clone_0_clone_clone_clone_clone'>
-        <pose frame=''>-15.3691 1.39213 0 0 0 -3.09593</pose>
+        <pose frame=''>-14.9106 -7.11753 0 0 0 -3.09593</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-15.3691 1.39213 0 0 0 -3.09593</pose>
+          <pose frame=''>-14.9106 -7.11753 0 0 0 -3.09593</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -926,7 +926,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>19.5304 4.95458 105.183 -0 1.5698 -3.11457</pose>
+        <pose frame=''>8.24856 -6.97228 62.1257 0 1.5098 1.84462</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1002,7 +1002,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1075,7 +1075,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1148,7 +1148,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1221,7 +1221,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1294,7 +1294,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1367,7 +1367,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1440,7 +1440,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1518,7 +1518,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1591,7 +1591,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1664,7 +1664,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1737,7 +1737,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1810,7 +1810,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1883,7 +1883,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1956,7 +1956,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2034,7 +2034,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2107,7 +2107,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2180,7 +2180,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2253,7 +2253,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2326,7 +2326,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2399,7 +2399,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2472,7 +2472,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3278,7 +3278,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3351,7 +3351,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3424,7 +3424,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3497,7 +3497,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3570,7 +3570,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3643,7 +3643,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3716,7 +3716,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4303,7 +4303,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4376,7 +4376,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4449,7 +4449,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4522,7 +4522,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4595,7 +4595,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4668,7 +4668,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4741,7 +4741,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4857,7 +4857,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4930,7 +4930,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5003,7 +5003,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5076,7 +5076,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5149,7 +5149,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5222,7 +5222,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5295,7 +5295,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5449,7 +5449,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5522,7 +5522,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5595,7 +5595,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5668,7 +5668,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5741,7 +5741,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5814,7 +5814,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -5887,7 +5887,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6041,7 +6041,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6114,7 +6114,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6187,7 +6187,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6260,7 +6260,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6333,7 +6333,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6406,7 +6406,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6479,7 +6479,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6611,82 +6611,6 @@
       </link>
       <pose frame=''>-15.278 2.86234 0 0 -0 0</pose>
     </model>
-    <model name='drc_practice_blue_cylinder_0_clone_clone'>
-      <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>-6.72903 12.3768 0 0 -0 0</pose>
-    </model>
-    <model name='drc_practice_blue_cylinder_0_clone_clone_0'>
-      <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>-7.31137 11.9568 0 0 -0 0</pose>
-    </model>
     <model name='drc_practice_straight_clone_0'>
       <link name='eight::link'>
         <pose frame=''>10.1496 5.51614 -0 0 0 -0.785398</pose>
@@ -6709,7 +6633,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6782,7 +6706,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6855,7 +6779,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6928,7 +6852,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7001,7 +6925,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7074,7 +6998,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7147,7 +7071,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7529,7 +7453,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7602,7 +7526,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7675,7 +7599,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7748,7 +7672,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7821,7 +7745,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7894,7 +7818,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+              <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -7967,7 +7891,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -8136,6 +8060,82 @@
         <gravity>1</gravity>
       </link>
       <pose frame=''>-15.1719 3.70564 0 0 -0 0</pose>
+    </model>
+    <model name='drc_practice_blue_cylinder_2_clone'>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>8.23261 -8.43367 0 0 -0 0</pose>
+    </model>
+    <model name='drc_practice_blue_cylinder_2_clone_0'>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-15.1652 -8.44333 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
