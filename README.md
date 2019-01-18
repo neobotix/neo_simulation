@@ -37,8 +37,18 @@ If you have any questions, just get in touch with us:
     `$ catkin_make`
    
     `$ source devel/setup.bash`
+
+3. Now we need to add the path of our custom gazebo models into the bashrc
+      
+    i. In your command line terminal
+
+        $ gedit ~/.bashrc
+
+    ii. Add this to your bashrc
+
+        $ export GAZEBO_MODEL_PATH=/(Path to your workspace)/src/neo_simulation/models:$GAZEBO_MODEL_PATH
     
- 3. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
+4. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
 
  ## Additional Packages that are required for the simulation
 
