@@ -395,7 +395,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-5.03644 11.583 0 0 -0 0</pose>
+      <pose frame=''>-1.40152 9.80108 0 0 -0 0</pose>
     </model>
     <model name='drc_practice_angled_barrier_135'>
       <static>1</static>
@@ -759,7 +759,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-5.78276 -20.7976 0 0 -0 0</pose>
+      <pose frame=''>-1.2484 -9.67009 0 0 -0 0</pose>
     </model>
     <model name='drc_practice_angled_barrier_135_0'>
       <static>1</static>
@@ -1123,7 +1123,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-6.21708 0.081545 0 0 -0 0</pose>
+      <pose frame=''>-3.23364 9.80117 0 0 0 -3.13233</pose>
     </model>
     <model name='drc_practice_angled_barrier_45_clone'>
       <static>1</static>
@@ -1487,7 +1487,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-11.0378 -0.845101 0 0 -0 0</pose>
+      <pose frame=''>-3.22142 -9.65275 0 0 0 -3.13458</pose>
     </model>
     <model name='Construction Barrel'>
       <static>1</static>
