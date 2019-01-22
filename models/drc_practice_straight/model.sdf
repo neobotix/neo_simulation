@@ -22,7 +22,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+            <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -93,7 +93,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+            <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -164,7 +164,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+            <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -235,7 +235,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+            <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -306,7 +306,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
+            <uri>model://drc_practice_orange_jersey_barrier/meshes/jersey_barrier.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -377,7 +377,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
+            <uri>model://drc_practice_white_jersey_barrier/meshes/jersey_barrier.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -448,7 +448,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/pradheep/.gazebo/models/drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
+            <uri>model://drc_practice_blue_cylinder/meshes/cylinder.dae</uri>
           </mesh>
         </geometry>
         <surface>
