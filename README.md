@@ -92,6 +92,13 @@ To simulate the robot in gazebo run:
 | rviz | indicates if rviz should be started with the simulation  | true, false |
 | autonomous_navigation | indicates if move base and gmapping or amcl should be started with the simulation  | true, false |
 
+## Moving obstacles
+
+For neo_track2 world, there is a ready made python script for moving obstacles. 
+
+After launching the simulation for the mobile robot, run the following line in the command line window.
+
+  $ rosrun neo_simulation models_spawn.py
 
 ## Topics
 
