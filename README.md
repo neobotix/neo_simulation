@@ -98,7 +98,7 @@ For neo_track2 world, there is a ready made python script for moving obstacles.
 
 After launching the simulation for the mobile robot, run the following line in the command line window.
 
-  $ rosrun neo_simulation models_spawn.py
+    $ rosrun neo_simulation models_spawn.py
 
 ## Topics
 
