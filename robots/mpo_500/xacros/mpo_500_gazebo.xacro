@@ -5,35 +5,29 @@
    <gazebo reference="base_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Grey"/>
   </gazebo>
 
    <gazebo reference="wheel_front_left_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Black"/>
   </gazebo>
 
   <gazebo reference="wheel_front_right_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Black"/>
   </gazebo>
 
   <gazebo reference="wheel_back_left_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Black"/>
   </gazebo>
 
   <gazebo reference="wheel_back_right_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Black"/>
   </gazebo>
 
-  <gazebo reference="sick_s300_laser_front_link">
-      <material value="Gazebo/Yellow"/>
+  <gazebo reference="sick_laser_front_link">
       <sensor type="ray" name="sick_s300_laser_front_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
@@ -43,8 +37,8 @@
               <horizontal>
                 <samples>720</samples>
                 <resolution>1</resolution>
-                <min_angle>-2.35619</min_angle>
-                <max_angle>2.35619</max_angle>
+                <min_angle>-1.48353</min_angle>
+                <max_angle>1.48353</max_angle>
               </horizontal>
             </scan>
             <range>
@@ -62,16 +56,15 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_s300_laser_front" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_front/scan</topicName>
-            <frameName>sick_s300_laser_front_link</frameName>
+          <plugin name="sick_laser_front" filename="libgazebo_ros_laser.so">
+            <topicName>sick_front/scan</topicName>
+            <frameName>sick_laser_front_link</frameName>
           </plugin>
         </sensor>
   </gazebo>
 
-  <gazebo reference="sick_s300_laser_back_link">
-      <material value="Gazebo/Yellow"/>
-      <sensor type="ray" name="sick_s300_laser_back_sensor">
+  <gazebo reference="sick_laser_back_link">
+      <sensor type="ray" name="sick_laser_back_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
           <update_rate>40</update_rate>
@@ -80,8 +73,8 @@
               <horizontal>
                 <samples>720</samples>
                 <resolution>1</resolution>
-                <min_angle>-2.35619</min_angle>
-                <max_angle>2.35619</max_angle>
+                <min_angle>-1.48353</min_angle>
+                <max_angle>1.48353</max_angle>
               </horizontal>
             </scan>
             <range>
@@ -99,9 +92,9 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_s300_laser_back" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_back/scan</topicName>
-            <frameName>sick_s300_laser_back_link</frameName>
+          <plugin name="sick_laser_back" filename="libgazebo_ros_laser.so">
+            <topicName>sick_back/scan</topicName>
+            <frameName>sick_laser_back_link</frameName>
           </plugin>
         </sensor>
   </gazebo>
@@ -109,10 +102,6 @@
   <gazebo>
     <plugin name="mpo_500_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
-      <leftFrontJoint>wheel_front_left_joint</leftFrontJoint>
-      <rightFrontJoint>wheel_front_right_joint</rightFrontJoint>
-      <leftRearJoint>wheel_back_left_joint</leftRearJoint>
-      <rightRearJoint>wheel_back_right_joint</rightRearJoint>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <odometryRate>20.0</odometryRate>

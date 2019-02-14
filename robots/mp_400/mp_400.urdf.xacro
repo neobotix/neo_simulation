@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- Materials -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mp_400">
+    
+<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/mp_400_gazebo.xacro" />
+
+<!--++++++++++++++++++++++++++++++base_link++++++++++++++++++++++++++++++++++++++++++++++++++++--> 
+<!--++++++++++++++++++++body++++++++++++++++++++++++++++--> 
+
+<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/mp_400_body.xacro" />
+
+<!--+++++++++++++++++++castor_wheel_link++++++++++++++++++++++++--> 
+<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/mp_400_caster_wheel.xacro" />
+
+<!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
+<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/mp_400_fixed_wheel.xacro" />
+
+  <xacro:mp_400_base name="base_link">
+  </xacro:mp_400_base>
+  <!-- Wheel Macro -->
+  <xacro:caster_wheel name="wheel_front_right" parent="base_link">
+    <origin xyz="0 0. -0.14" rpy="-1.57 0 -1.57" />
+  </xacro:caster_wheel>
+
+  <xacro:caster_wheel name="wheel_front_left" parent="base_link">
+    <origin xyz="-0. -0.32 -0.14" rpy="-1.57 0 -1.57" />
+  </xacro:caster_wheel>
+
+  <xacro:caster_wheel name="wheel_back_right" parent="base_link">
+    <origin xyz="-0.4 0 -0.14" rpy="-1.57 0 -1.57" />
+  </xacro:caster_wheel>
+
+   <xacro:caster_wheel name="wheel_back_left" parent="base_link">
+    <origin xyz="-0.4 -0.32  -0.14" rpy="-1.57 0 -1.57" />
+  </xacro:caster_wheel>
+
+  <xacro:fixed_wheel name="fixed_wheel_right" parent="base_link">
+    <origin xyz="0 0.0 0.0" rpy="1.57 0 1.57" />
+  </xacro:fixed_wheel>
+
+  <xacro:fixed_wheel name="fixed_wheel_left" parent="base_link">
+    <origin xyz="0 0.0 0.0" rpy="1.57 0 -1.57" />
+  </xacro:fixed_wheel>
+
+
+  <!--+++++++++++++++++++laserscanner_link++++++++++++++++++++++++-->
+   <!-- SENSORS --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/sick_laser.xacro" />
+  <xacro:sick_laser_v0 name="laserscanner_link" parent="base_link" ros_topic="sick_300/scan">
+    <origin xyz="0.230 0 0.11" rpy="0 0 0" />
+  </xacro:sick_laser_v0>
+    
+</robot>

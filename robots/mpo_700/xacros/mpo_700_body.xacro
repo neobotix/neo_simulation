@@ -11,17 +11,16 @@
                  izz="2.5725" />
       </inertial>
       <visual>
-        <origin xyz="0.0 0.0 0.021" rpy="0 0 1.571" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 -1.571" />
         <geometry>
-            <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-BODY.dae" scale="0.001 0.001 0.001"/>
         </geometry>
-        <material name="Neobotix/Grey" />
       </visual>
       <collision>
         <origin xyz="0. 0. 0.2" rpy="0 0 0" />
         <geometry>
           
-          <box size="0.610 0.515 0.360" />
+            <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-BODY.dae" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>

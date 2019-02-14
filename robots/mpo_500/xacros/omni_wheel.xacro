@@ -12,23 +12,22 @@
 
    <link name="${name}_link" type="wheel">
     <inertial>
-      <mass value="0.1" />
+      <mass value="9" />
       <origin xyz="0 0 0" rpy="0 0 0" />
       <inertia ixx="0.00044332" ixy="0" ixz="0" iyy="0.00044332" iyz="0" izz="0.00072" />
     </inertial>
 
     <visual>
-     <origin xyz="0 0 0" rpy="0 0 1.571" />
+     <origin xyz="0 0 0" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_500/meshes/MPO-500-WHEEL.STL"/>
+        <mesh filename="package://neo_simulation/robots/mpo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
      </geometry>
-     <material name="Neobotix/Black" />
     </visual>
 
     <collision>
-     <origin xyz="0 0 0" rpy="1.59 0 0" />
+     <origin xyz="0 0 0" rpy="0 0 0" />
      <geometry>
-        <cylinder radius="0.12" length="0.1"/>
+        <mesh filename="package://neo_simulation/robots/mpo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>

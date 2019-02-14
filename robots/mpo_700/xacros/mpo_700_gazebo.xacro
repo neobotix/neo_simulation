@@ -1,16 +1,14 @@
 <?xml version="1.0"?>
-<robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="mpo_700" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
    <gazebo reference="base_link">
     <gravity>true</gravity>
     <self_collide>false</self_collide>
-    <material value="Gazebo/Grey"/>
   </gazebo>
 
 
   <gazebo reference="sick_s300_laser_front_link">
-      <material value="Gazebo/Yellow"/>
       <sensor type="ray" name="sick_s300_laser_front_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
@@ -20,8 +18,8 @@
               <horizontal>
                 <samples>720</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.174533</min_angle>
-                <max_angle>3.31613</max_angle>
+                <min_angle>-1.48</min_angle>
+                <max_angle>1.48</max_angle>
               </horizontal>
             </scan>
             <range>
@@ -47,7 +45,6 @@
   </gazebo>
 
   <gazebo reference="sick_s300_laser_back_link">
-      <material value="Gazebo/Yellow"/>
       <sensor type="ray" name="sick_s300_laser_back_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
@@ -57,8 +54,8 @@
               <horizontal>
                 <samples>720</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.174533</min_angle>
-                <max_angle>3.31613</max_angle>
+                <min_angle>-1.48</min_angle>
+                <max_angle>1.48</max_angle>
               </horizontal>
             </scan>
             <range>
@@ -84,7 +81,7 @@
   </gazebo>
 
   <gazebo>
-    <plugin name="mpo_500_controller" filename="libgazebo_ros_planar_move.so">
+    <plugin name="mpo_700_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
