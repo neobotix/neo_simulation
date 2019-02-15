@@ -9,7 +9,7 @@
   <url type="website">http://www.neobotix-robots.com</url>
   <author email="harshasonyy@gmail.com">harsha_nagaraja</author>
   <author email="nieland@neobotix.de">Jan-Niklas Nieland</author> 
-  <author email="padhupradheep@gmail.com">Pradheep-Krishna</author> 
+  <author email="pradheep@neobotix.de">Pradheep-Krishna</author> 
   <buildtool_depend>catkin</buildtool_depend>
 
 
