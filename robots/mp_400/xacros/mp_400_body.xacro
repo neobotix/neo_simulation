@@ -10,7 +10,7 @@
                  iyy="0.08" iyz="0.0" izz="0.1" />
     </inertial>
       <visual name='body'>
-      <origin xyz="0.0 0.0 -0.16" rpy="-1.57 0 1.57" /><!-- for stl -->
+      <origin xyz="0.0 0.0 -0.18" rpy="-1.57 0 1.57" /><!-- for stl -->
         <geometry>
             <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-BODY.dae" scale="0.001 0.001 0.001"/>
         <!--cylinder length="0.381" radius="0.2545"/-->

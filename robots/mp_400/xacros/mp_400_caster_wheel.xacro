@@ -18,12 +18,12 @@
       <inertia ixx="13.177588678963057" ixy="-0.00000019386313414965295" ixz="-0.0000007636494859403484" iyy="8.48847991205267" iyz="-2.366298925984707" izz="7.157972023102095" />
     </inertial>
 
-      <visual name='castor_wheel'>
-    <origin xyz="0. 0.012 0." rpy="0 0 0" /><!-- for STL -->
-        <geometry>
+      <visual name='caster_wheel'>
+    <origin xyz="-0.2 -0.16 -0.07" rpy="-1.57 0 -1.57" />
+    <geometry>
             <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-WHEEL.dae" scale="0.001 0.001 0.001"/>
-        </geometry>
-      </visual>
+    </geometry>
+    </visual>
 
     <collision>
       <origin xyz="0 0. 0" rpy="0 0 0" />
@@ -31,7 +31,7 @@
             <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-WHEEL.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
-</link>
+    </link>
    
   </xacro:macro>
   

@@ -19,7 +19,7 @@
     </inertial>
 
       <visual name='fixed_wheel'>
-    <origin xyz="0 0.0 0" rpy=" 0 0 0" />
+    <origin xyz="-0. -0.2 0.074" rpy="1.57 0 1.57" />
         <geometry>
             <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-FIXED-WHEEL.dae" scale="0.001 0.001 0.001"/>
         </geometry>

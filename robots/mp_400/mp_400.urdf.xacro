@@ -19,27 +19,27 @@
   </xacro:mp_400_base>
   <!-- Wheel Macro -->
   <xacro:caster_wheel name="wheel_front_right" parent="base_link">
-    <origin xyz="0 0. -0.14" rpy="-1.57 0 -1.57" />
+    <origin xyz="0.2 0.155 -0.1" rpy="0 0 0" />
   </xacro:caster_wheel>
 
   <xacro:caster_wheel name="wheel_front_left" parent="base_link">
-    <origin xyz="-0. -0.32 -0.14" rpy="-1.57 0 -1.57" />
+    <origin xyz="0.2 -0.155 -0.1" rpy="0 0 0" />
   </xacro:caster_wheel>
 
   <xacro:caster_wheel name="wheel_back_right" parent="base_link">
-    <origin xyz="-0.4 0 -0.14" rpy="-1.57 0 -1.57" />
+    <origin xyz="-0.2 0.155 -0.1" rpy="0 0 0" />
   </xacro:caster_wheel>
 
    <xacro:caster_wheel name="wheel_back_left" parent="base_link">
-    <origin xyz="-0.4 -0.32  -0.14" rpy="-1.57 0 -1.57" />
+    <origin xyz="-0.2 -0.155  -0.1" rpy="0 0 0" />
   </xacro:caster_wheel>
 
   <xacro:fixed_wheel name="fixed_wheel_right" parent="base_link">
-    <origin xyz="0 0.0 0.0" rpy="1.57 0 1.57" />
+    <origin xyz="0 0.2 -0.1" rpy="0 0 0" />
   </xacro:fixed_wheel>
 
   <xacro:fixed_wheel name="fixed_wheel_left" parent="base_link">
-    <origin xyz="0 0.0 0.0" rpy="1.57 0 -1.57" />
+    <origin xyz="0 -0.2 -0.1" rpy="0 0 3.14" />
   </xacro:fixed_wheel>
 
 
