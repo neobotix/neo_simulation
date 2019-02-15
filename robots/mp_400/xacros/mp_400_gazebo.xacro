@@ -17,8 +17,8 @@
     <self_collide>false</self_collide>
   </gazebo>
 
-  <gazebo reference="laserscanner_front_link">
-      <sensor type="ray" name="laserscanner_front_link">
+  <gazebo reference="laserscanner_link">
+      <sensor type="ray" name="laserscanner_link">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
           <update_rate>40</update_rate>
@@ -46,9 +46,9 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="laserscanner_front_link" filename="libgazebo_ros_laser.so">
+          <plugin name="laserscanner_link" filename="libgazebo_ros_laser.so">
             <topicName>sick_s300_front/scan</topicName>
-            <frameName>laserscanner_front_link</frameName>
+            <frameName>laserscanner_link</frameName>
           </plugin>
         </sensor>
   </gazebo>

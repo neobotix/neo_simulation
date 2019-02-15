@@ -46,8 +46,8 @@
   <!--+++++++++++++++++++laserscanner_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
   <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/sick_laser.xacro" />
-  <xacro:sick_laser_v0 name="laserscanner_link" parent="base_link" ros_topic="sick_300/scan">
-    <origin xyz="0.230 0 0.11" rpy="0 0 0" />
+  <xacro:sick_laser_v0 name="laserscanner" parent="base_link" ros_topic="sick_300/scan">
+    <origin xyz="0.230 0 0.110" rpy="0 3.14 3.14" />
   </xacro:sick_laser_v0>
     
 </robot>
