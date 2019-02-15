@@ -28,9 +28,9 @@
   </gazebo>
 
   <gazebo reference="sick_laser_front_link">
-      <sensor type="ray" name="sick_s300_laser_front_sensor">
+      <sensor type="ray" name="sick_laser_front_sensor">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>false</visualize>
+          <visualize>true</visualize>
           <update_rate>40</update_rate>
           <ray>
             <scan>
