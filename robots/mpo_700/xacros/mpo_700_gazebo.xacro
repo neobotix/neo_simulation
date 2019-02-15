@@ -8,10 +8,10 @@
   </gazebo>
 
 
-  <gazebo reference="sick_s300_laser_front_link">
-      <sensor type="ray" name="sick_s300_laser_front_sensor">
+  <gazebo reference="sick_laser_front_link">
+      <sensor type="ray" name="sick_laser_front_sensor">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>false</visualize>
+          <visualize>true</visualize>
           <update_rate>40</update_rate>
           <ray>
             <scan>
@@ -37,15 +37,15 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_s300_laser_front" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_front/scan</topicName>
-            <frameName>sick_s300_laser_front_link</frameName>
+          <plugin name="sick_laser_front" filename="libgazebo_ros_laser.so">
+            <topicName>sick_front/scan</topicName>
+            <frameName>sick_laser_front_link</frameName>
           </plugin>
         </sensor>
   </gazebo>
 
-  <gazebo reference="sick_s300_laser_back_link">
-      <sensor type="ray" name="sick_s300_laser_back_sensor">
+  <gazebo reference="sick_laser_back_link">
+      <sensor type="ray" name="sick_laser_back_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
           <update_rate>40</update_rate>
@@ -73,9 +73,9 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_s300_laser_back" filename="libgazebo_ros_laser.so">
-            <topicName>sick_s300_back/scan</topicName>
-            <frameName>sick_s300_laser_back_link</frameName>
+          <plugin name="sick_laser_back" filename="libgazebo_ros_laser.so">
+            <topicName>sick_back/scan</topicName>
+            <frameName>sick_laser_back_link</frameName>
           </plugin>
         </sensor>
   </gazebo>

@@ -60,22 +60,22 @@
 
 <!-- Uncomment or comment it for sick s300 -->
 
-  <xacro:sick_v0 name="sick_s300_laser_front" parent="base_link" ros_topic="sick_s300_front/scan">
+  <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
   	<origin xyz="0.360 0 0.181" rpy="3.14 0 0 " />
   </xacro:sick_v0>
 
-  <xacro:sick_v0 name="sick_s300_laser_back" parent="base_link" ros_topic="sick_s300_back/scan">
+  <xacro:sick_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
   	<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />
   </xacro:sick_v0>
 
 <!-- Uncomment or comment it for sick_microscan_3 -->
 
-<!--   <xacro:sick_v0 name="sick_microscan_3_front" parent="base_link" ros_topic="sick_s300_front/scan">
-    <origin xyz="0.360 0 0.28" rpy="3.14 3.14 0" />
+<!--   <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
+    <origin xyz="0.360 0 0.181" rpy="3.14 3.14 3.14" />
   </xacro:sick_v0>
 
-  <xacro:sick_v0 name="sick_microscan_3_back" parent="base_link" ros_topic="sick_s300_back/scan">
-    <origin xyz="-0.360 0 0.28" rpy="3.14 3.14 3.14" /> 
-  </xacro:sick_v0> -->
-
+  <xacro:sick_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
+    <origin xyz="-0.360 0 0.181" rpy="3.14 3.14 0" /> 
+  </xacro:sick_v0>
+ -->
 </robot>
