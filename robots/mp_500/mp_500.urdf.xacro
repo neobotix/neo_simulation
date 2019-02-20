@@ -14,27 +14,28 @@
 
 <!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
 <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel.xacro" />
-
   <xacro:mp_500_base name="base_link">
   </xacro:mp_500_base>
+
+
   <!-- Wheel Macro -->
-  <xacro:caster_wheel name="wheel_front" parent="base_link">
-    <origin xyz="-0.37 0. 0.06" rpy="-1.570796 0 1.57" />
+  <xacro:caster_wheel name="caster_wheel" parent="base_link">
+    <origin xyz="-0.43 0. 0.171" rpy="-1.570796 0 1.570796 " />
   </xacro:caster_wheel>
 
-  <xacro:fixed_wheel name="fixed_wheel_right" parent="base_link">
-    <origin xyz="0. -0.25 0.12" rpy="0 0 -1.570796" />
+  <xacro:fixed_wheel name="wheel_right" parent="base_link">
+    <origin xyz="0. -0.25 0.125" rpy="0 0 1.570796" />
   </xacro:fixed_wheel>
 
-  <xacro:fixed_wheel name="fixed_wheel_left" parent="base_link">
-    <origin xyz="0. 0.25 0.12" rpy="0 0 -1.570796" />
+  <xacro:fixed_wheel name="wheel_left" parent="base_link">
+    <origin xyz="0. 0.25 0.125" rpy="0 0 -1.570796" />
   </xacro:fixed_wheel>
 
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
   <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
-  <xacro:sick_laser_v0 name="laserscanner" parent="base_link" ros_topic="sick_300/scan">
-    <origin xyz="0.244 0 0.141" rpy="0 0 0" />
+  <xacro:sick_laser_v0 name="laserscanner_1" parent="base_link" ros_topic="sick/scan">
+    <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
   </xacro:sick_laser_v0>
     
     

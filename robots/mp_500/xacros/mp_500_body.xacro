@@ -2,6 +2,8 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mp_500">
 
   <xacro:macro name="mp_500_base" params="name">
+
+
     <link name="${name}">
   <inertial>
   <mass value="56.4" />
@@ -12,15 +14,15 @@
 
   </inertial>
   <visual name='body'>
-  <origin xyz="0.0 0.0 -0.06" rpy="0 0 1.570796" /><!-- for STL -->
+  <origin xyz="0.0 0.0 0" rpy="0 0 1.570796" />
   <geometry>
-      <mesh filename="package://neo_mp_500/robot_model/mp_500/meshes/MP-500-BODY.dae" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://neo_simulation/robots/mp_500/meshes/MP-500-BODY.dae" scale="0.001 0.001 0.001"/>
   </geometry>
   </visual>
   <collision name='body_collision'>
   <origin xyz="0.0 0.0 0.0" rpy=" 0 0. 1.570796" />
   <geometry>
-    <mesh filename="package://neo_mp_500/robot_model/mp_500/meshes/MP-500-BODY.dae" scale="0.001 0.001 0.001"/>
+    <mesh filename="package://neo_simulation/robots/mp_500/meshes/MP-500-BODY.dae" scale="0.001 0.001 0.001"/>
   </geometry>
   </collision>
   </link>
