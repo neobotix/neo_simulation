@@ -17,7 +17,7 @@
       <visual>
       <!-- SICK S3 sensor: Uncomment/Comment it out if required  -->
 
-<!--       <origin xyz="0 0 -0.12" rpy="-1.57 0 3.14" />
+      <origin xyz="0 0 -0.12" rpy="-1.57 0 3.14" />
         <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_500/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
         </geometry>
@@ -27,11 +27,11 @@
         <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_500/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
         </geometry>
-      </collision> -->
+      </collision>
 
       <!-- Microscan 3 sensor: Uncomment/Comment it out if required  -->
 
- <origin xyz="-0.0 0 -0.06" rpy="1.57 0 0" />
+<!--  <origin xyz="-0.0 0 -0.06" rpy="1.57 0 0" />
       <geometry>
       <mesh filename="package://neo_simulation/robots/mpo_500/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
       </geometry>
@@ -41,7 +41,7 @@
       <geometry>
         <mesh filename="package://neo_simulation/robots/mp_500/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
         </geometry>
-      </collision>
+      </collision> -->
 
       
     </link>
