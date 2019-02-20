@@ -19,14 +19,14 @@
     </inertial>
 
     <visual>
-     <origin xyz="0 0 0.05" rpy="0 0 0"/>
+     <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
-     <origin xyz="0 0 0.05" rpy="0 0 0" />
+     <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
@@ -52,14 +52,14 @@
     </inertial>
 
     <visual>
-     <origin xyz="0 0 0.05" rpy="0 0 0"/>
+     <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
-     <origin xyz="0 0 0.05" rpy="0 0 0" />
+     <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
@@ -85,14 +85,14 @@
     </inertial>
 
     <visual>
-     <origin xyz="0 0 0.05" rpy="0 0 0"/>
+     <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
-     <origin xyz="0 0 0.05" rpy="0 0 0" />
+     <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
@@ -118,14 +118,14 @@
     </inertial>
 
     <visual>
-     <origin xyz="0 0 0.05" rpy="0 0 0"/>
+     <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
-     <origin xyz="0 0 0.05" rpy="0 0 0" />
+     <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
         <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>

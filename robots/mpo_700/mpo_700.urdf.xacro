@@ -19,22 +19,22 @@
   </xacro:mpo_700_base>
 
 <xacro:mpo_700_head_0 name="mpo_700_head_0" parent="base_link">
-    <origin xyz="0.24 0.18 0.25" rpy="3.14 0 -1.57" />
+    <origin xyz="0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_head_0>
 
 
 <xacro:mpo_700_head_1 name="mpo_700_head_1" parent="base_link">
-    <origin xyz="0.24 -0.18 0.25" rpy="3.14 0 1.57" />
+    <origin xyz="0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_head_1>
 
 
 <xacro:mpo_700_head_2 name="mpo_700_head_2" parent="base_link">
-    <origin xyz="-0.24 0.18 0.25" rpy="3.14 0 -1.57" />
+    <origin xyz="-0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_head_2>
 
 
 <xacro:mpo_700_head_3 name="mpo_700_head_3" parent="base_link">
-    <origin xyz="-0.24 -0.18 0.25" rpy="3.14 0 1.57" />
+    <origin xyz="-0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_head_3>
 
 <xacro:mpo_700_wheel name="wheel_0" parent="mpo_700_head_0_link">
@@ -58,8 +58,6 @@
 
 <!-- Sensors -->
 
-<!-- Uncomment or comment it for sick s300 -->
-
   <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
   	<origin xyz="0.360 0 0.181" rpy="3.14 0 0 " />
   </xacro:sick_v0>
@@ -68,14 +66,4 @@
   	<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />
   </xacro:sick_v0>
 
-<!-- Uncomment or comment it for sick_microscan_3 -->
-
-<!--   <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
-    <origin xyz="0.360 0 0.181" rpy="3.14 3.14 3.14" />
-  </xacro:sick_v0>
-
-  <xacro:sick_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
-    <origin xyz="-0.360 0 0.181" rpy="3.14 3.14 0" /> 
-  </xacro:sick_v0>
- -->
 </robot>
