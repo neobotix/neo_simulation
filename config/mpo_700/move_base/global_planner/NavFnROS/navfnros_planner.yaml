@@ -48,11 +48,11 @@ cost_factor: 3.0
 publish_potential: true
 #Publish Potential Costmap (dynamic reconfigure) (bool, default: True)
 
-orientation_mode: 0
+orientation_mode: 4
 #How to set the orientation of each point 
 #(None=0, Forward=1, Interpolate=2, ForwardThenInterpolate=3, Backward=4, Leftward=5, Rightward=6) (dynamic reconfigure)
 #(int, default: 0)
 
-orientation_window_size: 1
+orientation_window_size: 10
 #What window to use to determine the orientation based on the position derivative specified by the orientation mode (dynamic reconfigure)
 #(int, default: 1)

@@ -2,12 +2,12 @@
 <launch>
   
   <!--To launch gmapping to create a map-->
-  <arg name="gmapping" value="true"/> 
+  <arg name="gmapping" value="false"/> 
 
   <!--To launch amcl-->
   <!--NOTE: Do not forget to configure the correct Map for AMCL-->
   <!--NOTE: Use file neo_simulation/config/mpo_700/amcl/mpo_700_amcl.launch-->
-  <arg name="amcl" value="false"/>
+  <arg name="amcl" value="true"/>
 
   <!--To launch move base-->
   <arg name="move_base" value="true"/>

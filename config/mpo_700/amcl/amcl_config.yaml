@@ -4,7 +4,7 @@
 
     #####Minimum allowed number of particles (default:100)
 
- max_particles : 1250
+ max_particles : 2000
 
     #####Maximum allowed number of particles (default:5000)
 
@@ -16,11 +16,11 @@
 
     #####Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err. 
 
- update_min_d : 0.2 
+ update_min_d : 0.1 
 
     #####Translational movement required before performing a filter update. (default:0.2)
 
- update_min_a: π/6.0 
+ update_min_a: 0.1 
 
     #####Rotational movement required before performing a filter update. 
 
@@ -52,15 +52,15 @@
 
     ####Initial pose mean (yaw), used to initialize filter with Gaussian distribution. 
 
- initial_cov_xx : 0.5*0.5 
+ initial_cov_xx : 0.01 
 
     #####Initial pose covariance (x*x), used to initialize filter with Gaussian distribution. 
 
- initial_cov_yy : 0.5*0.5 
+ initial_cov_yy : 0.01 
 
     #####Initial pose covariance (y*y), used to initialize filter with Gaussian distribution. 
 
- initial_cov_aa : (π/12)*(π/12)
+ initial_cov_aa : 0.01
 
     #####Initial pose covariance (yaw*yaw), used to initialize filter with Gaussian distribution. 
 
@@ -93,7 +93,7 @@
 
     #####Maximum scan range to be considered; -1.0 will cause the laser's reported maximum range to be used. 
 
- laser_max_beams : 60
+ laser_max_beams : 200
 
     #####How many evenly-spaced beams in each scan to be used when updating the filter. (Default:30)
 
@@ -136,23 +136,23 @@
 
     #####Which model to use, either "diff", "omni", "diff-corrected" or "omni-corrected". 
 
- odom_alpha1 : 0.2
+ odom_alpha1 : 0.1
 
     #####Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion. 
 
- #odom_alpha2 : 0.2
+ #odom_alpha2 : 0.1
 
     #####Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion. 
 
- odom_alpha3 : 0.2
+ odom_alpha3 : 0.1
 
     #####Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion. 
 
- #odom_alpha4 : 0.2
+ #odom_alpha4 : 0.1
 
     #####Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. 
 
- #odom_alpha5 : 0.2
+ #odom_alpha5 : 0.1
 
     #####Translation-related noise parameter (only used if model is "omni"). 
 
