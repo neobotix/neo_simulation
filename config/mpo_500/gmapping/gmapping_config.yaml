@@ -7,7 +7,7 @@
   map_update_interval   : 2.0
   # How long (in seconds) between updates to the map. Lowering this number updates the occupancy grid more often, at the expense of greater computational load.
 
-  maxUrange : 80
+  maxUrange : 60
   # The maximum usable range of the laser. A beam is cropped to this value. 
 
   sigma : 0.05
@@ -49,31 +49,31 @@
   #stt : 0.2
   #Odometry error in rotation as a function of rotation (theta/theta) 
 
-  linearUpdate : 0.5
+  linearUpdate : 0.05
   #Process a scan each time the robot translates this far 
 
-  angularUpdate : 0.5
+  angularUpdate : 0.02
   #Process a scan each time the robot rotates this far 
 
-  temporalUpdate : -1.0
+  temporalUpdate : 1.0
   #Process a scan if the last scan processed is older than the update time in seconds. A value less than zero will turn time based updates off. 
 
   #resampleThreshold : 0.5
   #The Neff based resampling threshold 
 
-  particles : 50
+  particles : 500
   #Number of particles in the filter. Particles changed from default value 30 to 80. 
 
-  #xmin : -100.0
+  #xmin : -30.0
   #Initial map size 
 
-  #ymin : 100.0
+  #ymin : 30.0
   #Initial map size 
 
-  #xmax : 100.0
+  #xmax : 30.0
   #Initial map size 
 
-  #ymax : 100.0
+  #ymax : 30.0
   #Initial map size 
 
   delta : 0.05

@@ -16,11 +16,11 @@
 
     #####Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err. 
 
- update_min_d : 0.2 
+ update_min_d : 0.05 
 
     #####Translational movement required before performing a filter update. (default:0.2)
 
- update_min_a: π/6.0 
+ update_min_a: 0.05 
 
     #####Rotational movement required before performing a filter update. 
 
@@ -93,7 +93,7 @@
 
     #####Maximum scan range to be considered; -1.0 will cause the laser's reported maximum range to be used. 
 
- laser_max_beams : 60
+ laser_max_beams : 400
 
     #####How many evenly-spaced beams in each scan to be used when updating the filter. (Default:30)
 
