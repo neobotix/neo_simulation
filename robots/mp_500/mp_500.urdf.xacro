@@ -20,15 +20,15 @@
 
   <!-- Wheel Macro -->
   <xacro:caster_wheel name="caster_wheel" parent="base_link">
-    <origin xyz="-0.43 0. 0.171" rpy="-1.570796 0 1.570796 " />
+    <origin xyz="-0.43 0. 0.176" rpy="-1.570796 0 1.570796 " />
   </xacro:caster_wheel>
 
   <xacro:fixed_wheel name="wheel_right" parent="base_link">
-    <origin xyz="0. -0.25 0.125" rpy="0 0 1.570796" />
+    <origin xyz="0. -0.25 0.13" rpy="0 0 -1.570796" />
   </xacro:fixed_wheel>
 
   <xacro:fixed_wheel name="wheel_left" parent="base_link">
-    <origin xyz="0. 0.25 0.125" rpy="0 0 -1.570796" />
+    <origin xyz="0. 0.25 0.13" rpy="0 0 -1.570796" />
   </xacro:fixed_wheel>
 
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
@@ -38,5 +38,6 @@
     <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
   </xacro:sick_laser_v0>
     
-    
+
+
 </robot>

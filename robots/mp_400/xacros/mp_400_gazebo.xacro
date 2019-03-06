@@ -54,16 +54,35 @@
   </gazebo>
 
   <gazebo>
-    <plugin name="mp_400_controller" filename="libgazebo_ros_planar_move.so">
-      <commandTopic>cmd_vel</commandTopic>
-      <odometryTopic>odom</odometryTopic>
-      <odometryFrame>odom</odometryFrame>
-      <odometryRate>20.0</odometryRate>
-      <robotBaseFrame>base_link</robotBaseFrame>
+    <plugin name="diff_dirve_controller" filename="libgazebo_ros_diff_drive.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>40</updateRate>
+        <legacyMode>false</legacyMode>
+        <torque>5</torque>
+        <leftJoint>fixed_wheel_left_joint</leftJoint>
+        <rightJoint>fixed_wheel_right_joint</rightJoint>
+        <wheelSeparation>0.529</wheelSeparation>
+        <wheelDiameter>0.15</wheelDiameter>
+        <commandTopic>cmd_vel</commandTopic>
+        <rosDebugLevel>na</rosDebugLevel>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_link</robotBaseFrame>
+        <publishWheelTF>true</publishWheelTF>
+        <publishWheelJointState>true</publishWheelJointState>
+        <wheelAcceleration>6.0</wheelAcceleration>
+        <wheelTorque>5</wheelTorque>
+        <odometrySource>world</odometrySource>
+        <publishTf>1</publishTf>
+        <publishOdomTF>true</publishOdomTF>
     </plugin>
   </gazebo>
 
-
+<!-- <gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/mp_400</robotNamespace>
+  </plugin>
+</gazebo> -->
 
 
 </robot>

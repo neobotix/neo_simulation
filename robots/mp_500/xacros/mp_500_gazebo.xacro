@@ -49,14 +49,30 @@
   </gazebo>
 
   <gazebo>
-    <plugin name="mp_500_controller" filename="libgazebo_ros_planar_move.so">
-      <commandTopic>cmd_vel</commandTopic>
-      <odometryTopic>odom</odometryTopic>
-      <odometryFrame>odom</odometryFrame>
-      <odometryRate>20.0</odometryRate>
-      <robotBaseFrame>base_link</robotBaseFrame>
+    <plugin name="diff_dirve_controller" filename="libgazebo_ros_diff_drive.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>100</updateRate>
+        <legacyMode>false</legacyMode>
+        <torque>2.5</torque>
+        <leftJoint>wheel_left_joint</leftJoint>
+        <rightJoint>wheel_right_joint</rightJoint>
+        <wheelSeparation>0.592</wheelSeparation>
+        <wheelDiameter>0.260</wheelDiameter>
+        <commandTopic>cmd_vel</commandTopic>
+        <rosDebugLevel>na</rosDebugLevel>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_link</robotBaseFrame>
+        <publishWheelTF>true</publishWheelTF>
+        <publishWheelJointState>true</publishWheelJointState>
+        <wheelAcceleration>0</wheelAcceleration>
+        <wheelTorque>200</wheelTorque>
+        <odometrySource>world</odometrySource>
+        <publishTf>1</publishTf>
+        <publishOdomTF>true</publishOdomTF>
     </plugin>
   </gazebo>
+
 </robot>
 
 
