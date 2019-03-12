@@ -1,17 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mp_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-   <gazebo reference="base_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="castor_wheel_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
   <gazebo reference="laserscanner_1_link">
       <sensor type="ray" name="laserscanner_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -73,6 +62,13 @@
     </plugin>
   </gazebo>
 
+<!-- <gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+ <legacyModeNS> false </legacyModeNS> 
+  <robotParam>/robot_description</robotParam>
+       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  </plugin>
+</gazebo> -->
 </robot>
 
 

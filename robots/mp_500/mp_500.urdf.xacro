@@ -13,7 +13,9 @@
 <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_caster_wheel.xacro" />
 
 <!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel.xacro" />
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_left.xacro" />
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_right.xacro" />
+
   <xacro:mp_500_base name="base_link">
   </xacro:mp_500_base>
 
@@ -23,13 +25,13 @@
     <origin xyz="-0.43 0. 0.176" rpy="-1.570796 0 1.570796 " />
   </xacro:caster_wheel>
 
-  <xacro:fixed_wheel name="wheel_right" parent="base_link">
+  <xacro:fixed_wheel_right name="wheel_right" parent="base_link" number="1">
     <origin xyz="0. -0.25 0.13" rpy="0 0 -1.570796" />
-  </xacro:fixed_wheel>
+  </xacro:fixed_wheel_right>
 
-  <xacro:fixed_wheel name="wheel_left" parent="base_link">
+  <xacro:fixed_wheel_left name="wheel_left" parent="base_link" number="2">
     <origin xyz="0. 0.25 0.13" rpy="0 0 -1.570796" />
-  </xacro:fixed_wheel>
+  </xacro:fixed_wheel_left>
 
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
