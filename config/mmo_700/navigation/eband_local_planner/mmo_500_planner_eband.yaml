@@ -1,0 +1,131 @@
+EBandPlannerROS:
+
+ xy_goal_tolerance : 0.1  
+
+    #Distance tolerance for reaching the goal pose 
+
+ yaw_goal_tolerance : 0.05  
+
+    #Orientation tolerance for reaching the desired goal pose 
+
+ rot_stopped_vel : 0.01  
+
+    #Angular velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks 
+
+ trans_stopped_vel : 0.01  
+
+    #Linear velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks 
+
+#Visualization Parameters
+
+ marker_lifetime : 0.5  
+
+    #Lifetime of eband visualization markers 
+
+#Elastic Band Parameters
+
+ eband_min_relative_overlap : 0.7  
+
+    #Min distance that denotes connectivity between consecutive bubbles 
+
+ eband_tiny_bubble_distance: 0.01  
+
+    #Bubble geometric bound regarding tiny bubble distance 
+
+ eband_tiny_bubble_expansion : 0.01  
+
+    #Bubble geometric bound regarding tiny bubble expansion 
+
+ eband_internal_force_gain : 1.0  
+
+    #Force gain of forces between consecutive bubbles that tend to stretch the elastic band 
+
+ eband_external_force_gain : 2.0  
+
+    #Force gain of forces that tend to move the bubbles away from obstacles 
+
+ num_iterations_eband_optimization : 3  
+
+    #Number of iterations for eband optimization 
+
+ eband_equilibrium_approx_max_recursion_depth : 4  
+
+    #Number of iterations for reaching the equilibrium between internal and external forces 
+
+ eband_equilibrium_relative_overshoot : 0.75  
+
+    #Maximum relative equlibrium overshoot 
+
+ eband_significant_force_lower_bound : 0.15  
+
+    #Minimum magnitude of force that is considered significant and used in the calculations 
+
+ costmap_weight : 5.0  
+
+    #Costmap weight factor used in the calculation of distance to obstacles 
+
+#Trajectory Controller Parameters
+
+ max_vel_lin : 0.8  
+
+    #Maximum linear velocity 
+
+ max_vel_th : 1.0  
+
+    #Maximum angular velocity 
+
+ min_vel_lin : 0.0  
+
+    #Minimum linear velocity 
+
+ min_vel_th : 0.0  
+
+    #Minimum angular velocity 
+
+ k_prop : 4.0  
+
+    #Proportional gain of the PID controller 
+
+ k_damp : 3.5  
+
+    #Damping gain of the PID controller 
+
+ Ctrl_Rate : 10.0  
+
+    #Control rate 
+
+ max_acceleration : 0.5  
+
+    #Maximum allowable acceleration 
+
+ virtual_mass : 0.75  
+
+    #Virtual mass 
+
+ max_translational_acceleration : 0.5  
+
+    #Maximum linear acceleration 
+
+ max_rotational_acceleration : 1.5  
+
+    #Maximum angular acceleration 
+
+ rotation_correction_threshold : 0.5  
+
+    #Rotation correction threshold 
+
+ differential_drive : False 
+
+    #Denotes whether to use the differential drive mode 
+
+ bubble_velocity_multiplier : 2.0  
+
+    #Multiplier of bubble radius 
+
+ rotation_threshold_multiplier : 1.0  
+
+    #Multiplier of rotation threshold 
+
+ disallow_hysteresis : False  
+
+    #Determines whether to try getting closer to the goal, in case of going past the tolerance
