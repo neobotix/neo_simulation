@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_500">
+
+  <xacro:macro name="omni_wheel_250" params="name parent *origin">
+   <joint name="${name}_joint" type="fixed">
+    <insert_block name="origin" />
+    <axis xyz="0 1 0" />
+    <joint_properties damping="1" friction="1" />
+    <parent link="${parent}" />
+    <child link="${name}_link" />
+   </joint>
+
+   <link name="${name}_link" type="wheel">
+    <inertial>
+      <mass value="9" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="0.00044332" ixy="0" ixz="0" iyy="0.00044332" iyz="0" izz="0.00072" />
+    </inertial>
+
+    <visual>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+        <mesh filename="package://neo_simulation/robots/mmo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
+     </geometry>
+    </visual>
+
+    <collision>
+     <origin xyz="0 0 0" rpy="0 0 0" />
+     <geometry>
+        <mesh filename="package://neo_simulation/robots/mmo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
+     </geometry>
+    </collision>
+   </link>
+   
+  </xacro:macro>
+  
+</robot>
+
+

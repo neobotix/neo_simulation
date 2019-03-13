@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="ur10" >
+
+  <!-- common stuff 
+  <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" />-->
+
+  <!-- ur10 -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/ur10/ur10.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:ur10_robot prefix="ur1" parent="cabinet_u10_link" joint_limited="false"/>
+
+   <link name="cabinet_u10_link" />
+
+  <joint name="cabinet_u10_joint" type="fixed">
+    <parent link="cabinet_link" />
+    <child link = "${prefix}base_link" />
+    <origin xyz="0.0 0.0 0.805" rpy="0.0 0.0 0.0" />
+  </joint>
+
+
+</robot>
