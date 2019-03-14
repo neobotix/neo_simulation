@@ -3,8 +3,8 @@
 
   <gazebo>
     <plugin name="ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/</robotNamespace>
-        <alwaysOn>true</alwaysOn>
+  <robotNamespace>/</robotNamespace>
+  <alwaysOn>true</alwaysOn>
 	<updateRate>1000.0</updateRate>
   <legacyModeNS>false</legacyModeNS>
     </plugin>

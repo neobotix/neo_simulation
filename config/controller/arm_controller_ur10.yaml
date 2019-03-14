@@ -19,3 +19,12 @@ arm_controller:
   stop_trajectory_duration: 0.5
   state_publish_rate:  25
   action_monitor_rate: 10
+
+# gazebo_ros_control: 
+#   pid_gains:
+#       ur10shoulder_pan_joint: {p: 100.0, i: 0.01, d: 10.0}
+#       ur10shoulder_lift_joint: {p: 100.0, i: 0.01, d: 10.0}
+#       ur10elbow_joint: {p: 100.0, i: 0.01, d: 10.01}
+#       ur10wrist_1_joint: {p: 100.0, i: 0.01, d: 10.0}
+#       ur10wrist_2_joint: {p: 100.0, i: 0.01, d: 10.0}
+#       ur10wrist_3_joint: {p: 100.0, i: 0.01, d: 10.0}

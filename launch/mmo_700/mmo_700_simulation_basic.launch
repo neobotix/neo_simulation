@@ -38,15 +38,15 @@
 
   <node name="mmo_700_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mmo_700" />
-  
-  <!--To publish Joint and Robot state-->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-  <param name="rate" value="20.0"/>
-  </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
   <param name="publish_frequency" value="20.0"/>
   </node>
+
+   <include file="$(find neo_simulation)/config/controller/launch/controller_utils.launch"/>
+
+<rosparam file="$(find neo_simulation)/config/controller/arm_controller_ur10.yaml" command="load"/>
+<node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
 
 <!---=================================================================================================================================================================-->
  

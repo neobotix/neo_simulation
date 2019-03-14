@@ -1,0 +1,135 @@
+TrajectoryPlannerROS: 
+
+ acc_lim_x  : 2.5  
+
+    #The x acceleration limit of the robot in meters/sec^2 
+
+ acc_lim_y  : 2.5  
+
+    #The y acceleration limit of the robot in meters/sec^2 
+
+ acc_lim_theta  : 3.2  
+
+    #The rotational acceleration limit of the robot in radians/sec^2 
+
+ max_vel_x  : 0.8  
+
+    #The maximum forward velocity allowed for the base in meters/sec 
+
+ min_vel_x  : 0.1  
+
+    #The minimum forward velocity allowed for the base in meters/sec. It is useful to specify this to guarantee that velocity commands sent to a mobile base are high enough to allow the base to overcome #friction. 
+
+ max_vel_theta  : 1.0  
+
+   #The maximum rotational velocity allowed for the base in radians/sec 
+
+ min_vel_theta  : -1.0  
+
+    #The minimum rotational velocity allowed for the base in radians/sec 
+
+ min_in_place_vel_theta  : 0.4  
+
+    #The minimum rotational velocity allowed for the base while performing in-place rotations in radians/sec  
+
+ escape_vel  : -0.1  
+
+    #Speed used for driving during escapes in meters/sec. Note that it must be negative in order for the robot to actually reverse. A positive speed will cause the robot to move forward while attempting #to escape. New in navigation 1.3.1 
+
+ holonomic_robot  : true  
+
+    #Determines whether velocity commands are generated for a holonomic or non-holonomic robot. For holonomic robots, strafing velocity commands may be issued to the base. For non-holonomic robots, no #strafing velocity commands will be issued. 
+
+#The following parameters are only used if holonomic_robot is set to true:
+
+ y_vels : [-0.1, -0.1, 0.1, 0.1]  
+
+    #The strafing velocities that a holonomic robot will consider in meters/sec 
+
+###Goal Tolerance Parameters
+
+ yaw_goal_tolerance  : 0.05  
+
+    #The tolerance in radians for the controller in yaw/rotation when achieving its goal 
+
+ xy_goal_tolerance  : 0.10  
+
+    #The tolerance in meters for the controller in the x & y distance when achieving a goal 
+
+ latch_xy_goal_tolerance  : false  
+
+    #If goal tolerance is latched, if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so. - New in navigation 1.3.1 
+
+###Forward Simulation Parameters
+
+ sim_time  : 1.0  
+
+    #The amount of time to forward-simulate trajectories in seconds 
+
+ sim_granularity  : 0.025  
+
+    #The step size, in meters, to take between points on a given trajectory 
+
+ angular_sim_granularity  :  sim_granularity  
+
+    #The step size, in radians, to take between angular samples on a given trajectory. - New in navigation 1.3.1 
+
+ vx_samples : 20  
+
+    #The number of samples to use when exploring the x velocity space 
+
+ vtheta_samples : 40  
+
+    #The number of samples to use when exploring the theta velocity space 
+
+
+###Trajectory Scoring Parameters
+
+ meter_scoring  : false  
+
+    #Whether the gdist_scale and pdist_scale parameters should assume that goal_distance and path_distance are expressed in units of meters or cells. Cells are assumed by default. New in navigation 1.3.1 
+
+ pdist_scale : 0.9  
+
+    #The weighting for how much the controller should stay close to the path it was given, maximal possible value is 5.0 
+
+ gdist_scale : 0.6  
+
+    #The weighting for how much the controller should attempt to reach its local goal, also controls speed, maximal possible value is 5.0 
+
+ occdist_scale : 0.01  
+
+    #The weighting for how much the controller should attempt to avoid obstacles 
+
+ heading_lookahead : 0.325  
+
+    #How far to look ahead in meters when scoring different in-place-rotation trajectories 
+
+ heading_scoring  : false  
+
+    #Whether to score based on the robot's heading to the path or its distance from the path 
+
+ heading_scoring_timestep : 1.0  
+
+    #How far to look ahead in time in seconds along the simulated trajectory when using heading scoring 
+
+ dwa  : true  
+
+    #Whether to use the Dynamic Window Approach (DWA  _ or whether to use Trajectory Rollout (NOTE: In our experience DWA worked as well as Trajectory Rollout and is computationally less expensive. It is possible that robots with extremely poor acceleration limits could gain from running Trajectory Rollout, but we recommend trying DWA first.   
+
+ publish_cost_grid_pc  : false  
+
+    #Whether or not to publish the cost grid that the planner will use when planning. When true, a sensor_msgs/PointCloud2 will be available on the  cost_cloud topic. Each point cloud represents the cost #grid and has a field for each individual scoring function component as well as the overall cost for each cell, taking the scoring parameters into account. New in navigation 1.4.0 
+
+ 
+###Oscillation Prevention Parameters
+
+ oscillation_reset_dist : 0.05  
+
+    #How far the robot must travel in meters before oscillation flags are reset 
+
+###Global Plan Parameters
+
+ prune_plan  : true  
+
+    #Defines whether or not to eat up the plan as the robot moves along the path. If set to true, points will fall off the end of the plan once the robot moves 1 meter past them.

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
+    <remap from="scan" to="cob_scan_unifier/scan_unified"/>
+    <rosparam file="$(find neo_simulation)/config/mmo_700/gmapping/gmapping_config.yaml" command="load" />
+  </node>
+
+</launch>
