@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-  <!--set to the required robot and world-->
-  <arg name="robotworld" value="neo_track1.world"/>
-  
-  <!--To launch RVIZ set the value to true-->
-  <arg name="rviz" value="false"/>
+  <!--should be configured in simulation.launch-->
+  <arg name="world_name_global" default="worlds/empty.world"/>
 
   <!--To launch scanunifier set the value to true-->
   <arg name="scanunifier" value="true"/>
@@ -24,7 +21,7 @@
   <arg name="debug" default="false"/>
   
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find neo_simulation)/worlds/$(arg robotworld)"/>
+    <arg name="world_name" value="$(arg world_name_global)"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>

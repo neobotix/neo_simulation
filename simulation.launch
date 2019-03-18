@@ -2,19 +2,22 @@
 <launch>
 
   <!--set to the required robot type and world-->
-  <arg name="robot_type" value="mpo_700"/>
-  <arg name="robot_world" value="neo_track1.world"/>
+  <arg name="robot_type" value="mmo_700"/>
+  <arg name="robot_world" value="neo_track2.world"/>
+  <!--arg name="world_name" value=""/-->
   
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="true"/>
 
   <!--To launch move base set the value to true-->
-  <arg name="autonomous_navigation" value="false"/> 
+  <arg name="autonomous_navigation" value="false"/>
 
 <!---=================================================================================================================================================================-->
 
   <!-- Basic Simulation -->
-  <include file="$(find neo_simulation)/launch/$(arg robot_type)/$(arg robot_type)_simulation_basic.launch"/>
+  <include file="$(find neo_simulation)/launch/$(arg robot_type)/$(arg robot_type)_simulation_basic.launch">
+	<arg name="world_name_global" value="$(find neo_simulation)/worlds/$(arg robot_world)"/>
+  </include>
 
   <!-- Autonomous Navigation -->
   <group if="$(arg autonomous_navigation)">
