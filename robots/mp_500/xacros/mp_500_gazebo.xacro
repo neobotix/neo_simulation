@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <robot name="mp_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <gazebo reference="laserscanner_1_link">
-      <sensor type="ray" name="laserscanner_1_link">
+  <gazebo reference="laser_1_link">
+      <sensor type="ray" name="laser_1_link">
           <pose>0 0 0 0 0 0</pose>
-          <visualize>true</visualize>
+          <visualize>false</visualize>
           <update_rate>40</update_rate>
           <ray>
             <scan>
@@ -30,9 +30,9 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="laserscanner_1_link" filename="libgazebo_ros_laser.so">
-            <topicName>sick/scan</topicName>
-            <frameName>laserscanner_1_link</frameName>
+          <plugin name="laser_1_link" filename="libgazebo_ros_laser.so">
+            <topicName>/laser_1/scan</topicName>
+            <frameName>laser_1_link</frameName>
           </plugin>
         </sensor>
   </gazebo>
