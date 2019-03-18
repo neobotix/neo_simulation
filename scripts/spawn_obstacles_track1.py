@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 home = expanduser("~")
-path = home + '/.gazebo/models/construction_cone/model.sdf'
+path = home + '/neobotix_workspace/src/neo_simulation/models/construction_cone/model.sdf'
 
 class Moving():
 	def __init__(self, model_name, Spawning1, y_pose, x_pose):
