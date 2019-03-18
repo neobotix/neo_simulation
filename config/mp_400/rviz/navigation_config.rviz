@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /LaserScan1/Status1
       Splitter Ratio: 0.5
     Tree Height: 775
   - Class: rviz/Selection
@@ -26,7 +27,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Visualization Manager:
   Class: ""
   Displays:
@@ -73,7 +74,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        laserscanner_1_link:
+        laser_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -129,7 +130,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.0500000007
       Style: Boxes
-      Topic: /cob_scan_unifier/scan_unified
+      Topic: /laser_1/scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -275,7 +276,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -296,7 +297,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 12.933053
+      Distance: 33.1752281
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -311,10 +312,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.819796503
+      Pitch: 1.01979673
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.49482632
+      Yaw: 6.04483032
     Saved: ~
 Window Geometry:
   Displays:
