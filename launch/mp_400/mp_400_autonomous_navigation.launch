@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+  <!--To launch gmapping to create a map-->
+  <arg name="gmapping" value="false"/> 
+
+  <!--To launch amcl-->
+  <!--NOTE: Do not forget to configure the correct Map for AMCL-->
+  <!--NOTE: Use file neo_simulation/config/mpo_700/amcl/mpo_700_amcl.launch-->
+  <arg name="amcl" value="true"/>
+
+  <!--To launch move base-->
+  <arg name="move_base" value="true"/>
+
+<!---=================================================================================================================================================================-->
+
+ <!--Naviagation Package-->
+
+ <!--if arg gmapping is set to true (default=false)-->
+
+ <group if="$(arg gmapping)">
+ 	<include file="$(find neo_simulation)/config/mp_400/gmapping/mp_400_gmapping.launch"/>
+ </group>
+
+ <!--if arg amcl is set to true (default=false)-->
+
+ <group if="$(arg amcl)">
+ 	<include file="$(find neo_simulation)/config/mp_400/amcl/mp_400_amcl.launch"/>
+ </group>
+
+ <!--if arg move_base is set to true-->
+
+ <group if="$(arg move_base)">
+ 	<include file="$(find neo_simulation)/config/mp_400/move_base/mp_400_move_base.launch"/>
+ </group> 
+
+
+</launch>
