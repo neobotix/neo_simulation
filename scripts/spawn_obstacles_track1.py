@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import rospy, tf
+import rospy, tf, rospkg
 from gazebo_msgs.srv import SpawnModel
 import time
 from geometry_msgs.msg import *
@@ -9,9 +9,9 @@ import os
 from os.path import expanduser
 from pathlib import Path
 
-
-home = expanduser("~")
-path = home + '/neobotix_workspace/src/neo_simulation/models/construction_cone/model.sdf'
+rospack = rospkg.RosPack()
+Home = rospack.get_path('neo_simulation')
+path = Home + '/models/construction_cone/model.sdf'
 
 class Moving():
 	def __init__(self, model_name, Spawning1, y_pose, x_pose):
@@ -19,7 +19,7 @@ class Moving():
 		self.model_name = model_name
 		self.rate = rospy.Rate(10)
 		self.x_model_pose = x_pose
-		self.y_model_pose =	y_pose
+		self.y_model_pose = y_pose
 		self.Spawning1 = Spawning1 
 		self.flag = 0
 		self.flag1 = 0
