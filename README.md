@@ -56,7 +56,7 @@ If you have any questions, just get in touch with us:
 
     $ sudo apt-get install ros-kinetic-teleop-twist-keyboard
 
-  2. Control package 
+  2. Control package (For MMO-700 and MMO-500) 
 
     $ sudo apt-get install ros-kinetic-ros-control
 
@@ -77,7 +77,7 @@ If you have any questions, just get in touch with us:
 
     $ git clone https://github.com/neobotix/neo_driver.git
     
-## Launch a mobile Robot
+## Launch a mobile robot
 
 To simulate the robot in gazebo run:
 
@@ -99,6 +99,9 @@ For neo_track2 world, there is a ready made python script for moving obstacles.
 After launching the simulation for the mobile robot, run the following line in the command line window.
 
     $ rosrun neo_simulation models_spawn.py
+
+## Launch a mobile manipulator;
+    TODO
 
 ## Topics
 
