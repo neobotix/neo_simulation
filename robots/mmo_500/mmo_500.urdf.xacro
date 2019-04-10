@@ -46,12 +46,12 @@
   </xacro:omni_wheel_250>
 
   <!-- Sensors -->
-  <xacro:sick_laser_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_s300_front/scan">
-  	<origin xyz="0.442 0 0.420" rpy="0 0 0" />
+  <xacro:sick_laser_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
+    <origin xyz="0.442 0 0.372" rpy="0 0 0" />
   </xacro:sick_laser_v0>
 
-  <xacro:sick_laser_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_s300_back/scan">
-  	<origin xyz="-0.442 0 0.420" rpy="0 0 3.14" />
+  <xacro:sick_laser_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
+    <origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
   </xacro:sick_laser_v0>
 
   <!--cabinet-->
