@@ -100,8 +100,6 @@ After launching the simulation for the mobile robot, run the following line in t
 
     $ rosrun neo_simulation models_spawn.py
 
-## Launch a mobile manipulator;
-    TODO
 
 ## Topics
 
