@@ -2,8 +2,8 @@
 <launch>
 
   <!--set to the required robot type and world-->
-  <arg name="robot_type" value="mmo_700"/>
-  <arg name="robot_world" value="neo_track2.world"/>
+  <arg name="robot_type" value="mm_400"/>
+  <arg name="robot_world" value="neo_track1.world"/>
   <!--arg name="world_name" value=""/-->
   
   <!--To launch RVIZ set the value to true-->
