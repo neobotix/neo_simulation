@@ -18,6 +18,23 @@ If you have any questions, just get in touch with us:
 * General information: http://www.neobotix-robots.com/company-contact.html
 * ROS related questions: ros@neobotix.de
 
+# Videos
+
+## First steps and teleoperation
+[![Watch the video](https://img.youtube.com/vi/0-vC-WiX20o/3.jpg)](https://www.youtube.com/watch?v=0-vC-WiX20o)
+
+## Using navigation stack
+[![Watch the video](https://img.youtube.com/vi/GWd06wTpJSE/3.jpg)](https://www.youtube.com/watch?v=GWd06wTpJSE)
+
+## Static obstacle avoidance
+[![Watch the video](https://img.youtube.com/vi/nOkQsRYYKoU/3.jpg)](https://www.youtube.com/watch?v=nOkQsRYYKoU)
+
+## Dynamic obstacle avoidance
+[![Watch the video](https://img.youtube.com/vi/oO6NCerjE9s/3.jpg)](https://www.youtube.com/watch?v=oO6NCerjE9s)
+
+## Pick and Place using MMO-700
+[![Watch the video](https://img.youtube.com/vi/P5dGFwdckEE/3.jpg)](https://www.youtube.com/watch?v=P5dGFwdckEE)
+
 # neo_simulation
 
 ## Instructions to Download the Package
