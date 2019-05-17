@@ -42,7 +42,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = 0.9
+				obstacle.twist.linear.y = 1.
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif model.name[i] == self.model_name and round(model.pose[i].position.y) != round(self.y_model_pose):
@@ -50,7 +50,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = -0.9
+				obstacle.twist.linear.y = -1.
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif  round(model.pose[i].position.y) == round(self.y_model_pose):
@@ -65,7 +65,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = -0.7
+				obstacle.twist.linear.y = -1.
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif model.name[i] == self.model_name and round(model.pose[i].position.y) != round(self.y_model_pose):
@@ -73,7 +73,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = 0.7
+				obstacle.twist.linear.y = 1.
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif  round(model.pose[i].position.y) == round(self.y_model_pose):

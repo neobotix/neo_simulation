@@ -65,7 +65,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = 0.5
+				obstacle.twist.linear.y = 0.8
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif model.name[i] == self.model_name and round(model.pose[i].position.y,1) != round(self.y_model_pose,1):
@@ -73,7 +73,7 @@ class Moving():
 				obstacle.model_name = self.model_name
 				obstacle.pose = model.pose[i]
 				obstacle.twist = Twist()
-				obstacle.twist.linear.y = -0.5
+				obstacle.twist.linear.y = -0.8
 				obstacle.twist.angular.z = 0
 				self.pub_model.publish(obstacle)
 			elif  round(model.pose[i].position.y,1) == round(self.y_model_pose,1):
@@ -85,7 +85,7 @@ def main():
 	Spawning1 = rospy.ServiceProxy("gazebo/spawn_sdf_model", SpawnModel)
 	rospy.wait_for_service("gazebo/spawn_sdf_model")
 	moving = Moving("construction_barrel", Spawning1, -17.13, 9.78)
-	moving1 = Moving("construction_barrel_1", Spawning1, -16.33, -13.9)
+	moving1 = Moving("construction_barrel_1", Spawning1, -16.33, -12.3)
 	moving2 = Moving("construction_barrel_2", Spawning1, 0.1, -3.5)
 	moving3 = Moving("construction_barrel_3", Spawning1, -27.1, -4.8)
 	moving.spawning()
