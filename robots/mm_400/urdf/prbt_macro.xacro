@@ -22,7 +22,7 @@ limitations under the License.
     <joint name="cabinet_joints" type="fixed">
       <parent link="${parent}" />
       <child link = "pilzbase_link" />
-      <origin xyz="0.1 0.0 0.12" rpy="0.0 0.0 0.0" />
+      <origin xyz="-0.05 0.0 0.12" rpy="0.0 0.0 0.0" />
     </joint>
     <!-- Height of Foot -->
     <xacro:property name="L0" value="0.2604" />
