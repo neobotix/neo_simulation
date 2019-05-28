@@ -169,8 +169,8 @@
             <shininess>
               <float sid="shininess">154</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -198,8 +198,8 @@
             <shininess>
               <float sid="shininess">511</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -227,8 +227,8 @@
             <shininess>
               <float sid="shininess">154</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -256,8 +256,8 @@
             <shininess>
               <float sid="shininess">511</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -285,8 +285,8 @@
             <shininess>
               <float sid="shininess">511</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -314,8 +314,8 @@
             <shininess>
               <float sid="shininess">511</float>
             </shininess>
-            <transparent opaque="A_ONE">
-              <color>1 1 1 1</color>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
