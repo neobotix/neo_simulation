@@ -10,9 +10,9 @@ Neobotix offers a wide range of mobile robots for different applications:
 Very good system for robotics research when equipped with a robot arm.
 * [MPO-500](http://www.neobotix-robots.com/mecanum-robot-mpo-500.html): Omnidirectional robot with Mecanum wheels for all kinds of service robotics research
 * [MPO-700](http://www.neobotix-robots.com/omnidirectional-robot-mpo-700.html): Omnidirectional robot with Omni-Drive-Modules, offering very high payload and smooth movements. Great for both research and demanding industrial applications.
-* [MM-400][https://www.neobotix-roboter.de/mobiler-manipulator-mm-400.html]: The MM-400 combines the mobile robot MP-400 and a light-weight robot arm from PILZ or Schunk to create a very compact and agile robot system for research applications.
-* [MMO-500][https://www.neobotix-robots.com/mobile-manipulator-mmo-500.html]: The MMO-500 combines the omnidirectional robot MPO-500 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk.
-* [MMO-700][https://www.neobotix-robots.com/mobile-manipulator-mmo-700.html]: The omnidirectional MMO-700 is the ideal base for high-end service robots. It combines the omnidirectional MPO-700 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk. 
+* [MM-400](https://www.neobotix-roboter.de/mobiler-manipulator-mm-400.html): The MM-400 combines the mobile robot MP-400 and a light-weight robot arm from PILZ or Schunk to create a very compact and agile robot system for research applications.
+* [MMO-500](https://www.neobotix-robots.com/mobile-manipulator-mmo-500.html): The MMO-500 combines the omnidirectional robot MPO-500 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk.
+* [MMO-700](https://www.neobotix-robots.com/mobile-manipulator-mmo-700.html): The omnidirectional MMO-700 is the ideal base for high-end service robots. It combines the omnidirectional MPO-700 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk. 
 
 # Contact information
 
