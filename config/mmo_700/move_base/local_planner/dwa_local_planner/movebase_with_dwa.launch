@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  
+ <include file="$(find neo_simulation)/config/mmo_700/amcl/launch/amcl.launch"/>
+
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <param name="controller_frequency" value="2.9"/>
+
+    <rosparam file="$(find neo_simulation)/config/$(env ROBOT)/navigation/costmaps/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find neo_simulation)/config/$(env ROBOT)/navigation/costmaps/costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find neo_simulation)/config/$(env ROBOT)/navigation/costmaps/costmap_local.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/$(env ROBOT)/navigation/costmaps/costmap_global.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/$(env ROBOT)/navigation/dwa_local_planner/dwa_planner.yaml" command="load" />
+  </node>
+
+</launch>

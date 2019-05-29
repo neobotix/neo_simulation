@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="env_map" default="$(find neo_simulation)/maps/$(env MAP_NAME).yaml" />
+
+  <!-- MAP SERVER -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
+  </node>
+
+  <node pkg="amcl" type="amcl" name="amcl">
+  	<remap from="scan" to="sick/scan"/>
+  	<rosparam file="$(find neo_simulation)/config/mp_500/amcl/amcl_config.yaml" command="load" />
+  </node>
+
+</launch>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_700">
+
+  <xacro:macro name="mpo_700_base" params="name">
+    <link name="${name}">
+      <inertial>
+        <mass value="30" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="1.71402" ixy="0.0" ixz="0.0"
+                 iyy="0.8856" iyz="0.0" 
+                 izz="2.5725" />
+      </inertial>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 -1.571" />
+        <geometry>
+            <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-BODY.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0. 0. 0." rpy="0 0 -1.571" />
+        <geometry>
+          
+            <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-BODY.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+  
+</robot>

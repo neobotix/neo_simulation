@@ -1,0 +1,309 @@
+TebLocalPlannerROS:
+
+####################################################
+#Robot Configuration Parameters
+####################################################
+ acc_lim_x: 1.0
+ #Maximum translational acceleration of the robot in meters/sec^2 
+
+ acc_lim_theta: 0.8
+ #Maximum angular acceleration of the robot in radians/sec^2 
+
+ max_vel_x: 0.6
+ #Maximum translational velocity of the robot in meters/sec 
+
+ max_vel_x_backwards: 0.4
+ #Maximum absolute translational velocity of the robot while driving backwards in meters/sec. See optimization parameter weight_kinematics_forward_drive 
+
+ max_vel_theta: 0.8
+ #Maximum angular velocity of the robot in radians/sec 
+ 
+ footprint_model/type: "line"
+ #Specify the robot footprint model type used for optimization. Different types are "point", "circular", "line", 
+ #"two_circles" and "polygon." 
+ #The type of the model significantly influences the required computation time.
+
+############################
+###Type Point
+############################
+
+#no other params needed
+
+############################
+###Type Line
+############################
+ footprint_model/line_start: [-0.4, 0.0] 
+ #This parameter is only relevant for type "line". It contains the start coordinates of the line segment. 
+
+ footprint_model/line_end: [0.4, 0.0]
+ #This parameter is only relevant for type "line". It contains the end coordinates of the line segment.
+
+############################
+###For Holonomic robots
+############################
+ max_vel_y: 0.6
+
+ acc_lim_y: 1.0
+
+ #Set both to 0.0 for nonholonomic
+
+####################################################
+#Goal Tolerance Parameters 
+####################################################
+ xy_goal_tolerance: 0.05
+ #Allowed final euclidean distance to the goal position in meters 
+
+ yaw_goal_tolerance: 0.02
+ #Allowed final orientation error in radians 
+
+ free_goal_vel: false
+ #Remove the goal velocity constraint such that the robot can arrive at the goal with maximum speed
+
+####################################################
+#Trajectory Configuration Parameters
+####################################################
+ dt_ref: 0.3
+ #Desired temporal resolution of the trajectory
+
+ dt_hysteresis: 0.1
+ #Hysteresis for automatic resizing depending on the current temporal resolution, 
+ #usually approx. 10% of dt_ref is recommended
+
+ min_samples: 3
+ #Minimum number of samples
+
+ global_plan_overwrite_orientation: true
+ #Overwrite orientation of local subgoals provided by the global planner (since they often provide only a 2D path)
+
+ global_plan_viapoint_sep: -0.1
+ #If positive, via-points are extrected from the global plan (path-following mode). 
+ #The value determines the resolution of the reference path (min. separation between each two consecutive via-points along the global plan, 
+ #if negative (disabled). Refer to parameter weight_viapoint for adjusting the intensity. New in version 0.4
+
+ max_global_plan_lookahead_dist: 100.0
+ #Specify the maximum length (cumulative Euclidean distances) of the subset of the global plan taken into account for optimization. 
+ #The actual length is than determined by the logical conjunction of the local costmap size and this maximum bound. 
+ #Set to zero or negative in order to deactivate this limitation.
+
+ force_reinit_new_goal_dist: 1.0
+ #Reinitialize the trajectory if a previous goal is updated with a separation of more than the specified value in meters 
+
+ feasibility_check_no_poses : 4
+ #Specify up to which pose on the predicted plan the feasibility should be checked each sampling interval. 
+
+ shrink_horizon_backup: true
+ #Allows the planner to shrink the horizon temporary (50%) in case of automatically detected issues (e.g. infeasibility). 
+ #Also see parameter shrink_horizon_min_duration.
+
+ publish_feedback: false
+ #Publish planner feedback containing the full trajectory and a list of active obstacles 
+ #(should be enabled only for evaluation or debugging. See list of publishers above. 
+
+ allow_init_with_backwards_motion: true
+ #allows backward motion incase the goal behind start
+
+ exact_arc_length: true
+ #If true, the planner uses the exact arc length in velocity, acceleration and turning rate computations 
+ #(-> increased cpu time), otherwise the Euclidean approximation is used.
+
+ shrink_horizon_min_duration: 10.0
+ #Specify minimum duration for the reduced horizon in case an infeasible trajectory is detected 
+ #(refer to parameter shrink_horizon_backup in order to activate the reduced horizon mode).
+
+####################################################
+#Obstacle Parameters
+####################################################
+
+ min_obstacle_dist: 2.5
+ #Minimum desired separation from obstacles in meters 
+
+ include_costmap_obstacles: true
+ #Specify if obstacles of the local costmap should be taken into account. Each cell that is marked as 
+ #obstacle is considered as a point-obstacle. Therefore do not choose a very small resolution of the costmap 
+ #since it increases computation time. In future releases this circumstance is going to be addressed as 
+ #well as providing an additional api for dynamic obstacles.
+
+ costmap_obstacles_behind_robot_dist: 1.0
+ #Limit the occupied local costmap obstacles taken into account for planning behind the robot (specify distance in meters).
+
+ obstacle_poses_affected: 30
+ #Each obstacle position is attached to the closest pose on the trajectory in order to keep a distance. 
+ #Additional neighbors can be taken into account as well. Note, this parameter might be removed in future versions, 
+ #since the the obstacle association strategy has been modified in kinetic+. Refer to the parameter description of legacy_obstacle_association.
+
+ inflation_dist: 0.8
+ #Buffer zone around obstacles with non-zero penalty costs (should be larger than min_obstacle_dist in order to take effect). 
+ #Also refer to the weight weight_inflation.
+
+ include_dynamic_obstacles: false
+ #If this parameter is set to true, the motion of obstacles with non-zero velocity (provided via user-supplied obstacles on 
+ #topic ~/obstacles or obtained from the costmap_converter) is predicted and considered during optimization via a constant velocity model.
+
+ legacy_obstacle_association: false
+ #The strategy of connecting trajectory poses with obstacles for optimization has been modified (see changelog). 
+ #You can switch to the old/previous strategy by setting this parameter to true. 
+ #Old strategy for each obstacle, find the nearest TEB pose 
+ #New strategy for each teb pose, find only "relevant" obstacles.
+
+ obstacle_association_force_inclusion_factor: 1.5
+ #he non-legacy obstacle association strategy tries to connect only relevant obstacles with the discretized trajectory during optimization. 
+ #But all obstacles within a specifed distance are forced to be included (as a multiple of min_obstacle_dist). 
+ #E.g. choose 2.0 in order toenforce the consideration obstacles within a radius of 2.0*min_obstacle_dist. 
+ #[This parameter is used only if parameter legacy_obstacle_association is false]
+
+ obstacle_association_cutoff_factor: 5
+ #See obstacle_association_force_inclusion_factor, but beyond a multiple of [value]*min_obstacle_dist all obstacles are ignored during optimization. 
+ #Parameter obstacle_association_force_inclusion_factor is processed first. 
+ #[This parameter is used only if parameter legacy_obstacle_association is false]
+
+############################
+###Only if using Costmap Converter plugins
+############################
+
+ #costmap_converter_plugin
+
+ #costmap_converter_spin_thread
+
+ #costmap_converter_rate
+
+####################################################
+#Optimization Parameters
+####################################################
+
+ no_inner_iterations: 2
+ #Number of actual solver iterations called in each outerloop iteration. 
+ #See param no_outer_iterations.
+
+ no_outer_iterations: 2
+ #Each outerloop iteration automatically resizes the trajectory according to the desired temporal resolution dt_ref 
+ #and invokes the internal optimizer (that performs no_inner_iterations). 
+ #The total number of solver iterations in each planning cycle is therefore the product of both values.
+
+ penalty_epsilon: 0.1  
+ #small safety margin to penalty functions for hard-constraint approximations
+
+ weight_max_vel_x: 2.0 
+ #Optimization weight for satisfying the maximum allowed translational velocity
+
+ weight_max_vel_y: 1.0 
+ #Optimization weight for satisfying the maximum allowed translational velocity
+ #ONLY FOR HOLONOMIC 
+
+ weight_max_vel_theta: 1.0 
+ #Optimization weight for satisfying the maximum allowed angular velocity 
+
+ weight_acc_lim_x: 1.0 
+ #Optimization weight for satisfying the maximum allowed translational acceleration
+
+ weight_acc_lim_y: 1.0 
+ #Optimization weight for satisfying the maximum allowed translational acceleration
+ #ONLY FOR HOLONOMIC 
+
+ weight_acc_lim_theta: 1.0 
+ #Optimization weight for satisfying the maximum allowed angular acceleration 
+
+ weight_kinematics_nh: 1 # Default 1000.0 => WE HAVE A HOLONOMIC ROBOT, JUST ADD A SMALL PENALTY
+ #Optimization weight for satisfying the non-holonomic kinematics (this parameter must be high 
+ #since the kinematics equation constitutes an equality constraint, even a value of 1000 does not 
+ #imply a bad matrix condition due to small 'raw' cost values in comparison to other costs).
+
+ weight_kinematics_forward_drive: 0.5
+ #Optimization weight for forcing the robot to choose only forward directions (positive transl. velocities). 
+ #A small weight (e.g. 1.0) still allows driving backwards.
+
+ weight_kinematics_turning_radius: 1.0
+ #Optimization weight for enforcing a minimum turning radius (only for carlike robots).
+
+ weight_optimaltime: 1.0
+ #Optimization weight for contracting the trajectory w.r.t transition/execution time
+
+ weight_obstacle: 100.0
+ #Optimization weight for keeping a minimum distance from obstacles
+
+ weight_viapoint: 1.0
+ #Optimization weight for minimzing the distance to via-points (resp. reference path). 
+ #New in version 0.4
+
+ weight_inflation: 0.1
+ #Optimization weight for the inflation penalty (should be small).
+
+ weight_adapt_factor: 2.0
+ #Some special weights (currently weight_obstacle) are repeatedly scaled by this factor in each outer TEB iteration 
+ #(weight_new = weight_old*factor). 
+ #Increasing weights iteratively instead of setting a huge value a-priori leads to better numerical conditions of 
+ #the underlying optimization problem.
+
+####################################################
+#Parallel Planning in distinctive Topologies
+####################################################
+
+ enable_homotopy_class_planning: true
+ #Activate parallel planning in distinctive topologies (
+ #requires much more CPU resources, since multiple trajectories are optimized at once)
+
+ enable_multithreading: true
+ #Activate multiple threading in order to plan each trajectory in a different thread
+
+ max_number_classes: 2
+ #Specify the maximum number of distinctive trajectories taken into account 
+ #(limits computational effort)
+
+ selection_cost_hysteresis: 1.0
+ #Specify how much trajectory cost must a new candidate have w.r.t. a previously selected 
+ #trajectory in order to be selected (selection if new_cost < old_cost*factor). 
+
+ selection_obst_cost_scale: 100.0
+ #Extra scaling of obstacle cost terms just for selecting the 'best' candidate.
+
+ selection_viapoint_cost_scale: 1.0
+ #Extra scaling of via-point cost terms just for selecting the 'best' candidate. 
+ #New in version 0.4
+
+ selection_alternative_time_cost: false
+ #If true, time cost (sum of squared time differences) is replaced by the total 
+ #transition time (sum of time differences).
+
+ roadmap_graph_no_samples: 15
+ #Specify the number of samples generated for creating the roadmap graph
+
+ roadmap_graph_area_width: 6
+ #Random keypoints/waypoints are sampled in a rectangular region between start and goal. 
+ #Specify the width of that region in meters.
+
+ h_signature_prescaler: 1.0
+ #Scale internal parameter (H-signature) that is used to distinguish between homotopy classes. 
+ #Warning reduce this parameter only, if you observe problems with too many obstacles in the local cost map,
+ #do not choose it extremly low, otherwise obstacles cannot be distinguished from each other (0.2<value<=1).
+
+ h_signature_threshold: 0.1
+ #Two H-signatures are assumed to be equal, if both the difference of real parts and 
+ #complex parts are below the specified threshold.
+
+ obstacle_heading_threshold: 1.0
+ #Specify the value of the scalar product between obstacle heading and goal heading 
+ #in order to take them (obstacles) into account for exploration.
+
+ visualize_hc_graph: false
+ #Visualize the graph that is created for exploring distinctive trajectories 
+ #(check marker message in rviz)
+
+ viapoints_all_candidates: true
+ #If true, all trajectories of different topologies are attached to the set of via-points, 
+ #otherwise only the trajectory sharing the same topology as the initial/global plan is 
+ #connected with them (no effect on test_optim_node). New in version 0.4
+
+ switching_blocking_period: 2.0
+ #Specify a time duration in seconds that needs to be expired before a switch to a new equivalence class is allowed.
+
+####################################################
+#Miscellaneous Parameters
+####################################################
+
+ odom_topic: odom
+ #Topic name of the odometry message, provided by the robot driver or simulator.
+
+ map_frame: odom
+ #Global planning frame (in case of a static map, this parameter must be usually changed to "/map".
+
+
+

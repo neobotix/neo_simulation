@@ -1,0 +1,58 @@
+#
+#Documentation:
+#http://wiki.ros.org/global_planner
+#
+
+allow_unknown: true
+#Specifies whether or not to allow the planner to create plans that traverse unknown space. 
+#NOTE: if you are using a layered costmap_2d costmap with a voxel or obstacle layer, 
+#you must also set the track_unknown_space param for that layer to be true, 
+#or it will convert all your unknown space to free space (which planner will then happily go right through). 
+#(bool, default: true)
+
+default_tolerance: 0.0
+#A tolerance on the goal point for the planner. The planner will attempt to create a plan that is as close to 
+#the specified goal as possible but no further than default_tolerance away.
+#(double, default: 0.0)
+
+visualize_potential: false
+#Specifies whether or not to visualize the potential area computed via a PointCloud2.
+#(bool, default: false)
+
+use_dijkstra: true
+#If true, use dijkstra's algorithm. Otherwise, A*.
+#(bool, default: true)
+
+use_quadratic: true
+#If true, use the quadratic approximation of the potential. Otherwise, use a simpler calculation.
+#(bool, default: true)
+
+use_grid_path: false
+#If true, create a path that follows the grid boundaries. Otherwise, use a gradient descent method.
+#(bool, default: false)
+
+old_navfn_behavior: false
+#If for some reason, you want global_planner to exactly mirror the behavior of navfn, 
+#set this to true (and use the defaults for the other boolean parameters)
+#(bool, default: false)
+
+lethal_cost: 253 
+#Lethal Cost (dynamic reconfigure) (int, default: 253)
+
+neutral_cost: 50
+#Neutral Cost (dynamic reconfigure) (int, default: 50)
+
+cost_factor: 3.0
+#Factor to multiply each cost from costmap by (dynamic reconfigure) (double, default: 3.)
+
+publish_potential: true
+#Publish Potential Costmap (dynamic reconfigure) (bool, default: True)
+
+orientation_mode: 0
+#How to set the orientation of each point 
+#(None=0, Forward=1, Interpolate=2, ForwardThenInterpolate=3, Backward=4, Leftward=5, Rightward=6) (dynamic reconfigure)
+#(int, default: 0)
+
+orientation_window_size: 1
+#What window to use to determine the orientation based on the position derivative specified by the orientation mode (dynamic reconfigure)
+#(int, default: 1)

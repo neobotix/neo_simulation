@@ -1,0 +1,59 @@
+gripper_controller:
+  type: position_controllers/JointTrajectoryController
+  gains:
+    H1_F1J3:
+      p: 15
+    H1_F2J3:
+      p: 15
+    H1_F3J3:
+      p: 15
+  type: position_controllers/JointTrajectoryController
+  joints: [H1_F1J3, H1_F2J3, H1_F3J3]
+allow_partial_joints_goal: true
+
+
+  # gains:
+  #     palm_finger_1_joint_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: palm_finger_1_joint
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_1_joint_1_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_1_joint_1
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_1_joint_2_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_1_joint_2
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_1_joint_3_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_1_joint_3
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   palm_finger_2_joint_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: palm_finger_2_joint
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_2_joint_1_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_2_joint_2
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_2_joint_2_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_2_joint_2
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_2_joint_3_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_2_joint_3
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_middle_joint_1_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_middle_joint_1
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_middle_joint_2_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_middle_joint_2
+  #   pid: {p: 100, i: 10, d: 0, i_clamp: 100}
+  #   finger_middle_joint_3_position_controller:
+  #   type: position_controllers/JointPositionController
+  #   joint: finger_middle_joint_3
+  # pid: {p: 100, i: 10, d: 0, i_clamp: 100}

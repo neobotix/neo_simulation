@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- Materials -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mp_500">
+    
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_gazebo.xacro" />
+
+<!--++++++++++++++++++++++++++++++base_link++++++++++++++++++++++++++++++++++++++++++++++++++++--> 
+<!--++++++++++++++++++++body++++++++++++++++++++++++++++--> 
+
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_body.xacro" />
+
+<!--+++++++++++++++++++castor_wheel_link++++++++++++++++++++++++--> 
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_caster_wheel.xacro" />
+
+<!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_left.xacro" />
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_right.xacro" />
+
+  <xacro:mp_500_base name="base_link">
+  </xacro:mp_500_base>
+
+
+  <!-- Wheel Macro -->
+  <xacro:caster_wheel name="caster_wheel" parent="base_link">
+    <origin xyz="-0.43 0. 0.176" rpy="-1.570796 0 1.570796 " />
+  </xacro:caster_wheel>
+
+  <xacro:fixed_wheel_right name="wheel_right" parent="base_link" number="1">
+    <origin xyz="0. -0.25 0.13" rpy="0 0 -1.570796" />
+  </xacro:fixed_wheel_right>
+
+  <xacro:fixed_wheel_left name="wheel_left" parent="base_link" number="2">
+    <origin xyz="0. 0.25 0.13" rpy="0 0 -1.570796" />
+  </xacro:fixed_wheel_left>
+
+ <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
+   <!-- SENSORS --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
+  <xacro:sick_laser_v0 name="laser_1" parent="base_link" ros_topic="/laser_1/scan">
+    <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
+  </xacro:sick_laser_v0>
+    
+
+
+</robot>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>neo_simulation</name>
+  <version>0.1.0</version>
+  <description>The neo_simulation package</description>
+
+  <maintainer email="ros@neobotix.de">Neobotix</maintainer>
+  <license>BSD</license>
+  <url type="website">http://www.neobotix-robots.com</url>
+  <author email="harshasonyy@gmail.com">harsha_nagaraja</author>
+  <author email="nieland@neobotix.de">Jan-Niklas Nieland</author> 
+  <author email="pradheep@neobotix.de">Pradheep-Krishna</author> 
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

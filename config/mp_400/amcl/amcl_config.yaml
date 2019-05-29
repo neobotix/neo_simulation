@@ -1,0 +1,174 @@
+#######OVERALL FILTER PARAMETER########
+
+ min_particles : 500
+
+    #####Minimum allowed number of particles (default:100)
+
+ max_particles : 2000
+
+    #####Maximum allowed number of particles (default:5000)
+
+ kld_err : 0.01
+
+    #####Maximum error between the true distribution and the estimated distribution. 
+
+ kld_z : 0.99
+
+    #####Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err. 
+
+ update_min_d : 0.05
+
+    #####Translational movement required before performing a filter update. (default:0.2)
+
+ update_min_a: 0.05
+
+    #####Rotational movement required before performing a filter update. 
+
+ resample_interval : 2
+
+    #####Number of filter updates required before resampling. 
+
+ transform_tolerance : 0.1 
+
+    #####Time with which to post-date the transform that is published, to indicate that this transform is valid into the future. (default:0.1)
+
+ #recovery_alpha_slow : 0.0
+
+    #####Exponential decay rate for the slow average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.001. 
+
+ #recovery_alpha_fast : 0.0
+
+    #####Exponential decay rate for the fast average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.1. 
+
+ initial_pose_x : 0.0 
+
+    #####Initial pose mean (x), used to initialize filter with Gaussian distribution. 
+
+ initial_pose_y : 0.0
+
+    #####Initial pose mean (y), used to initialize filter with Gaussian distribution. 
+
+ initial_pose_a : 0.0 
+
+    ####Initial pose mean (yaw), used to initialize filter with Gaussian distribution. 
+
+ initial_cov_xx : 0.01 
+
+    #####Initial pose covariance (x*x), used to initialize filter with Gaussian distribution. 
+
+ initial_cov_yy : 0.01 
+
+    #####Initial pose covariance (y*y), used to initialize filter with Gaussian distribution. 
+
+ initial_cov_aa : 0.01
+
+    #####Initial pose covariance (yaw*yaw), used to initialize filter with Gaussian distribution. 
+
+ gui_publish_rate : 2.0 
+
+    #####Maximum rate (Hz) at which scans and paths are published for visualization, -1.0 to disable. 
+
+ save_pose_rate : 0.5
+
+    #####Maximum rate (Hz) at which to store the last estimated pose and covariance to the parameter server, in the variables ~initial_pose_* and ~initial_cov_*. This saved pose will be used on subsequent #####runs to initialize the filter. -1.0 to disable. 
+
+ use_map_topic : true
+
+    #####When set to true, AMCL will subscribe to the map topic rather than making a service call to receive its map. New in navigation 1.4.2 (default:false)
+
+ first_map_only : false
+
+    #####When set to true, AMCL will only use the first map it subscribes to, rather than updating each time a new one is received. New in navigation 1.4.2 (default:false)
+
+
+
+#######LASER MODEL PARAMETERS#######
+
+ 
+ laser_min_range : -1.0
+
+    #####Minimum scan range to be considered; -1.0 will cause the laser's reported minimum range to be used. 
+
+ laser_max_range : -1.0
+
+    #####Maximum scan range to be considered; -1.0 will cause the laser's reported maximum range to be used. 
+
+ laser_max_beams : 200
+
+    #####How many evenly-spaced beams in each scan to be used when updating the filter. (Default:30)
+
+ #laser_z_hit : 0.95
+
+    #####Mixture weight for the z_hit part of the model. 
+
+ #laser_z_short : 0.1
+
+    #####Mixture weight for the z_short part of the model. 
+
+ #laser_z_max : 0.05
+
+    #####Mixture weight for the z_max part of the model. 
+
+ #laser_z_rand : 0.05
+
+    #####Mixture weight for the z_rand part of the model. 
+
+ #laser_sigma_hit : 0.2 
+
+    #####Standard deviation for Gaussian model used in z_hit part of the model. 
+
+ #laser_lambda_short : 0.1
+
+    #####Exponential decay parameter for z_short part of model. 
+
+ laser_likelihood_max_dist : 2.0 
+
+    #####Maximum distance to do obstacle inflation on map, for use in likelihood_field model. 
+
+ laser_model_type : "likelihood_field"
+
+    #####Which model to use, either beam, likelihood_field, or likelihood_field_prob (same as likelihood_field but incorporates the beamskip feature, if enabled).
+
+
+#######ODOMETRY MODEL PARAMETRS####### 
+
+ odom_model_type : diff-corrected
+
+    #####Which model to use, either "diff", "omni", "diff-corrected" or "omni-corrected". 
+
+ odom_alpha1 : 0.1
+
+    #####Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion. 
+
+ #odom_alpha2 : 0.1
+
+    #####Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion. 
+
+ odom_alpha3 : 0.1
+
+    #####Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion. 
+
+ #odom_alpha4 : 0.1
+
+    #####Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. 
+
+ #odom_alpha5 : 0.1
+
+    #####Translation-related noise parameter (only used if model is "omni"). 
+
+ odom_frame_id : "odom"
+
+    #####Which frame to use for odometry. 
+
+ base_frame_id : "base_link"
+
+   #####Which frame to use for the robot base 
+
+ global_frame_id : "map"
+
+    #####The name of the coordinate frame published by the localization system 
+
+ tf_broadcast : true
+
+    #####Set this to false to prevent amcl from publishing the transform between the global frame and the odometry frame. 
+
