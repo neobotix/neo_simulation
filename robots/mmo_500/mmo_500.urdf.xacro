@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<robot name="mmo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!--GAZEBO REFERENCES 
+  MPO_500-->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/mpo_500_gazebo.xacro" />
+
+  <!--ur10 -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/common.gazebo.xacro" />
+
+  <!-- BODY -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/mpo_500_body.xacro" />
+ 
+  <!-- WHEELS -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/omni_wheel.xacro" />
+
+  <!-- SENSORS --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/sick_laser.xacro" />
+
+  <!-- CABINET --> 
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/cabinet.xacro" />
+
+  <!--ur10 -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/ur10.urdf.xacro" />
+
+
+  <!-- Base Macro-->
+  <xacro:mpo_500_base name="base_link">
+  </xacro:mpo_500_base>
+
+  <!-- Wheel Macro -->
+  <xacro:omni_wheel_250 name="wheel_front_left" parent="base_link">
+  	<origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link" >
+  	<origin xyz="0.25 -0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
+  	<origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link" >
+  	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 0" />
+  </xacro:omni_wheel_250>
+
+  <!-- Sensors -->
+  <xacro:sick_laser_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
+    <origin xyz="0.442 0 0.372" rpy="0 0 0" />
+  </xacro:sick_laser_v0>
+
+  <xacro:sick_laser_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
+    <origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
+  </xacro:sick_laser_v0>
+
+  <!--cabinet-->
+  <xacro:mmo_500_cabinet name="cabinet" parent="base_link">
+  	<origin xyz="0.072 0 0.386" rpy="0 0 0" />
+  </xacro:mmo_500_cabinet>
+
+  <!--ur10-->
+  <xacro:ur10_robot parent="cabinet_link" prefix="ur10" joint_limited="true"
+		 shoulder_pan_lower_limit="${-pi}" shoulder_pan_upper_limit="${pi}"
+		 shoulder_lift_lower_limit="${-pi}" shoulder_lift_upper_limit="${pi}"
+		 elbow_joint_lower_limit="${-pi}" elbow_joint_upper_limit="${pi}"
+		 wrist_1_lower_limit="${-pi}" wrist_1_upper_limit="${pi}"
+		 wrist_2_lower_limit="${-pi}" wrist_2_upper_limit="${pi}"
+		 wrist_3_lower_limit="${-pi}" wrist_3_upper_limit="${pi}">
+  </xacro:ur10_robot>
+
+</robot>

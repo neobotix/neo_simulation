@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- parameters -->
+	<rosparam command="load" ns="cob_scan_unifier" file="$(find neo_simulation)/config/mpo_700/scan_unifier/unifier.yaml"/>
+	<!-- start node -->
+	<node pkg="cob_scan_unifier" type="scan_unifier_node" name="scan_unifier_node" ns="cob_scan_unifier" respawn="false" output="screen" >
+	</node>
+
+</launch>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+    <param name="base_local_planner" value="eband_local_planner/EBandPlannerROS"/>
+
+    <rosparam file="$(find neo_simulation)/config/mmo_700/navigation/costmaps/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/navigation/costmaps/costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/navigation/costmaps/costmap_local.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/navigation/costmaps/costmap_global.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/navigation/eband_local_planner/eband_planner.yaml" command="load" />
+  </node>
+
+</launch>

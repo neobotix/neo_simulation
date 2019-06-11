@@ -1,0 +1,39 @@
+EBandPlannerROS:
+
+  costmap_weight : 5.0
+  Ctrl_Rate : 10.0
+  differential_drive : false
+  max_acceleration : 0.6
+  max_rotational_acceleration : 1.5
+  max_vel_lin : 0.8
+  max_vel_th : 1.0
+  min_vel_lin : 0.0
+  min_vel_th : 0.0
+  xy_goal_tolerance : 0.1
+  yaw_goal_tolerance : 0.05
+  rot_stopped_vel : 0.01
+  trans_stopped_vel : 0.01 
+  eband_min_relative_overlap : 0.7  
+  eband_tiny_bubble_distance: 0.01  
+  eband_tiny_bubble_expansion : 0.01  
+  eband_internal_force_gain : 1.0  
+  eband_external_force_gain : 2.0  
+  num_iterations_eband_optimization : 3  
+  eband_equilibrium_approx_max_recursion_depth : 4  
+  eband_equilibrium_relative_overshoot : 0.75  
+  eband_significant_force_lower_bound : 0.15   
+  k_prop : 4.0  
+  k_damp : 3.5  
+  Ctrl_Rate : 10.0  
+  virtual_mass : 0.75  
+  max_translational_acceleration : 0.5  
+  rotation_correction_threshold : 0.5  
+  differential_drive : False 
+  bubble_velocity_multiplier : 2.0  
+  rotation_threshold_multiplier : 1.0  
+  disallow_hysteresis : False  
+
+
+
+
+

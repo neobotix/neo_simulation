@@ -1,0 +1,4 @@
+loop_rate: 100
+input_scans:
+- /sick_front/scan
+- /sick_back/scan

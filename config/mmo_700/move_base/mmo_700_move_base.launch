@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+    <!-- Costmaps -->
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/costmaps/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/costmaps/costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/costmaps/costmap_local.yaml" command="load" />
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/costmaps/costmap_global.yaml" command="load" />
+
+    <!-- Global Planner -->
+    <param name="base_global_planner" value="navfn/NavfnROS"/>
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/global_planner/NavFnROS/navfnros_planner.yaml" command="load" />
+
+    <!-- Local Planner -->
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/local_planner/teb_local_planner/teb_planner.yaml" command="load" />
+
+    <!-- Common -->
+    <rosparam file="$(find neo_simulation)/config/mmo_700/move_base/move_base/move_base.yaml" command="load" />
+  </node>
+
+</launch>
