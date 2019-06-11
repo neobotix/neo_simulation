@@ -10,6 +10,9 @@ Neobotix offers a wide range of mobile robots for different applications:
 Very good system for robotics research when equipped with a robot arm.
 * [MPO-500](http://www.neobotix-robots.com/mecanum-robot-mpo-500.html): Omnidirectional robot with Mecanum wheels for all kinds of service robotics research
 * [MPO-700](http://www.neobotix-robots.com/omnidirectional-robot-mpo-700.html): Omnidirectional robot with Omni-Drive-Modules, offering very high payload and smooth movements. Great for both research and demanding industrial applications.
+* [MM-400](https://www.neobotix-roboter.de/mobiler-manipulator-mm-400.html): The MM-400 combines the mobile robot MP-400 and a light-weight robot arm from PILZ or Schunk to create a very compact and agile robot system for research applications.
+* [MMO-500](https://www.neobotix-robots.com/mobile-manipulator-mmo-500.html): The MMO-500 combines the omnidirectional robot MPO-500 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk.
+* [MMO-700](https://www.neobotix-robots.com/mobile-manipulator-mmo-700.html): The omnidirectional MMO-700 is the ideal base for high-end service robots. It combines the omnidirectional MPO-700 with a light-weight robot arm from Universal Robots, Kuka, Rethink Robotics or Schunk. 
 
 # Contact information
 
@@ -36,6 +39,10 @@ If you have any questions, just get in touch with us:
 [![Watch the video](https://img.youtube.com/vi/P5dGFwdckEE/3.jpg)](https://www.youtube.com/watch?v=P5dGFwdckEE)
 
 # neo_simulation
+
+## Support
+  
+  ROS Distros: ros-kinetic and ros-melodic
 
 ## Instructions to Download the Package
 
@@ -71,24 +78,24 @@ If you have any questions, just get in touch with us:
 
   1. Teleoperation
 
-    $ sudo apt-get install ros-kinetic-teleop-twist-keyboard
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-teleop-twist-keyboard
 
   2. Control package (For MMO-700 and MMO-500) 
 
-    $ sudo apt-get install ros-kinetic-ros-control
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-ros-control
 
   3. Navigation
 
-    $ sudo apt-get install ros-kinetic-navigation
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-navigation
 
   3.1 Local Planner
 
-    $ sudo apt-get install ros-kinetic-eband-local-planner
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-eband-local-planner
 
   3.2 Localization
 
-    $ sudo apt-get install ros-kinetic-openslam-gmapping
-    $ sudo apt-get install ros-kinetic-amcl
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-openslam-gmapping
+    $ sudo apt-get install ros-$(YOUR-DISTRO)-amcl
 
   4. Scan Unifier (Just the folder cob_scan_unifier)
 
@@ -111,12 +118,15 @@ To simulate the robot in gazebo run:
 
 ## Moving obstacles
 
-For neo_track2 world, there is a ready made python script for moving obstacles. 
+For the worlds, there are ready made python script for moving obstacles. 
 
 After launching the simulation for the mobile robot, run the following line in the command line window.
 
-    $ rosrun neo_simulation models_spawn.py
+1. For world 1:
+    $ rosrun neo_simulation spawn_obstacles_track1.py
 
+2. For world 2:
+    $ rosrun neo_simulation spawn_obstacles_track2.py
 
 ## Topics
 
