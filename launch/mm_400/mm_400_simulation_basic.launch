@@ -48,6 +48,10 @@
 	<param name="publish_frequency" value="20.0"/>
   </node>
 
+  <!-- PILZ -->
+<rosparam file="$(find neo_simulation)/config/controller/arm_controller_pilz.yaml" command="load"/>
+<node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
+
 <!---=================================================================================================================================================================-->
  
   <!--if arg scan-unifier is set to true-->
