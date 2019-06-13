@@ -21,7 +21,11 @@
   <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/xacros/cabinet.xacro" />
 
   <!--ur10 -->
-  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/ur10.urdf.xacro" />
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/ur10.urdf.xacro" /> -->
+
+  <!-- Pilz -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_500/urdf/prbt_macro.xacro" />
+
 
 
   <!-- Base Macro-->
@@ -60,13 +64,18 @@
   </xacro:mmo_500_cabinet>
 
   <!--ur10-->
-  <xacro:ur10_robot parent="cabinet_link" prefix="ur10" joint_limited="true"
+<!--   <xacro:ur10_robot parent="cabinet_link" prefix="ur10" joint_limited="true"
 		 shoulder_pan_lower_limit="${-pi}" shoulder_pan_upper_limit="${pi}"
 		 shoulder_lift_lower_limit="${-pi}" shoulder_lift_upper_limit="${pi}"
 		 elbow_joint_lower_limit="${-pi}" elbow_joint_upper_limit="${pi}"
 		 wrist_1_lower_limit="${-pi}" wrist_1_upper_limit="${pi}"
 		 wrist_2_lower_limit="${-pi}" wrist_2_upper_limit="${pi}"
 		 wrist_3_lower_limit="${-pi}" wrist_3_upper_limit="${pi}">
-  </xacro:ur10_robot>
+  </xacro:ur10_robot> -->
+
+  <!-- Pilz arm -->
+    <xacro:prbt parent="cabinet_link" prefix="pilz">
+    <origin xyz="0 0 0." rpy="0 0 0" />
+  </xacro:prbt>
 
 </robot>

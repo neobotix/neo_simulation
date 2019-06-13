@@ -10,7 +10,7 @@
 
 <!---=================================================================================================================================================================-->
 
-	<arg name="rvizconfig" default="$(find neo_simulation)/config/mmo_500/rviz/$(arg config)_config.rviz" />
+	<arg name="rvizconfig" default="$(find neo_simulation)/config/mm_400/rviz/$(arg config)_config.rviz" />
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
 
 <!---=================================================================================================================================================================-->
