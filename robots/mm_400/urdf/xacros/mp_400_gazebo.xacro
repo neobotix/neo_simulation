@@ -78,11 +78,12 @@
     </plugin>
   </gazebo>
 
-<!-- <gazebo>
-  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-    <robotNamespace>/mp_400</robotNamespace>
+<gazebo>
+  <plugin name="ros_control" filename="libgazebo_ros_control.so">
+    <legacyModeNS>false</legacyModeNS>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
   </plugin>
-</gazebo> -->
+</gazebo>
 
 
 </robot>

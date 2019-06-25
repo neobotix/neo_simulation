@@ -24,7 +24,7 @@
 
 ## joint_names
 arm_controller:
-  type: position_controllers/PilzJointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
      - pilzjoint_1
      - pilzjoint_2

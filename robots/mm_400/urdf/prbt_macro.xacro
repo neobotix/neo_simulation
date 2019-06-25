@@ -374,13 +374,13 @@ limitations under the License.
       <actuator name="${prefix}joint_6_motor"/>
     </transmission>
 
-    <gazebo>
+<!--     <gazebo>
       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so" >
         <robotNamespace>prbt</robotNamespace>
-        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-        <legacyModeNS>false</legacyModeNS> <!-- Only used from ros-kinetic-gazebo-ros-control 2.5.18 -->
-      </plugin>
-    </gazebo>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> -->
+<!--         <legacyModeNS>false</legacyModeNS>  --><!-- Only used from ros-kinetic-gazebo-ros-control 2.5.18 -->
+<!--       </plugin>
+    </gazebo> -->
 
   </xacro:macro>
 

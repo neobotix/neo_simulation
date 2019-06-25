@@ -71,6 +71,8 @@ If you have any questions, just get in touch with us:
     ii. Add this to your bashrc
 
         $ export GAZEBO_MODEL_PATH=/(Path to your workspace)/src/neo_simulation/models:$GAZEBO_MODEL_PATH
+
+        $ export YOUR_DISTRO="melodic"
     
 4. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
 
@@ -78,24 +80,24 @@ If you have any questions, just get in touch with us:
 
   1. Teleoperation
 
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-teleop-twist-keyboard
+    $ sudo apt-get install ros-${YOUR_DISTRO}-teleop-twist-keyboard
 
   2. Control package (For MMO-700 and MMO-500) 
 
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-ros-control
+    $ sudo apt-get install ros-${YOUR_DISTRO}-ros-control
 
   3. Navigation
 
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-navigation
+    $ sudo apt-get install ros-${YOUR_DISTRO}-navigation
 
   3.1 Local Planner
 
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-eband-local-planner
+    $ sudo apt-get install ros-${YOUR_DISTRO}-eband-local-planner
 
   3.2 Localization
 
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-openslam-gmapping
-    $ sudo apt-get install ros-$(YOUR-DISTRO)-amcl
+    $ sudo apt-get install ros-${YOUR_DISTRO}-openslam-gmapping
+    $ sudo apt-get install ros-${YOUR_DISTRO}-amcl
 
   4. Scan Unifier (Just the folder cob_scan_unifier)
 
