@@ -26,6 +26,10 @@
  <!-- SENSORS --> 
 <xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/sick_laser.xacro" />
 
+<!-- Gripper -->
+<xacro:include filename="$(find schunk_description)/pg70.urdf.xacro" />
+
+
   <xacro:mp_400_base name="base_link">
   </xacro:mp_400_base>
 
@@ -63,7 +67,9 @@
     <origin xyz="0 0 0." rpy="0 0 0" />
   </xacro:prbt>
 
-
+  <xacro:pg70 parent="pilztool0">
+    <origin xyz="0 0 0." rpy="0 0 0" />
+  </xacro:pg70>
   <!--+++++++++++++++++++laserscanner_link++++++++++++++++++++++++-->
 
   <xacro:sick_laser_v0 name="laser_1" parent="base_link" ros_topic="laser_1/scan">
