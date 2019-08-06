@@ -76,6 +76,20 @@ If you have any questions, just get in touch with us:
     
 4. Download additional Gazebo Models from http://data.nvision2.eecs.yorku.ca/3DGEMS/
 
+ ## Additional step for Melodic
+  i. Open a terminal, go to the following directory
+        
+        $ cd ~/.ignition/fuel/config.yaml
+   
+  ii. Change 
+          
+          url: https://api.ignitionfuel.org
+  
+      
+      To
+ 
+          url: https://api.ignitionrobotics.org
+
  ## Additional Packages that are required for the simulation
 
   1. Teleoperation
