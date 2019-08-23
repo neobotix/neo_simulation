@@ -7,7 +7,6 @@ from geometry_msgs.msg import *
 from gazebo_msgs.msg import ModelState, ModelStates
 import os
 from os.path import expanduser
-from pathlib import Path
 
 
 home = expanduser("~")
