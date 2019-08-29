@@ -31,7 +31,7 @@
             </noise>
           </ray>
           <plugin name="laser_1_link" filename="libgazebo_ros_laser.so">
-            <topicName>/laser_1/scan</topicName>
+            <topicName>/lidar_1/scan</topicName>
             <frameName>laser_1_link</frameName>
           </plugin>
         </sensor>

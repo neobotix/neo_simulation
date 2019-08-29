@@ -24,7 +24,7 @@
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link">
-  	<origin xyz="0.25 -0.28 0.13" rpy="0 0 0" />
+  	<origin xyz="0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
@@ -32,15 +32,15 @@
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link">
-  	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 0" />
+  	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
   <!-- Sensors -->
-  <xacro:sick_laser_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
+  <xacro:sick_laser_v0 name="sick_laser_front" parent="base_link" ros_topic="lidar_1/scan">
   	<origin xyz="0.442 0 0.372" rpy="0 0 0" />
   </xacro:sick_laser_v0>
 
-  <xacro:sick_laser_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
+  <xacro:sick_laser_v0 name="sick_laser_back" parent="base_link" ros_topic="lidar_2/scan">
   	<origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
   </xacro:sick_laser_v0>
 
