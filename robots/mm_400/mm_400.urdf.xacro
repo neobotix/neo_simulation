@@ -72,7 +72,7 @@
   </xacro:pg70>
   <!--+++++++++++++++++++laserscanner_link++++++++++++++++++++++++-->
 
-  <xacro:sick_laser_v0 name="laser_1" parent="base_link" ros_topic="laser_1/scan">
+  <xacro:sick_laser_v0 name="laser_1" parent="base_link" ros_topic="lidar_1/scan">
     <origin xyz="0.230 0 0.110" rpy="0 3.14 3.14" />
   </xacro:sick_laser_v0>
     
