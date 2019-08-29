@@ -71,11 +71,11 @@
 
 <!-- Sensors -->
 
-  <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="sick_front/scan">
+  <xacro:sick_v0 name="sick_laser_front" parent="base_link" ros_topic="lidar_1/scan">
     <origin xyz="0.360 0 0.181" rpy="3.14 0 0 " />
   </xacro:sick_v0>
 
-  <xacro:sick_v0 name="sick_laser_back" parent="base_link" ros_topic="sick_back/scan">
+  <xacro:sick_v0 name="sick_laser_back" parent="base_link" ros_topic="lidar_2/scan">
     <origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />
   </xacro:sick_v0>
 

@@ -38,7 +38,7 @@
             </noise>
           </ray>
           <plugin name="sick_laser_front" filename="libgazebo_ros_laser.so">
-            <topicName>sick_front/scan</topicName>
+            <topicName>lidar_1/scan</topicName>
             <frameName>sick_laser_front_link</frameName>
           </plugin>
         </sensor>
@@ -74,7 +74,7 @@
             </noise>
           </ray>
           <plugin name="sick_laser_back" filename="libgazebo_ros_laser.so">
-            <topicName>sick_back/scan</topicName>
+            <topicName>lidar_2/scan</topicName>
             <frameName>sick_laser_back_link</frameName>
           </plugin>
         </sensor>
