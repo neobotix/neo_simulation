@@ -17,6 +17,47 @@
     <self_collide>false</self_collide>
   </gazebo>
 
+<gazebo reference="wheel_front_right_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>    
+      <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_front_left_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_back_left_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_back_right_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+
   <gazebo reference="laser_1_link">
       <sensor type="ray" name="laser_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -47,7 +88,7 @@
             </noise>
           </ray>
           <plugin name="laser_1_link" filename="libgazebo_ros_laser.so">
-            <topicName>lidar_1/scan</topicName>
+            <topicName>laser_1/scan</topicName>
             <frameName>laser_1_link</frameName>
           </plugin>
         </sensor>
@@ -58,7 +99,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
-        <torque>5</torque>
+        <torque>0.05</torque>
         <leftJoint>fixed_wheel_left_joint</leftJoint>
         <rightJoint>fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
@@ -71,7 +112,7 @@
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
         <wheelAcceleration>6.0</wheelAcceleration>
-        <wheelTorque>5</wheelTorque>
+        <wheelTorque>200</wheelTorque>
         <odometrySource>world</odometrySource>
         <publishTf>1</publishTf>
         <publishOdomTF>true</publishOdomTF>
