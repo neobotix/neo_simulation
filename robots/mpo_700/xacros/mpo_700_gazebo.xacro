@@ -8,8 +8,8 @@
   </gazebo>
 
 
-  <gazebo reference="sick_laser_front_link">
-      <sensor type="ray" name="sick_laser_front_sensor">
+  <gazebo reference="lidar_1_link">
+      <sensor type="ray" name="lidar_1_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
           <update_rate>40</update_rate>
@@ -37,15 +37,15 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_laser_front" filename="libgazebo_ros_laser.so">
-            <topicName>lidar_1/scan</topicName>
-            <frameName>sick_laser_front_link</frameName>
+          <plugin name="lidar_1" filename="libgazebo_ros_laser.so">
+            <topicName>lidar_1/scan_filtered</topicName>
+            <frameName>lidar_1_link</frameName>
           </plugin>
         </sensor>
   </gazebo>
 
-  <gazebo reference="sick_laser_back_link">
-      <sensor type="ray" name="sick_laser_back_sensor">
+  <gazebo reference="lidar_2_link">
+      <sensor type="ray" name="lidar_2_sensor">
           <pose>0 0 0 0 0 0</pose>
           <visualize>false</visualize>
           <update_rate>40</update_rate>
@@ -73,9 +73,9 @@
               <stddev>0.01</stddev>
             </noise>
           </ray>
-          <plugin name="sick_laser_back" filename="libgazebo_ros_laser.so">
+          <plugin name="lidar_2" filename="libgazebo_ros_laser.so">
             <topicName>lidar_2/scan</topicName>
-            <frameName>sick_laser_back_link</frameName>
+            <frameName>lidar_2_link</frameName>
           </plugin>
         </sensor>
   </gazebo>

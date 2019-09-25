@@ -3,7 +3,7 @@
 
   <!--set to the required robot type and world-->
   <arg name="robot_type" default="mpo_700"/>
-  <arg name="robot_world" default="neo_workshop.world"/>
+  <arg name="robot_world" default="neo_track1.world"/>
   <!--arg name="world_name" value=""/-->
 
   <!--To launch RVIZ set the value to true-->
