@@ -6,10 +6,10 @@ cost_scaling_factor: 10.0
 
 observation_sources: laser_scan_front laser_scan_back 
 
-laser_scan_front: {sensor_frame: sick_s300_laser_front_link , data_type: LaserScan, topic: sick_s300_front/scan, marking: true, clearing: true}
+laser_scan_front: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: lidar_1/scan_filtered, marking: true, clearing: true}
 
 
-laser_scan_back: {sensor_frame: sick_s300_laser_back_link , data_type: LaserScan, topic: sick_s300_back/scan, marking: true, clearing: true}
+laser_scan_back: {sensor_frame: lidar_2_link , data_type: LaserScan, topic: lidar_2/scan_filtered, marking: true, clearing: true}
 
 
 

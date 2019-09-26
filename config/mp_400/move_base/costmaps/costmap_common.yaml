@@ -6,7 +6,7 @@ cost_scaling_factor: 10.0
 
 observation_sources: laser_scan_front
 
-laser_scan_front: {sensor_frame: laserscanner_1_link , data_type: LaserScan, topic: sick/scan, marking: true, clearing: true, obstacle_range: 8.0, raytrace_range: 8.0}
+laser_scan_front: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 8.0, raytrace_range: 8.0}
 
 
 

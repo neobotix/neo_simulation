@@ -11,12 +11,13 @@
   <!-- SENSORS --> 
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/sick_laser.xacro" />
 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
+<!--   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" /> -->
 
 
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_gazebo.xacro" />
 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" />
 
 
 
@@ -75,9 +76,9 @@
 
    <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
  <!-- Comment or uncomment based on your requirement -->
-  <xacro:imu name="imu_1" parent="base_link">
+<!--   <xacro:imu name="imu_1" parent="base_link">
     <origin xyz="0.100 0 0.300" rpy="0 0 3.14" />
-  </xacro:imu>
+  </xacro:imu> -->
 
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
