@@ -120,6 +120,10 @@
     <origin xyz="0.230 0 0.300" rpy="0 3.14 3.14" />
   </xacro:us_sensor-->
     
-
+      <!--Camera  -->
+<!-- <xacro:camera name="camera" parent="base_link">
+    <origin xyz="0 0 0.38" rpy="0 0 0" />
+  </xacro:camera>
+ -->
 
 </robot>
