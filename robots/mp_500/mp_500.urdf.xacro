@@ -17,10 +17,16 @@
 <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_right.xacro" />
 
  <!-- SENSORS --> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
+ <!-- Sick laser S300 -->
+<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser_s300.xacro" />
 
+<!-- Sick laser Microscan -->
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser_microscan.xacro" /> -->
+
+<!-- IMU -->
 <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/imu.xacro" />
 
+<!-- UltraSonic Sensor -->
 <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/ultrasonic.xacro" />
 
   <xacro:mp_500_base name="base_link">
@@ -42,10 +48,17 @@
 
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
-  <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
+   <!-- Sick S300 -->
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser_s300.xacro" />
+  <xacro:sick_laser_s300 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
     <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
-  </xacro:sick_laser_v0>
+  </xacro:sick_laser_s300>
+
+  <!-- Sick Microscan -->
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser_microscan.xacro" />
+  <xacro:sick_laser_microscan name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
+    <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
+  </xacro:sick_laser_microscan> -->
 
      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
  <!-- Comment or uncomment based on your requirement -->
