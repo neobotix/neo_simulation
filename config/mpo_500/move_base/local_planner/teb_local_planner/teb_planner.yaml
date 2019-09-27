@@ -302,7 +302,7 @@ TebLocalPlannerROS:
  odom_topic: odom
  #Topic name of the odometry message, provided by the robot driver or simulator.
 
- map_frame: map
+ map_frame: odom
  #Global planning frame (in case of a static map, this parameter must be usually changed to "/map".
 
 

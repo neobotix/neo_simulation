@@ -12,12 +12,11 @@
    </joint>
 
    <link name="${name}_link" type="wheel">
-      <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="1.82362"/>
-        <inertia ixx="0.0399743171" ixy="0.00000004464" ixz="-0.00000002245"
-                 iyy="0.0399741733" iyz="-0.00000000164"
-                 izz="0.0739239692"/>
+   <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.000399743171" ixy="0.00000004464" ixz="-0.00000002245"
+                 iyy="0.000399741733" iyz="-0.00000000164"
+                 izz="0.000739239692"/>
 </inertial>
 
       <visual name='fixed_wheel_right'>
@@ -37,10 +36,9 @@
 <gazebo reference="${name}_link">
       <kp>100000.0</kp> 
       <kd>50.0</kd>
-      <gravity> 1 </gravity>
-      <mu1>100</mu1>
-      <mu2>100</mu2>
-      <minDepth>0.00</minDepth>
+      <mu1>20</mu1>
+      <mu2>10</mu2>
+      <fdir1>1 0 0</fdir1>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
   </xacro:macro>
