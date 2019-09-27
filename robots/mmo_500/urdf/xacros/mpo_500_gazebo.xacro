@@ -99,7 +99,7 @@
         </sensor>
   </gazebo>
 
-      <gazebo reference="imu_link">
+    <gazebo reference="imu_1_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -117,6 +117,42 @@
       </plugin>
       <pose>0 0 0 0 0 0</pose>
     </sensor>
+  </gazebo>
+
+  <gazebo reference="us_1_link">
+  <!-- Visuals / Collisions omitted for this example -->
+  <sensor type="ray" name="range">
+    <ray>
+         <scan>
+            <horizontal>
+               <samples>1</samples>
+               <resolution>1.0</resolution>
+               <min_angle>-0.01</min_angle>
+               <max_angle>0.01</max_angle>
+            </horizontal>
+            <vertical>
+               <samples>1</samples>
+               <resolution>1</resolution>
+               <min_angle>-0.01</min_angle>
+               <max_angle>0.01</max_angle>
+            </vertical>
+         </scan>
+         <range>
+            <min>0.01</min>
+            <max>3.75</max>
+            <resolution>0.02</resolution>
+         </range>
+      </ray>
+    <plugin name="libgazebo_ros_range" filename="libgazebo_ros_range.so">
+         <gaussianNoise>0.005</gaussianNoise>
+         <alwaysOn>true</alwaysOn>
+         <updateRate>50</updateRate>
+         <topicName>us_sensor</topicName>
+         <frameName>us_1_link</frameName>
+         <radiation>SONAR</radiation>
+         <fov>0.2967</fov>
+    </plugin>
+  </sensor>
   </gazebo>
 
     <!-- camera -->

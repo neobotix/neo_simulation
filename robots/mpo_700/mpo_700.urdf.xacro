@@ -11,9 +11,9 @@
   <!-- SENSORS --> 
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/sick_laser.xacro" />
 
-<!--   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" /> -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" />
   <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/camera.xacro" /> -->
 
 
@@ -84,9 +84,9 @@
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
   <!-- SENSOR 1 --> 
-  <!-- xacro:us_sensor name="us_1" parent="base_link">
-    <origin xyz="0.100 0 0.300" rpy="0 3.14 3.14" />
-  </xacro:us_sensor-->
+<!--   <xacro:us_sensor name="us_1" parent="base_link">
+    <origin xyz="0.100 0 0.500" rpy="0 3.14 3.14"/>
+  </xacro:us_sensor> -->
   <!-- SENSOR 2 --> 
   <!-- xacro:us_sensor name="us_2" parent="base_link">
     <origin xyz="0.110 0 0.300" rpy="0 3.14 3.14" />

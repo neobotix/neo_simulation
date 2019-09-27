@@ -140,7 +140,7 @@
       </plugin>
     </sensor>
   </gazebo>
-  <gazebo>
+ <gazebo>
     <plugin name="mpo_700_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
