@@ -4,7 +4,7 @@
   <xacro:macro name="mpo_500_base" params="name">
     <link name="${name}">
       <inertial>
-        <mass value="30" />
+        <mass value="0.02" />
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <inertia ixx="1.71402" ixy="0.0" ixz="0.0"
                  iyy="0.8856" iyz="0.0" 

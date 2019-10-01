@@ -2,17 +2,19 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_500">
 
   <xacro:macro name="omni_wheel_250" params="name parent *origin">
-   <joint name="${name}_joint" type="fixed">
+   <joint name="${name}_joint" type="revolute">
     <insert_block name="origin" />
     <axis xyz="0 1 0" />
-    <joint_properties damping="1" friction="1" />
+    <joint_properties damping="100" friction="1000" />
+        <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
+    <joint_properties damping="1.0" friction="1" />
     <parent link="${parent}" />
     <child link="${name}_link" />
    </joint>
 
    <link name="${name}_link" type="wheel">
     <inertial>
-      <mass value="9" />
+      <mass value="1" />
       <origin xyz="0 0 0" rpy="0 0 0" />
       <inertia ixx="0.00044332" ixy="0" ixz="0" iyy="0.00044332" iyz="0" izz="0.00072" />
     </inertial>
