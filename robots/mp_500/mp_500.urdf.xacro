@@ -1,27 +1,34 @@
 <?xml version="1.0"?>
-<!-- Materials -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mp_500">
     
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_gazebo.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_gazebo.xacro" />
 
-<!--++++++++++++++++++++++++++++++base_link++++++++++++++++++++++++++++++++++++++++++++++++++++--> 
-<!--++++++++++++++++++++body++++++++++++++++++++++++++++--> 
+  <!--++++++++++++++++++++++++++++++base_link++++++++++++++++++++++++++++++++++++++++++++++++++++--> 
+  <!--++++++++++++++++++++body++++++++++++++++++++++++++++--> 
 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_body.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_body.xacro" />
 
-<!--+++++++++++++++++++castor_wheel_link++++++++++++++++++++++++--> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_caster_wheel.xacro" />
+  <!--+++++++++++++++++++castor_wheel_link++++++++++++++++++++++++--> 
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_caster_wheel.xacro" />
 
-<!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_left.xacro" />
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_right.xacro" />
+  <!--+++++++++++++++++++left_wheel_link++++++++++++++++++++++++--> 
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_left.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/mp_500_fixed_wheel_right.xacro" />
 
- <!-- SENSORS --> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
+  <!-- SENSORS --> 
+  <!-- Sick S300 - Comment/Uncomment if required  -->
 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/imu.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_S300.xacro" />
 
-<xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/ultrasonic.xacro" />
+  <!-- Microscan - Comment/Uncomment if required -->
+
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/micro_scan.xacro" /> -->
+
+  <!-- USS and IMU - Comment/Uncomment if required  -->
+
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/imu.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/ultrasonic.xacro" /> -->
 
   <xacro:mp_500_base name="base_link">
   </xacro:mp_500_base>
@@ -42,7 +49,6 @@
 
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/sick_laser.xacro" />
   <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
     <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
   </xacro:sick_laser_v0>
