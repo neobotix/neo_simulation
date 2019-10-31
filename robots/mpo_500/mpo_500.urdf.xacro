@@ -11,7 +11,22 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/omni_wheel.xacro" />
 
   <!-- SENSORS --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/sick_laser.xacro" />
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/sick_S300.xacro" /> -->
+
+  <!-- Microscan - Comment/Uncomment if required -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/micro_scan.xacro" /> 
+
+  <!--<xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/imu.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/ultrasonic.xacro" /> -->
+
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_gazebo.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_caster.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_wheel.xacro" />
+  
 
 
   <!-- Base Macro-->
@@ -20,28 +35,28 @@
 
   <!-- Wheel Macro -->
   <xacro:omni_wheel_250 name="wheel_front_left" parent="base_link">
-  	<origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
+    <origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link">
-  	<origin xyz="0.25 -0.28 0.13" rpy="0 0 3.14" />
+    <origin xyz="0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
-  	<origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
+    <origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
   <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link">
-  	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 3.14" />
+    <origin xyz="-0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
   <!-- Sensors -->
   <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan">
-  	<origin xyz="0.442 0 0.372" rpy="0 0 0" />
+    <origin xyz="0.442 0 0.372" rpy="0 0 0" />
   </xacro:sick_laser_v0>
 
   <xacro:sick_laser_v0 name="lidar_2" parent="base_link" ros_topic="lidar_2/scan">
-  	<origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
+    <origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
   </xacro:sick_laser_v0>
 
 </robot>
