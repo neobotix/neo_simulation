@@ -14,17 +14,21 @@
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_body.xacro" />
 
   <!-- SENSORS --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/sick_laser.xacro" />
+  <!-- Sick-S300 -->
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mmo_700/xacros/sick_S300.xacro" /> -->
 
-  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/imu.xacro" />
+  <!--Sick Micro-scan  -->
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/micro_scan.xacro" /> 
 
-  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/ultrasonic.xacro" />
+  <!--   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/imu.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/ultrasonic.xacro" /> -->
 
   <!-- Gazebo --> 
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_gazebo.xacro" />
 
   <!-- Head --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_head.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_caster.xacro" />
 
   <!-- Wheel --> 
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_wheel.xacro" />
@@ -35,53 +39,56 @@
   <xacro:mpo_700_base name="base_link">
   </xacro:mpo_700_base>
 
-<xacro:mmo_700_head_0 name="mmo_700_head_0" parent="base_link">
+<xacro:mpo_700_caster_0 name="mpo_700_caster_front_left" parent="base_link">
     <origin xyz="0.24 0.18 0.27" rpy="3.14 0 -1.57" />
-  </xacro:mmo_700_head_0>
+  </xacro:mpo_700_caster_0>
 
-
-<xacro:mmo_700_head_1 name="mmo_700_head_1" parent="base_link">
+<!-- Casters -->
+<xacro:mpo_700_caster_1 name="mpo_700_caster_front_right" parent="base_link">
     <origin xyz="0.24 -0.18 0.27" rpy="3.14 0 1.57" />
-  </xacro:mmo_700_head_1>
+  </xacro:mpo_700_caster_1>
 
 
-<xacro:mmo_700_head_2 name="mmo_700_head_2" parent="base_link">
+<xacro:mpo_700_caster_2 name="mpo_700_caster_back_left" parent="base_link">
     <origin xyz="-0.24 0.18 0.27" rpy="3.14 0 -1.57" />
-  </xacro:mmo_700_head_2>
+  </xacro:mpo_700_caster_2>
 
 
-<xacro:mmo_700_head_3 name="mmo_700_head_3" parent="base_link">
+<xacro:mpo_700_caster_3 name="mpo_700_caster_back_right" parent="base_link">
     <origin xyz="-0.24 -0.18 0.27" rpy="3.14 0 1.57" />
-  </xacro:mmo_700_head_3>
+  </xacro:mpo_700_caster_3>
 
-<xacro:mmo_700_wheel name="wheel_0" parent="mmo_700_head_0_link">
+<!-- wheels -->
+<xacro:mpo_700_wheel name="mpo_700_wheel_front_left" parent="mpo_700_caster_front_left_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
-  </xacro:mmo_700_wheel>
+  </xacro:mpo_700_wheel>
 
 
-<xacro:mmo_700_wheel name="wheel_1" parent="mmo_700_head_1_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_front_right" parent="mpo_700_caster_front_right_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
-  </xacro:mmo_700_wheel>
+  </xacro:mpo_700_wheel>
 
 
-<xacro:mmo_700_wheel name="wheel_2" parent="mmo_700_head_2_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_back_left" parent="mpo_700_caster_back_left_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
-  </xacro:mmo_700_wheel>
+  </xacro:mpo_700_wheel>
 
 
-<xacro:mmo_700_wheel name="wheel_3" parent="mmo_700_head_3_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_back_right" parent="mpo_700_caster_back_right_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
-  </xacro:mmo_700_wheel>
+  </xacro:mpo_700_wheel>
 
 <!-- Sensors -->
 
-  <xacro:sick_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
-    <origin xyz="0.360 0 0.181" rpy="3.14 0 0 " />
-  </xacro:sick_v0>
+  <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
+  <!--<origin xyz="0.360 0 0.181" rpy="3.14 0 0" />--> 
+    <origin xyz="0.338 0.288 0.223" rpy="3.14 0 0.79" /> <!-- Scanners on the side -->
+  </xacro:sick_laser_v0>
 
-  <xacro:sick_v0 name="lidar_2" parent="base_link" ros_topic="lidar_2/scan_filtered">
-    <origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />
-  </xacro:sick_v0>
+  <xacro:sick_laser_v0 name="lidar_2" parent="base_link" ros_topic="lidar_2/scan_filtered">
+  <!--<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />-->
+    <origin xyz="-0.338 -0.288 0.223" rpy="3.14 0 3.93" /> <!-- Scanners on the side -->
+  </xacro:sick_laser_v0>
 
      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
  <!-- Comment or uncomment based on your requirement -->

@@ -11,7 +11,17 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/omni_wheel.xacro" />
 
   <!-- SENSORS --> 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/sick_laser.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/sick_S300.xacro" />
+
+  <!-- Microscan - Comment/Uncomment if required -->
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/micro_scan.xacro" />  -->
+
+  <!--<xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/imu.xacro" />
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/ultrasonic.xacro" /> -->
+
+
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/mpo_500_gazebo.xacro" />
 
 
   <!-- Base Macro-->
