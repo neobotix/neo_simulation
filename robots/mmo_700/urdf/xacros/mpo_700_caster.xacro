@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_700">
 
-  <xacro:macro name="mpo_700_head_0" params="name parent *origin">
+  <xacro:macro name="mpo_700_caster_0" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
     <insert_block name="origin" />
     <axis xyz="0 0 -1" />
@@ -21,21 +21,21 @@
     <visual>
      <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
      <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>
    
   </xacro:macro>
 
-  <xacro:macro name="mpo_700_head_1" params="name parent *origin">
+  <xacro:macro name="mpo_700_caster_1" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
     <insert_block name="origin" />
     <axis xyz="0 0 -1" />
@@ -54,21 +54,21 @@
     <visual>
      <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
      <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>
    
   </xacro:macro>
   
-  <xacro:macro name="mpo_700_head_2" params="name parent *origin">
+  <xacro:macro name="mpo_700_caster_2" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
     <insert_block name="origin" />
     <axis xyz="0 0 -1" />
@@ -87,21 +87,21 @@
     <visual>
      <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
      <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>
    
   </xacro:macro>
 
-  <xacro:macro name="mpo_700_head_3" params="name parent *origin">
+  <xacro:macro name="mpo_700_caster_3" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
     <insert_block name="origin" />
     <axis xyz="0 0 -1" />
@@ -120,14 +120,14 @@
     <visual>
      <origin xyz="0 0 0.10" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
      <origin xyz="0 0 0.10" rpy="0 0 0" />
      <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_simulation/robots/mmo_700/meshes/MPO-700-HEAD.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>

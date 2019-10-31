@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_700">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mpo_500">
   <xacro:macro name="sick_laser_v0" params="name parent *origin ros_topic">
     <joint name="${name}_joint" type="fixed">
       <axis xyz="0 1 0" />
@@ -16,13 +16,13 @@
       <visual>
         <origin xyz="0 0 -0.06" rpy="1.57 0 0" />
       <geometry>
-        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
+        <mesh filename="package://neo_simulation/robots/mmo_500/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
         </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 -0.06" rpy="1.57 0 0" />
         <geometry>
-          <mesh filename="package://neo_simulation/robots/mpo_700/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
+          <mesh filename="package://neo_simulation/robots/mmo_500/meshes/SICK-MICROSCAN3.dae" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>

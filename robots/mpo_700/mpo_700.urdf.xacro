@@ -28,41 +28,41 @@
   <xacro:mpo_700_base name="base_link">
   </xacro:mpo_700_base>
 
-<xacro:mpo_700_caster_0 name="mpo_700_caster_0" parent="base_link">
+<xacro:mpo_700_caster_0 name="mpo_700_caster_front_left" parent="base_link">
     <origin xyz="0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_caster_0>
 
 
-<xacro:mpo_700_caster_1 name="mpo_700_caster_1" parent="base_link">
+<xacro:mpo_700_caster_1 name="mpo_700_caster_front_right" parent="base_link">
     <origin xyz="0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_caster_1>
 
 
-<xacro:mpo_700_caster_2 name="mpo_700_caster_2" parent="base_link">
+<xacro:mpo_700_caster_2 name="mpo_700_caster_back_left" parent="base_link">
     <origin xyz="-0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_caster_2>
 
 
-<xacro:mpo_700_caster_3 name="mpo_700_caster_3" parent="base_link">
+<xacro:mpo_700_caster_3 name="mpo_700_caster_back_right" parent="base_link">
     <origin xyz="-0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_caster_3>
 
-<xacro:mpo_700_wheel name="wheel_0" parent="mpo_700_caster_0_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_front_left" parent="mpo_700_caster_front_left_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
   </xacro:mpo_700_wheel>
 
 
-<xacro:mpo_700_wheel name="wheel_1" parent="mpo_700_caster_1_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_front_right" parent="mpo_700_caster_front_right_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
   </xacro:mpo_700_wheel>
 
 
-<xacro:mpo_700_wheel name="wheel_2" parent="mpo_700_caster_2_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_back_left" parent="mpo_700_caster_back_left_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
   </xacro:mpo_700_wheel>
 
 
-<xacro:mpo_700_wheel name="wheel_3" parent="mpo_700_caster_3_link">
+<xacro:mpo_700_wheel name="mpo_700_wheel_back_right" parent="mpo_700_caster_back_right_link">
     <origin xyz="-0.05 0. 0.18" rpy="0 0 0" />
   </xacro:mpo_700_wheel>
 
