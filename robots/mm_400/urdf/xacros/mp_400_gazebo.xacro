@@ -17,6 +17,47 @@
     <self_collide>false</self_collide>
   </gazebo>
 
+<gazebo reference="wheel_front_right_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>    
+      <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_front_left_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_back_left_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+<gazebo reference="wheel_back_right_link">
+      <kp>35000.0</kp>
+      <kd>1000.0</kd>
+      <mu1>0.051</mu1>
+      <mu2>0.051</mu2>
+          <fdir1>1 0 0</fdir1>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.00</minDepth>
+      <implicitSpringDamper>1</implicitSpringDamper>
+</gazebo>
+
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -58,7 +99,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
-        <torque>5</torque>
+        <torque>0.05</torque>
         <leftJoint>fixed_wheel_left_joint</leftJoint>
         <rightJoint>fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
@@ -71,32 +112,19 @@
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
         <wheelAcceleration>6.0</wheelAcceleration>
-        <wheelTorque>5</wheelTorque>
+        <wheelTorque>200</wheelTorque>
         <odometrySource>world</odometrySource>
         <publishTf>1</publishTf>
         <publishOdomTF>true</publishOdomTF>
     </plugin>
   </gazebo>
 
-    <gazebo reference="imu_1_link">
-    <gravity>true</gravity>
-    <sensor name="imu_sensor" type="imu">
-      <always_on>true</always_on>
-      <update_rate>100</update_rate>
-      <visualize>true</visualize>
-      <topic>__default_topic__</topic>
-      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
-        <topicName>imu</topicName>
-        <bodyName>imu_link</bodyName>
-        <updateRateHZ>10.0</updateRateHZ>
-        <gaussianNoise>0.0</gaussianNoise>
-        <xyzOffset>0 0 0</xyzOffset>
-        <rpyOffset>0 0 0</rpyOffset>
-        <frameName>imu_link</frameName>
-      </plugin>
-      <pose>0 0 0 0 0 0</pose>
-    </sensor>
-  </gazebo>
+<gazebo>
+  <plugin name="ros_control" filename="libgazebo_ros_control.so">
+    <legacyModeNS>false</legacyModeNS>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  </plugin>
+</gazebo>
 
   <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
@@ -133,7 +161,6 @@
     </plugin>
   </sensor>
   </gazebo>
-
     <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
@@ -175,14 +202,8 @@
     </sensor>
   </gazebo>
 
-<gazebo>
-  <plugin name="ros_control" filename="libgazebo_ros_control.so">
-    <legacyModeNS>false</legacyModeNS>
-    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-  </plugin>
-</gazebo>
-
 
 </robot>
+
 
 
