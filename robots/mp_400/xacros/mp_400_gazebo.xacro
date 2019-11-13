@@ -98,7 +98,6 @@
          </range>
       </ray>
       </sensor>
-  </gazebo>
     <plugin name="libgazebo_ros_range" filename="libgazebo_ros_range.so">
          <gaussianNoise>0.005</gaussianNoise>
          <alwaysOn>true</alwaysOn>
@@ -108,7 +107,6 @@
          <radiation>SONAR</radiation>
          <fov>0.2967</fov>
     </plugin>
-  </sensor>
   </gazebo>
     <!-- camera -->
   <gazebo reference="camera_link">
