@@ -97,6 +97,8 @@
             <resolution>0.02</resolution>
          </range>
       </ray>
+      </sensor>
+  </gazebo>
     <plugin name="libgazebo_ros_range" filename="libgazebo_ros_range.so">
          <gaussianNoise>0.005</gaussianNoise>
          <alwaysOn>true</alwaysOn>

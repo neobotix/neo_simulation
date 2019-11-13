@@ -19,11 +19,19 @@
 <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/mp_400_fixed_wheel_right.xacro" />
 
 <!-- SENSORS --> 
-<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/sick_laser.xacro" />
+  <!-- Sick-S300 -->
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/sick_S300.xacro" /> -->
 
-<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/imu.xacro" />
+  <!--Sick Micro-scan  -->
+  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/micro_scan.xacro" /> 
+    <!--Ultrasonics, cameras and IMU's  -->
 
-<xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/ultrasonic.xacro" />
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/camera.xacro" /> -->
+
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/imu.xacro" /> -->
+
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/ultrasonic.xacro" /> -->
+
 
 <!-- Base link macro -->
   <xacro:mp_400_base name="base_link">

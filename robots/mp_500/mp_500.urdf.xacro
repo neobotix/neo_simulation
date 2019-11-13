@@ -24,11 +24,14 @@
 
   <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/micro_scan.xacro" /> -->
 
-  <!-- USS and IMU - Comment/Uncomment if required  -->
+  <!-- USS, IMU and Camera- Comment/Uncomment if required  -->
 
   <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/imu.xacro" />
 
   <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/ultrasonic.xacro" /> -->
+
+    <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_500/xacros/camera.xacro" />  -->
+
 
   <xacro:mp_500_base name="base_link">
   </xacro:mp_500_base>

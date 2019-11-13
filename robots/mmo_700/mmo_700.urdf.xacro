@@ -20,9 +20,13 @@
   <!--Sick Micro-scan  -->
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/micro_scan.xacro" /> 
 
+  <!--Ultrasonics, cameras and IMU's  -->
   <!--   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/imu.xacro" />
 
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/ultrasonic.xacro" /> -->
+
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/camera.xacro" />  -->
+
 
   <!-- Gazebo --> 
   <xacro:include filename="$(find neo_simulation)/robots/mmo_700/urdf/xacros/mpo_700_gazebo.xacro" />

@@ -82,25 +82,35 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>11374 876000000</sim_time>
-      <real_time>1776 984246840</real_time>
-      <wall_time>1561968518 247848437</wall_time>
-      <iterations>176706</iterations>
+      <sim_time>11493 36000000</sim_time>
+      <real_time>118 264591956</real_time>
+      <wall_time>1573636222 667473358</wall_time>
+      <iterations>11816</iterations>
+      <model name='Ar_tags'>
+        <pose frame=''>-5.75194 -3.51178 0.375166 1.58632 0.040794 1.58265</pose>
+        <scale>1 1 1</scale>
+        <link name='link_1'>
+          <pose frame=''>-5.75194 -3.51178 0.375166 1.58632 0.040794 1.58265</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='Construction Cone_clone'>
-        <pose frame=''>-5.09952 -0.976543 -0.00088 -0 -0 -0</pose>
+        <pose frame=''>-5.09952 -0.976543 -0.00088 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-5.09952 -0.976543 -0.00088 -0 -0 -0</pose>
+          <pose frame=''>-5.09952 -0.976543 -0.00088 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_clone_clone'>
-        <pose frame=''>-3.16254 -4.5019 -0.00088 -0 -0 -0</pose>
+        <pose frame=''>-3.16254 -4.5019 -0.00088 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-3.16254 -4.5019 -0.00088 -0 -0 -0</pose>
+          <pose frame=''>-3.16254 -4.5019 -0.00088 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -739,7 +749,7 @@
         </link>
       </model>
       <model name='yellow_bin'>
-        <pose frame=''>1.25296 -0.822828 0 0 -0 0</pose>
+        <pose frame=''>1.25296 -0.82283 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_2'>
           <pose frame=''>0.952956 -1.17283 0 0 -0 0</pose>
@@ -760,7 +770,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>13.5137 0.316427 22.0322 0 0.969798 3.07691</pose>
+        <pose frame=''>-4.51953 -3.66292 0.540704 -0 0.261798 2.84491</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3832,6 +3842,57 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>3.28846 1.02772 0 0 -0 0</pose>
+    </model>
+    <model name='Ar_tags'>
+      <link name='link_1'>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://Ar_tags/meshes/Ar_tag.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Ar_tags/materials/scripts</uri>
+              <uri>model://Ar_tags/materials/textures</uri>
+              <name>Ar_tags</name>
+            </script>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://Ar_tags/meshes/Ar_tag.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose frame=''>-4.68045 -3.42999 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
