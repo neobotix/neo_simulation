@@ -99,7 +99,7 @@
         </sensor>
   </gazebo>
 
-<!--  <gazebo reference="camera_link">
+ <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -134,9 +134,9 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo> -->
+  </gazebo>
 
-<!--       <gazebo reference="imu_1_link">
+      <gazebo reference="imu_1_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -154,9 +154,9 @@
       </plugin>
       <pose>0 0 0 0 0 0</pose>
     </sensor>
-  </gazebo> -->
+  </gazebo>
 
-<!--   <gazebo reference="us_1_link">
+  <gazebo reference="us_1_link">
   <sensor type="ray" name="range">
     <ray>
          <scan>
@@ -180,7 +180,7 @@
          </range>
       </ray>
       </sensor>
-  </gazebo> -->
+  </gazebo>
 
   <gazebo>
     <plugin name="mpo_500_controller" filename="libgazebo_ros_planar_move.so">
