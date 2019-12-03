@@ -80,7 +80,7 @@
         </sensor>
   </gazebo>
 
-    <gazebo reference="imu_link">
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
 
     <sensor name="imu_sensor" type="imu">
@@ -101,8 +101,6 @@
     </sensor>
   </gazebo>
 
-    <!-- camera -->
-
  <gazebo>
     <plugin name="mpo_700_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
@@ -113,16 +111,17 @@
     </plugin>
   </gazebo>
 
+  <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
         <horizontal_fov>1.3962634</horizontal_fov>
-        <image>
-          <width>800</width>
-          <height>800</height>
-          <format>R8G8B8</format>
-        </image>
+	<image>
+	  <width>800</width>
+ 	  <height>800</height>
+	  <format>R8G8B8</format>
+	</image>
         <clip>
           <near>0.02</near>
           <far>300</far>
@@ -139,7 +138,7 @@
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
-        <cameraName>camera1</cameraName>
+        <cameraName>robot/camera1</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
         <frameName>camera_link</frameName>
@@ -153,7 +152,8 @@
     </sensor>
   </gazebo>
   
-    <gazebo reference="us_1_link">
+  <!-- Sonar -->
+  <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
   <sensor type="ray" name="range">
     <ray>
@@ -177,6 +177,15 @@
             <resolution>0.02</resolution>
          </range>
       </ray>
+      <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+	<gaussianNoise>0.005</gaussianNoise>
+	<alwaysOn>true</alwaysOn>
+	<updateRate>50</updateRate>
+	<topicName>ultrasonic/us1</topicName>
+	<frameName>us_1_link</frameName>
+	<radiation>INFRARED</radiation>
+	<fov>0.2967</fov>
+      </plugin>
       </sensor>
   </gazebo>
 

@@ -37,7 +37,8 @@
         </sensor>
   </gazebo>
 
-    <gazebo reference="imu_1_link">
+  <!-- IMU sensor -->
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -56,7 +57,8 @@
       <pose>0 0 0 0 0 0</pose>
     </sensor>
   </gazebo>
-
+  
+  <!-- Ultrasonic sensors -->
   <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
   <sensor type="ray" name="range">
@@ -85,7 +87,7 @@
          <gaussianNoise>0.005</gaussianNoise>
          <alwaysOn>true</alwaysOn>
          <updateRate>50</updateRate>
-         <topicName>us_sensor</topicName>
+         <topicName>ultrasonic/us1</topicName>
          <frameName>us_1_link</frameName>
          <radiation>SONAR</radiation>
          <fov>0.2967</fov>
@@ -93,7 +95,7 @@
   </sensor>
   </gazebo>
 
-    <!-- camera -->
+  <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>

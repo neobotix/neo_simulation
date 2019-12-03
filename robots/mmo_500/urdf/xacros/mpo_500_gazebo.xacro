@@ -27,6 +27,7 @@
     <self_collide>false</self_collide>
   </gazebo>
 
+  <!-- Lidar sensors -->
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_sensor">
           <pose>0 0 0 0 0 0</pose>
@@ -99,7 +100,8 @@
         </sensor>
   </gazebo>
 
-    <gazebo reference="imu_1_link">
+  <!-- IMU sensor -->
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -119,6 +121,7 @@
     </sensor>
   </gazebo>
 
+  <!-- Ultrasonic sensors -->
   <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
   <sensor type="ray" name="range">
@@ -155,7 +158,7 @@
   </sensor>
   </gazebo>
 
-    <!-- camera -->
+  <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>

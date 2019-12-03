@@ -34,21 +34,16 @@
     </collision>
 </link>
 
-<gazebo reference="${name}_link">
-      <kp>600.0</kp> <!-- Partial Ziegler-Nichols method -->
-      <kd>1465.0</kd>
-      <mu1>200</mu1>
+  <gazebo reference="${name}_link">
+      <kp>100000.0</kp> 
+      <kd>50.0</kd>
+      <gravity> 1 </gravity>
+      <mu1>100</mu1>
       <mu2>100</mu2>
-      <fdir1>.5 0 0</fdir1>
-      <maxVel>3.0</maxVel>
       <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
+  </gazebo>
   </xacro:macro>
-
-
-
-
 </robot>
 
 

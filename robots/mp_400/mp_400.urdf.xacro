@@ -23,14 +23,14 @@
   <!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/sick_S300.xacro" /> -->
 
   <!--Sick Micro-scan  -->
-  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/micro_scan.xacro" /> 
-    <!--Ultrasonics, cameras and IMU's  -->
+  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/micro_scan.xacro" />
 
-<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/camera.xacro" /> -->
+ 
+  <!--Ultrasonics, cameras and IMU's  -->
 
-<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/imu.xacro" /> -->
-
-<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/ultrasonic.xacro" /> -->
+<!-- <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/camera.xacro" /> 
+  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/imu.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mp_400/xacros/ultrasonic.xacro" />-->
 
 
 <!-- Base link macro -->
@@ -69,18 +69,18 @@
     <origin xyz="0.230 0 0.110" rpy="0 3.14 3.14" />
   </xacro:sick_laser_v0>
 
-     <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
- <!-- Comment or uncomment based on your requirement -->
-<!--   <xacro:imu name="imu_1" parent="base_link">
+  <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
+  <!-- Comment or uncomment based on your requirement -->
+  <!--><xacro:imu name="imu" parent="base_link">
     <origin xyz="0.100 0 0.300" rpy="0 0 3.14" />
-  </xacro:imu> -->
+  </xacro:imu><-->
 
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
   <!-- SENSOR 1 --> 
-  <!-- xacro:us_sensor name="us_1" parent="base_link">
-    <origin xyz="0.100 0 0.300" rpy="0 3.14 3.14" />
-  </xacro:us_sensor-->
+  <!--><xacro:us_sensor name="us_1" parent="base_link">
+    <origin xyz="0.100 0 0.500" rpy="0 3.14 3.14" />
+  </xacro:us_sensor><-->
   <!-- SENSOR 2 --> 
   <!-- xacro:us_sensor name="us_2" parent="base_link">
     <origin xyz="0.110 0 0.300" rpy="0 3.14 3.14" />
