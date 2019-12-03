@@ -37,15 +37,15 @@
 
 
   <!-- Wheel Macro -->
-  <xacro:caster_wheel name="caster_wheel" parent="base_link">
+  <xacro:caster_wheel name="mp_500_caster_wheel" parent="base_link">
     <origin xyz="-0.43 0. 0.176" rpy="-1.570796 0 1.570796 " />
   </xacro:caster_wheel>
 
-  <xacro:fixed_wheel_right name="wheel_right" parent="base_link" number="1">
+  <xacro:fixed_wheel_right name="mp_500_fixed_wheel_right" parent="base_link" number="1">
     <origin xyz="0. -0.25 0.13" rpy="0 0 -1.570796" />
   </xacro:fixed_wheel_right>
 
-  <xacro:fixed_wheel_left name="wheel_left" parent="base_link" number="2">
+  <xacro:fixed_wheel_left name="mp_500_fixed_wheel_left" parent="base_link" number="2">
     <origin xyz="0. 0.25 0.13" rpy="0 0 -1.570796" />
   </xacro:fixed_wheel_left>
 

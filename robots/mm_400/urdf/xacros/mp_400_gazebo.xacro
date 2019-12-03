@@ -17,7 +17,7 @@
     <self_collide>false</self_collide>
   </gazebo>
 
-<gazebo reference="wheel_front_right_link">
+<gazebo reference="mp_400_caster_wheel_front_right_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -27,7 +27,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_front_left_link">
+<gazebo reference="mp_400_caster_wheel_front_left_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -37,7 +37,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_back_left_link">
+<gazebo reference="mp_400_caster_wheel_back_left_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -47,7 +47,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_back_right_link">
+<gazebo reference="mp_400_caster_wheel_back_right_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -101,8 +101,8 @@
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
         <torque>0.05</torque>
-        <leftJoint>fixed_wheel_left_joint</leftJoint>
-        <rightJoint>fixed_wheel_right_joint</rightJoint>
+        <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
+        <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
         <wheelDiameter>0.15</wheelDiameter>
         <commandTopic>cmd_vel</commandTopic>

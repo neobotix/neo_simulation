@@ -46,19 +46,19 @@
   </xacro:mpo_500_base>
 
   <!-- Wheel Macro -->
-  <xacro:omni_wheel_250 name="wheel_front_left" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_front_left" parent="base_link">
   	<origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_front_right" parent="base_link">
   	<origin xyz="0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_back_left" parent="base_link">
   	<origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_back_right" parent="base_link">
   	<origin xyz="-0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 

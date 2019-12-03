@@ -157,8 +157,8 @@
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
 	<torque>2</torque>
-        <leftJoint>fixed_wheel_left_joint</leftJoint>
-        <rightJoint>fixed_wheel_right_joint</rightJoint>
+        <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
+        <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
         <wheelDiameter>0.15</wheelDiameter>
         <commandTopic>cmd_vel</commandTopic>
