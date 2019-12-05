@@ -32,10 +32,10 @@ TebLocalPlannerROS:
 ############################
 ###Type Line
 ############################
- footprint_model/line_start: [-0.4, 0.0] 
+ footprint_model/line_start: [-0.6, 0.0] 
  #This parameter is only relevant for type "line". It contains the start coordinates of the line segment. 
 
- footprint_model/line_end: [0.4, 0.0]
+ footprint_model/line_end: [0.6, 0.0]
  #This parameter is only relevant for type "line". It contains the end coordinates of the line segment.
 
 ############################

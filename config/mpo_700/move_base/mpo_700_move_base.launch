@@ -22,14 +22,22 @@
     <!-- Local Planner -->
 
     <!-- EBand -->
-    <!-- param name="base_local_planner" value="eband_local_planner/EBandPlannerROS"/-->
-    <!-- rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/eband_local_planner/eband_planner.yaml" command="load" /-->
+    
+    <param name="base_local_planner" value="eband_local_planner/EBandPlannerROS"/>
+    <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/eband_local_planner/eband_planner.yaml" command="load" />
+    <!--><-->
 
     <!-- Teb -->
+    <!-->
     <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
     <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/teb_local_planner/teb_planner.yaml" command="load" />
+    <-->
 
-
+    <!-- DWA -->
+    <!-->
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/dwa_local_planner/dwa_planner.yaml" command="load" />
+    <-->
     <!-- Common -->
     <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/move_base/move_base.yaml" command="load" />
 
