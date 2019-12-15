@@ -34,18 +34,18 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mp_500/mp_500.urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mp_500/mp_500.urdf.xacro'" />
 
   <node name="mp_500_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mp_500" />
   
   <!--To publish Joint and Robot state-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-	<param name="rate" value="20.0"/>
+	<param name="rate" value="20.0" />
   </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
-	<param name="publish_frequency" value="20.0"/>
+	<param name="publish_frequency" value="20.0" />
   </node>
 
 <!---=================================================================================================================================================================-->

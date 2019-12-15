@@ -2,7 +2,7 @@ EBandPlannerROS:
 
   costmap_weight : 5.0
   Ctrl_Rate : 10.0
-  differential_drive : false
+  differential_drive : False
   max_acceleration : 0.6
   max_rotational_acceleration : 1.5
   max_vel_lin : 0.8
@@ -28,7 +28,7 @@ EBandPlannerROS:
   virtual_mass : 0.75  
   max_translational_acceleration : 0.5  
   rotation_correction_threshold : 0.5  
-  differential_drive : False 
+  differential_drive : Flase 
   bubble_velocity_multiplier : 2.0  
   rotation_threshold_multiplier : 1.0  
   disallow_hysteresis : False  

@@ -17,7 +17,7 @@
     <self_collide>false</self_collide>
   </gazebo>
 
-<gazebo reference="wheel_front_right_link">
+<gazebo reference="mp_400_caster_wheel_front_right_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -27,7 +27,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_front_left_link">
+<gazebo reference="mp_400_caster_wheel_front_left_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -37,7 +37,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_back_left_link">
+<gazebo reference="mp_400_caster_wheel_back_left_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -47,7 +47,7 @@
     <minDepth>0.00</minDepth>
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
-<gazebo reference="wheel_back_right_link">
+<gazebo reference="mp_400_caster_wheel_back_right_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>
       <mu1>0.051</mu1>
@@ -58,6 +58,7 @@
       <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
 
+  <!-- Lidar -->
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -100,8 +101,8 @@
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
         <torque>0.05</torque>
-        <leftJoint>fixed_wheel_left_joint</leftJoint>
-        <rightJoint>fixed_wheel_right_joint</rightJoint>
+        <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
+        <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
         <wheelDiameter>0.15</wheelDiameter>
         <commandTopic>cmd_vel</commandTopic>
@@ -118,8 +119,8 @@
         <publishOdomTF>true</publishOdomTF>
     </plugin>
   </gazebo>
-
-  <gazebo reference="imu_1_link">
+  <!-- IMU sensor -->
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -146,6 +147,7 @@
   </plugin>
 </gazebo>
 
+  <!-- Ultrasonic sensors -->
   <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
   <sensor type="ray" name="range">
@@ -174,14 +176,15 @@
          <gaussianNoise>0.005</gaussianNoise>
          <alwaysOn>true</alwaysOn>
          <updateRate>50</updateRate>
-         <topicName>us_sensor</topicName>
+         <topicName>ultrasonic/us1</topicName>
          <frameName>us_1_link</frameName>
          <radiation>SONAR</radiation>
          <fov>0.2967</fov>
     </plugin>
   </sensor>
   </gazebo>
-    <!-- camera -->
+
+  <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>

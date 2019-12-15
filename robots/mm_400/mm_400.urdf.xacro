@@ -35,53 +35,51 @@
 <!-- Microscan - Comment/Uncomment if required -->
 <xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/micro_scan.xacro" /> 
 
-<!-- Additional sensors if required -->
-<!-- <xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/imu.xacro" />
-
-<xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/ultrasonic.xacro" />
-
-<xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/camera.xacro" />-->
+<!-- Additional sensors if required 
+<xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/imu.xacro" />
+<xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/ultrasonic.xacro" /> <xacro:include filename="$(find neo_simulation)/robots/mm_400/urdf/xacros/camera.xacro" />-->
 
 
   <xacro:mp_400_base name="base_link">
   </xacro:mp_400_base>
 
   <!-- Wheel Macro -->
-  <xacro:caster_wheel name="wheel_front_left" parent="base_link">
+  <xacro:caster_wheel name="mp_400_caster_wheel_front_left" parent="base_link">
     <origin xyz="0.165 0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-  <xacro:caster_wheel name="wheel_back_left" parent="base_link">
+  <xacro:caster_wheel name="mp_400_caster_wheel_back_left" parent="base_link">
     <origin xyz="-0.220 0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-  <xacro:caster_wheel name="wheel_front_right" parent="base_link">
+  <xacro:caster_wheel name="mp_400_caster_wheel_front_right" parent="base_link">
     <origin xyz="0.165 -0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-   <xacro:caster_wheel name="wheel_back_right" parent="base_link">
+   <xacro:caster_wheel name="mp_400_caster_wheel_back_right" parent="base_link">
     <origin xyz="-0.220 -0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-  <xacro:fixed_wheel_right name="fixed_wheel_right" parent="base_link">
+  <xacro:fixed_wheel_right name="mp_400_fixed_wheel_right" parent="base_link">
     <origin xyz="0. -0.26 0.074" rpy="0 0 1.57" />
   </xacro:fixed_wheel_right>
 
-  <xacro:fixed_wheel_left name="fixed_wheel_left" parent="base_link">
+  <xacro:fixed_wheel_left name="mp_400_fixed_wheel_left" parent="base_link">
     <origin xyz="-0. 0.26 0.074" rpy="0 0 1.57" />
   </xacro:fixed_wheel_left>
 
+<!--  -->
   <xacro:mm_400_cabinet name="cabinet" parent="base_link">
     <origin xyz="0.02 0 0.551" rpy="0 0 3.14" />
-  </xacro:mm_400_cabinet>
+  </xacro:mm_400_cabinet> 
 
-   <!-- Robot arm -->
+   <!-- Robot arm  -->
   <xacro:prbt parent="cabinet_link" prefix="pilz">
     <origin xyz="0 0 0." rpy="0 0 0" />
   </xacro:prbt>
 
 <!-- Panda -->
-<!--   <xacro:panda_arm parent="base_link" prefix="panda">
+<!--  <xacro:panda_arm parent="base_link" prefix="panda">
     <origin xyz="0 0 0." rpy="0 0 0" />
   </xacro:panda_arm> -->
   <!--+++++++++++++++++++laserscanner_link++++++++++++++++++++++++-->
@@ -90,18 +88,18 @@
     <origin xyz="0.230 0 0.110" rpy="0 3.14 3.14" />
   </xacro:sick_laser_v0>
 
-       <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
- <!-- Comment or uncomment based on your requirement -->
-<!--   <xacro:imu name="imu_1" parent="base_link">
+  <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
+  <!-- Comment or uncomment based on your requirement 
+  <xacro:imu name="imu_1" parent="base_link">
     <origin xyz="0.100 0 0.300" rpy="0 0 3.14" />
-  </xacro:imu> -->
+  </xacro:imu>-->
 
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
-  <!-- SENSOR 1 --> 
-  <!-- xacro:us_sensor name="us_1" parent="base_link">
-    <origin xyz="0.100 0 0.300" rpy="0 3.14 3.14" />
-  </xacro:us_sensor-->
+  <!-- SENSOR 1 
+  <xacro:us_sensor name="us_1" parent="base_link">
+    <origin xyz="0.300 0 0.500" rpy="0 3.14 3.14" />
+  </xacro:us_sensor>--> 
   <!-- SENSOR 2 --> 
   <!-- xacro:us_sensor name="us_2" parent="base_link">
     <origin xyz="0.110 0 0.300" rpy="0 3.14 3.14" />

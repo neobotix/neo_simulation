@@ -17,6 +17,7 @@
     <self_collide>false</self_collide>
   </gazebo>
 
+  <!-- Lidar sensor -->
   <gazebo reference="laser_1_link">
       <sensor type="ray" name="laser_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -52,8 +53,8 @@
           </plugin>
         </sensor>
   </gazebo>
-
-    <gazebo reference="imu_1_link">
+  <!-- IMU sensor -->  
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -73,6 +74,7 @@
     </sensor>
   </gazebo>
 
+  <!-- Ultrasonic sensor -->
   <gazebo reference="us_1_link">
   <!-- Visuals / Collisions omitted for this example -->
   <sensor type="ray" name="range">
@@ -97,18 +99,19 @@
             <resolution>0.02</resolution>
          </range>
       </ray>
-      </sensor>
-    <plugin name="libgazebo_ros_range" filename="libgazebo_ros_range.so">
+      <plugin name="libgazebo_ros_range" filename="libgazebo_ros_range.so">
          <gaussianNoise>0.005</gaussianNoise>
          <alwaysOn>true</alwaysOn>
          <updateRate>50</updateRate>
-         <topicName>us_sensor</topicName>
+         <topicName>ultrasonic/us1</topicName>
          <frameName>us_1_link</frameName>
          <radiation>SONAR</radiation>
          <fov>0.2967</fov>
-    </plugin>
+      </plugin>
+  </sensor>
   </gazebo>
-    <!-- camera -->
+
+  <!-- camera -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
@@ -153,9 +156,9 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>40</updateRate>
         <legacyMode>false</legacyMode>
-        <torque>5</torque>
-        <leftJoint>fixed_wheel_left_joint</leftJoint>
-        <rightJoint>fixed_wheel_right_joint</rightJoint>
+	<torque>2</torque>
+        <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
+        <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
         <wheelSeparation>0.529</wheelSeparation>
         <wheelDiameter>0.15</wheelDiameter>
         <commandTopic>cmd_vel</commandTopic>
@@ -165,8 +168,8 @@
         <robotBaseFrame>base_link</robotBaseFrame>
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>6.0</wheelAcceleration>
-        <wheelTorque>5</wheelTorque>
+        <wheelAcceleration>0.0</wheelAcceleration>
+        <wheelTorque>2</wheelTorque>
         <odometrySource>world</odometrySource>
         <publishTf>1</publishTf>
         <publishOdomTF>true</publishOdomTF>
