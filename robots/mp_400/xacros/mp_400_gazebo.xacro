@@ -169,7 +169,7 @@
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
         <wheelAcceleration>0.0</wheelAcceleration>
-        <wheelTorque>2</wheelTorque>
+        <wheelTorque>20</wheelTorque>
         <odometrySource>world</odometrySource>
         <publishTf>1</publishTf>
         <publishOdomTF>true</publishOdomTF>

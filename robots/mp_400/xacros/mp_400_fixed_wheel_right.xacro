@@ -29,7 +29,7 @@
     <collision>
      <origin xyz="0. 0 0" rpy=" 0 0 0" />
       <geometry>
-            <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-FIXED-WHEEL-LEFT.dae" scale="0.001 0.001 0.001"/>
+        <sphere radius="0.0765"/>
       </geometry>
     </collision>
 </link>

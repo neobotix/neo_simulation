@@ -29,7 +29,8 @@
     <collision>
       <origin xyz="0 0. 0" rpy="0 0 0" />
       <geometry>
-            <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-CASTER-WHEEL.dae" scale="0.001 0.001 0.001"/>
+          <sphere radius="0.038"/>
+
       </geometry>
     </collision>
     </link>
