@@ -137,4 +137,40 @@
     <origin xyz="0 0 0.38" rpy="0 0 0" />
   </xacro:camera> -->
 
+  <transmission name="mpo_500_omni_wheel_front_left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_front_left_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_front_left_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_front_right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_front_right_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_front_right_motor">
+      <mechanicalReduction>30</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_back_left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_back_left_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_back_left_motor">
+      <mechanicalReduction>19</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_back_right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_back_right_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_back_right_motor">
+      <mechanicalReduction>30</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>
