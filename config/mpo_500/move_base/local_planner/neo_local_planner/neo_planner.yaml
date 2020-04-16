@@ -1,0 +1,97 @@
+NeoLocalPlanner:
+
+  # The x acceleration limit of the robot in meters/sec^2
+  acc_lim_x : 0.25
+
+  # The y acceleration limit of the robot in meters/sec^2
+  acc_lim_y : 0.25
+
+  # The rotational acceleration limit of the robot in radians/sec^2
+  acc_lim_theta : 0.8
+
+  # The maximum x velocity for the robot in m/s.
+  max_vel_x : 0.8
+
+  # The minimum x velocity for the robot in m/s, negative for backwards motion.
+  min_vel_x : -0.2
+
+  # The maximum y velocity for the robot in m/s
+  max_vel_y : 0.5
+
+  # The minimum y velocity for the robot in m/s
+  min_vel_y : -0.5
+
+  # The absolute value of the maximum rotational velocity for the robot in rad/s
+  max_rot_vel : 0.8
+
+  # The absolute value of the minimum rotational velocity for the robot in rad/s
+  min_rot_vel : 0.1
+
+  # The absolute value of the maximum translational velocity for the robot in m/s
+  max_trans_vel : 0.8
+
+  # The absolute value of the minimum translational velocity for the robot in m/s
+  min_trans_vel : 0.1
+
+  # The tolerance in radians for the controller in yaw/rotation when achieving its goal
+  yaw_goal_tolerance : 0.005
+
+  # The tolerance in meters for the controller in the x & y distance when achieving a goal
+  xy_goal_tolerance : 0.01
+
+  # How long to fine tune for goal position after reaching tolerance limits [s]
+  goal_tune_time : 0.5
+
+  # How far to predict control pose into the future based on latest odometry [s]
+  lookahead_time : 0.4
+
+  # How far to look ahead when computing path orientation [m]
+  lookahead_dist : 0.5
+
+  # Threshold yaw error below which we consider to start moving [rad]
+  start_yaw_error : 0.5
+
+  # Gain when adjusting final x position for goal [1/s]
+  pos_x_gain : 1
+
+   # Gain when adjusting y position (holonomic only) [1/s]
+  pos_y_gain : 1
+
+  # Gain for adjusting yaw when not translating, or in case of holonomic drive  [1/s]
+  static_yaw_gain : 3
+
+  # Gain for x cost avoidance (holonomic only)
+  cost_x_gain : 0.1
+
+  # Gain for y cost avoidance (holonomic only)
+  cost_y_gain : 0.1
+
+  # How far ahead to compute y cost gradient (constant offset) [m]
+  cost_y_lookahead_dist : 0
+
+  # How far ahead to compute y cost gradient (dynamic offset) [s]
+  cost_y_lookahead_time : 0.3
+
+  # Gain for yaw cost avoidance
+  cost_yaw_gain : 2
+
+  # Gain for final control low pass filter
+  low_pass_gain : 0.2
+
+  # Max cost to allow, above we slow down to min_trans_vel or even stop
+  max_cost : 0.95
+
+  # Max velocity based on curvature [rad/s]
+  max_curve_vel : 0.4
+
+  # Max distance to goal when looking for it [m]
+  max_goal_dist : 0.5
+
+  # Max distance allowable for backing up (zero = unlimited) [m]
+  max_backup_dist : 0
+
+  # Minimal distance for stopping [m]
+  min_stop_dist : 0.3
+
+  # If robot has differential drive, holonomic otherwise
+  differential_drive : false

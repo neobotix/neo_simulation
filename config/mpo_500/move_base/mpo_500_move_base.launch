@@ -37,6 +37,10 @@
     <rosparam file="$(find neo_simulation)/config/mpo_500/move_base/local_planner/dwa_local_planner/dwa_planner.yaml" command="load" />
     <-->
 
+    <!-- NeoLocalPlanner -->
+    <!--     <param name="base_local_planner" value="neo_local_planner/NeoLocalPlanner"/>
+    <rosparam file="$(find neo_simulation)/config/mpo_500/move_base/local_planner/neo_local_planner/neo_planner.yaml" command="load" /> -->
+    
     <!-- Common -->
     <rosparam file="$(find neo_simulation)/config/mpo_500/move_base/move_base/move_base.yaml" command="load" />
 
