@@ -1,0 +1,59 @@
+
+# exponential low pass gain for localization updates (0 to 1)
+#   (higher gain means odometry is less used / relied on)
+update_gain: 0.3
+
+# time based confidence gain when in 2D mode
+confidence_gain: 0.01
+
+# movement based confidence loss when in 1D or 0D mode
+#   (percentage of confidence loss per meter travelled)
+confidence_loss: 0.05
+
+# limits minimum particle spread to a fraction of sample_std_xy / sample_std_yaw
+max_confidence: 0.95
+
+# map tile size in pixels
+map_size: 1000
+
+# how often to downscale (half) the original map
+map_downscale: 0
+
+# how many 3x3 gaussian smoothing iterations are applied to the map
+num_smooth: 5
+
+# solver update gain, lower gain = more stability / slower convergence
+solver_gain: 0.1
+
+# solver update damping, higher damping = more numeric stability / slower convergence
+solver_damping: 1000
+
+# number of gauss-newton iterations per sample per scan
+solver_iterations: 20
+
+# how many particles (samples) to spread for each scan / update
+sample_rate: 10
+
+# initial particle spread in x and y [m]
+sample_std_xy: 0.5
+
+# initial particle spread in yaw angle [rad]
+sample_std_yaw: 0.5
+
+# first threshold for 1D / 2D decision making
+#   if sigma ratio falls below this value we go into 1D mode
+#   higher values will make it go into 1D mode earlier
+constrain_ratio: 0.2
+
+# second threshold for 1D / 2D decision making
+#   if worst relative sigma is above this value we go into 1D mode
+#   lower values will make it go into 1D mode earlier
+constrain_threshold: 0.3
+
+# threshold for 2D / 0D decision making
+#   lower values will make it go into 0D mode earlier
+disable_threshold: 1
+
+# if to broadcast map frame
+broadcast_tf: true
+

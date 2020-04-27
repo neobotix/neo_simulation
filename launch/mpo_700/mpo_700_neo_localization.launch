@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+        <include file="$(find neo_simulation)/config/neo_localization/neo_localization.launch"/>
+        <include file="$(find neo_simulation)/config/move_base/move_base.launch"/>
+
+</launch>

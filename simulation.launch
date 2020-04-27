@@ -9,6 +9,7 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" default="true"/>
 
+
   <!--To launch move base set the value to true-->
   <arg name="autonomous_navigation" default="false"/>
 
