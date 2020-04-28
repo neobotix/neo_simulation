@@ -3,7 +3,7 @@
 
   <xacro:macro name="fixed_wheel_left" params="name parent number *origin">
     <joint name="${name}_joint" type="revolute">
-    <insert_block name="origin" />
+    <xacro:insert_block name="origin" />
     <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
     <axis xyz="-1 0 0" />
     <joint_properties damping="0" friction="0.0" />

@@ -3,7 +3,7 @@
 
   <xacro:macro name="mmo_700_cabinet" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-   <insert_block name="origin" />
+   <xacro:insert_block name="origin" />
     <joint_properties damping="1" friction="1" />
     <parent link="${parent}" />
     <child link="${name}_link" />

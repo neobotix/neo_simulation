@@ -3,7 +3,7 @@
 
   <xacro:macro name="omni_wheel_250" params="name parent *origin">
    <joint name="${name}_joint" type="continuous">
-    <insert_block name="origin" />
+    <xacro:insert_block name="origin" />
     <axis xyz="0 1 0" />
     <joint_properties damping="100" friction="100" />
     <parent link="${parent}" />

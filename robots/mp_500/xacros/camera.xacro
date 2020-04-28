@@ -5,7 +5,7 @@
     <xacro:property name="camera_link" value="0.05" />
     <joint name="${name}_joint" type="fixed">
       <axis xyz="0 1 0" />
-      <insert_block name="origin" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_link"/>
     </joint>
