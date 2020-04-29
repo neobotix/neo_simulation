@@ -3,7 +3,7 @@
 
   <xacro:macro name="caster_wheel" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-    <insert_block name="origin" />
+    <xacro:insert_block name="origin" />
     <axis xyz="-1 0 0" />
     <joint_properties damping="1." friction="1.0" />
     <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
