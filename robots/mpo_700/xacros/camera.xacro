@@ -4,7 +4,7 @@
   <xacro:macro name="camera" params="name parent *origin">
     <joint name="${name}_joint" type="fixed">
       <axis xyz="0 1 0" />
-      <xacro:insert_block name="origin" />
+      <insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_link"/>
     </joint>

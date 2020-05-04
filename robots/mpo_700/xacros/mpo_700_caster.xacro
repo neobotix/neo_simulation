@@ -3,7 +3,7 @@
 
   <xacro:macro name="mpo_700_caster_0" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-    <xacro:insert_block name="origin" />
+    <insert_block name="origin" />
     <axis xyz="0 0 -1" />
     <!-- <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/> -->
     <joint_properties damping="1" friction="1" />
@@ -37,7 +37,7 @@
 
   <xacro:macro name="mpo_700_caster_1" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-    <xacro:insert_block name="origin" />
+    <insert_block name="origin" />
     <axis xyz="0 0 -1" />
     <joint_properties damping="1" friction="1" />
     <parent link="${parent}" />
@@ -70,7 +70,7 @@
   
   <xacro:macro name="mpo_700_caster_2" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-    <xacro:insert_block name="origin" />
+    <insert_block name="origin" />
     <axis xyz="0 0 -1" />
     <joint_properties damping="1" friction="1" />
     <parent link="${parent}" />
@@ -103,7 +103,7 @@
 
   <xacro:macro name="mpo_700_caster_3" params="name parent *origin">
    <joint name="${name}_joint" type="fixed">
-    <xacro:insert_block name="origin" />
+    <insert_block name="origin" />
     <axis xyz="0 0 -1" />
     <joint_properties damping="1" friction="1" />
     <parent link="${parent}" />
