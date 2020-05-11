@@ -31,19 +31,24 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mpo_500/mpo_500.urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find neo_simulation)/robots/mpo_500/mpo_500.urdf.xacro'"/>
 
   <node name="mpo_500_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mpo_500" />
   
   <!--To publish Joint and Robot state-->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-  <param name="rate" value="20.0"/>
-  </node>
+
+  <include file="$(find neo_simulation)/config/controller/launch/controller_utils.launch"/>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
-  <param name="publish_frequency" value="20.0"/>
+      <param name="rate" value="100.0"/>
   </node>
+
+<!-- Launching wheel controllers -->
+
+  <rosparam file="$(find neo_simulation)/config/controller/mpo_500_wheel_controller.yaml" command="load"/>
+  <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" 
+  args="spawn mpo_500_omni_wheel_front_left_controller mpo_500_omni_wheel_front_right_controller mpo_500_omni_wheel_back_left_controller mpo_500_omni_wheel_back_right_controller" respawn="false" output="screen"/>
 
 <!---=================================================================================================================================================================-->
  
@@ -63,7 +68,6 @@
    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_keyboard"  output="screen">
   </node>
  </group>
-
 <!---=================================================================================================================================================================-->
 
 </launch>

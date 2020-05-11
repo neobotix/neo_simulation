@@ -34,7 +34,7 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mm_400/mm_400.urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find neo_simulation)/robots/mm_400/mm_400.urdf.xacro'"/>
 
   <node name="mm_400_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mm_400" />
