@@ -12,10 +12,13 @@
   <!-- Microscan - Comment/Uncomment if required -->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/micro_scan.xacro" /> 
 
-
+  <!-- Depth camera -->
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" />  -->
   <!--Ultrasonics, cameras and IMU's  -->
   <!-->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/camera.xacro" /> 
+
+
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" />
   <-->
@@ -28,30 +31,30 @@
 
   <!-- Wheels -->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_wheel.xacro" />
-
-  <link name="dummy_link" />
+  
+  <link name="base_link" />
 
   <!-- Base Macro-->
-  <xacro:mpo_700_base name="base_link" parent="dummy_link">
+  <xacro:mpo_700_base name="base_footprint" parent="base_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:mpo_700_base>
 
-<xacro:mpo_700_caster_0 name="mpo_700_caster_front_left" parent="base_link">
+<xacro:mpo_700_caster_0 name="mpo_700_caster_front_left" parent="base_footprint">
     <origin xyz="0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_caster_0>
 
 
-<xacro:mpo_700_caster_1 name="mpo_700_caster_front_right" parent="base_link">
+<xacro:mpo_700_caster_1 name="mpo_700_caster_front_right" parent="base_footprint">
     <origin xyz="0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_caster_1>
 
 
-<xacro:mpo_700_caster_2 name="mpo_700_caster_back_left" parent="base_link">
+<xacro:mpo_700_caster_2 name="mpo_700_caster_back_left" parent="base_footprint">
     <origin xyz="-0.24 0.18 0.27" rpy="3.14 0 -1.57" />
   </xacro:mpo_700_caster_2>
 
 
-<xacro:mpo_700_caster_3 name="mpo_700_caster_back_right" parent="base_link">
+<xacro:mpo_700_caster_3 name="mpo_700_caster_back_right" parent="base_footprint">
     <origin xyz="-0.24 -0.18 0.27" rpy="3.14 0 1.57" />
   </xacro:mpo_700_caster_3>
 
@@ -168,5 +171,10 @@
     <origin xyz="0 0 0.38" rpy="0 0 0" />
   </xacro:camera>
   <-->
+
+  <!-- Depth Camera -->
+<!--   <xacro:depth_camera name="camera" parent="base_link">
+    <origin xyz="0.228 0 0.461" rpy="0 0 0" />
+  </xacro:depth_camera> -->
 
 </robot>
