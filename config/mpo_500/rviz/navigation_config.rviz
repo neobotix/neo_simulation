@@ -64,11 +64,15 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
+        base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         lidar_1_link:
           Alpha: 1
           Show Axes: false
@@ -208,7 +212,7 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /move_base/TebLocalPlannerROS/global_plan
+      Topic: /move_base/NeoLocalPlanner/local_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -300,25 +304,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.585995674133301
+      Distance: 20.185705184936523
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 3.857968807220459
-        Y: 6.563574314117432
-        Z: 0.4896838068962097
+        X: 1.6272236108779907
+        Y: -2.4120798110961914
+        Z: 0.4374498724937439
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7647970914840698
+      Pitch: 0.8947967290878296
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.1748218536376953
+      Yaw: 3.339826822280884
     Saved: ~
 Window Geometry:
   Displays:
@@ -336,5 +340,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1920
-  X: 0
+  X: 1920
   Y: 0
