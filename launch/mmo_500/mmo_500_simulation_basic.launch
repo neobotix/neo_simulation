@@ -53,6 +53,20 @@
   <include file="$(find neo_simulation)/config/mmo_500/scan_unifier/mmo_500_scan_unifier.launch"/>
  </group>  
 
+<!-- Wheel controllers -->
+  <rosparam file="$(find neo_simulation)/config/controller/mpo_500_wheel_controller.yaml" command="load"/>
+  <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" 
+  args="spawn mpo_500_omni_wheel_front_left_controller mpo_500_omni_wheel_front_right_controller mpo_500_omni_wheel_back_left_controller mpo_500_omni_wheel_back_right_controller" respawn="false" output="screen"/>
+
+<!-- Launching kinematics node -->
+
+  <!-- upload parameters -->
+  <rosparam command="load" ns="kinematics_mecanum" file="$(find neo_kinematics_mecanum)/launch/test_setup.yaml"/>
+
+<!-- start simulation node -->
+  <node pkg="neo_kinematics_mecanum" type="neo_kinematics_mecanum_sim_node" ns="kinematics_mecanum" name="neo_kinematics_mecanum_sim_node" respawn="false" output="screen"/>
+
+
 <!-- UR10 -->
 <rosparam file="$(find neo_simulation)/config/controller/arm_controller_ur10.yaml" command="load"/>
 <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
