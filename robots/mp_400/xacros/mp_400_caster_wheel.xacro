@@ -14,10 +14,10 @@
    <link name="${name}_link" type="wheel">
    <inertial>
         <mass value="1.4"/>
-        <inertia ixx="0.00499743171" ixy="0.00000004464" ixz="-0.00000002245"
-                 iyy="0.00499741733" iyz="-0.00000000164"
+        <inertia ixx="0.00499743171" ixy="0.0" ixz="-0.0"
+                 iyy="0.00499741733" iyz="-0.0"
                  izz="0.00839239692"/>
-</inertial>
+  </inertial>
 
       <visual name='caster_wheel'>
     <origin xyz="0 0 0" rpy="0 0 0" />
@@ -29,7 +29,7 @@
     <collision>
       <origin xyz="0 0. 0" rpy="0 0 0" />
       <geometry>
-            <mesh filename="package://neo_simulation/robots/mp_400/meshes/MP-400-CASTER-WHEEL.dae" scale="0.001 0.001 0.001"/>
+          <sphere radius="0.040"/>
       </geometry>
     </collision>
     </link>

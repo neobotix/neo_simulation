@@ -166,7 +166,7 @@
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
         <wheelAcceleration>6.0</wheelAcceleration>
-        <wheelTorque>5</wheelTorque>
+        <wheelTorque>10</wheelTorque>
         <odometrySource>world</odometrySource>
         <publishTf>1</publishTf>
         <publishOdomTF>true</publishOdomTF>
