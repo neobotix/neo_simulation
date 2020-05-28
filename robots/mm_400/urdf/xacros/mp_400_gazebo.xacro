@@ -17,46 +17,6 @@
     <self_collide>false</self_collide>
   </gazebo>
 
-<gazebo reference="wheel_front_right_link">
-      <kp>35000.0</kp>
-      <kd>1000.0</kd>
-      <mu1>0.051</mu1>
-      <mu2>0.051</mu2>    
-      <fdir1>1 0 0</fdir1>
-    <maxVel>1.0</maxVel>
-    <minDepth>0.00</minDepth>
-      <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
-<gazebo reference="wheel_front_left_link">
-      <kp>35000.0</kp>
-      <kd>1000.0</kd>
-      <mu1>0.051</mu1>
-      <mu2>0.051</mu2>
-          <fdir1>1 0 0</fdir1>
-    <maxVel>1.0</maxVel>
-    <minDepth>0.00</minDepth>
-      <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
-<gazebo reference="wheel_back_left_link">
-      <kp>35000.0</kp>
-      <kd>1000.0</kd>
-      <mu1>0.051</mu1>
-      <mu2>0.051</mu2>
-          <fdir1>1 0 0</fdir1>
-    <maxVel>1.0</maxVel>
-    <minDepth>0.00</minDepth>
-      <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
-<gazebo reference="wheel_back_right_link">
-      <kp>35000.0</kp>
-      <kd>1000.0</kd>
-      <mu1>0.051</mu1>
-      <mu2>0.051</mu2>
-          <fdir1>1 0 0</fdir1>
-    <maxVel>1.0</maxVel>
-    <minDepth>0.00</minDepth>
-      <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
 
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_link">
