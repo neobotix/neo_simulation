@@ -11,13 +11,13 @@
     <child link="${name}" />
    </joint>
     <link name="${name}">
-      <inertial>
-        <mass value="0.01" />
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <inertia ixx="0.0008" ixy="0.0" ixz="0.0"
-                 iyy="0.0008" iyz="0.0" 
-                 izz="0.0008" />
-      </inertial>
+    <inertial>
+      <mass value="90"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="7.8" ixy="0.0" ixz="0" 
+               iyy="7.8" iyz="0.0" 
+               izz="7.8"/>
+    </inertial>
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0 0 -1.571" />
         <geometry>
@@ -27,7 +27,6 @@
       <collision>
         <origin xyz="0. 0. 0." rpy="0 0 -1.571" />
         <geometry>
-          
             <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-BODY.dae" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>

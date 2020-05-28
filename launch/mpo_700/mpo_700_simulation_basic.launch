@@ -44,6 +44,12 @@
 	<param name="publish_frequency" value="100.0"/>
   </node>
 
+  <!-- Wheel controller -->
+  <rosparam file="$(find neo_simulation)/config/controller/mpo_700_wheel_controller.yaml" command="load"/>
+  <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn mpo_700_caster_front_left_controller mpo_700_caster_front_right_controller mpo_700_caster_back_left_controller 
+  mpo_700_caster_back_right_controller  mpo_700_wheel_front_left_controller
+  mpo_700_wheel_front_right_controller   mpo_700_wheel_back_left_controller 
+  mpo_700_wheel_back_right_controller " respawn="false" output="screen"/>
 <!---=================================================================================================================================================================-->
  
   <!--if arg scan-unifier is set to true-->
@@ -62,6 +68,19 @@
    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_keyboard"  output="screen">
   </node>
  </group>
+
+  <!-- start neo teleop node -->
+<!--   <node pkg="neo_teleop" type="neo_teleop" name="neo_teleop_node" ns="neo_teleop" output="screen">
+
+  </node> -->
+
+
+  <!-- run joystick -->
+<!--   <node pkg="joy" type="joy_node" name="joy_node" output="screen" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+  </node> -->
+
 
 <!---=================================================================================================================================================================-->
 
