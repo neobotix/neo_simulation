@@ -1,32 +1,7 @@
 <?xml version="1.0"?>
 <robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-   <gazebo reference="base_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-   <gazebo reference="wheel_front_left_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="wheel_front_right_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="wheel_back_left_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="wheel_back_right_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
+  <!-- Lidar sensors -->
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_sensor">
           <pose>0 0 0 0 0 0</pose>
@@ -99,7 +74,8 @@
         </sensor>
   </gazebo>
 
- <gazebo reference="camera_link">
+  <!-- Camera -->
+  <gazebo reference="camera_link">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -134,9 +110,10 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+   </gazebo>
 
-      <gazebo reference="imu_1_link">
+  <!-- IMU sensor -->
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -156,6 +133,7 @@
     </sensor>
   </gazebo>
 
+  <!-- Ultrasonic sensors -->
   <gazebo reference="us_1_link">
   <sensor type="ray" name="range">
     <ray>
@@ -179,23 +157,34 @@
             <resolution>0.02</resolution>
          </range>
       </ray>
+      <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+	<gaussianNoise>0.005</gaussianNoise>
+	<alwaysOn>true</alwaysOn>
+	<updateRate>50</updateRate>
+	<topicName>ultrasonic/us1</topicName>
+	<frameName>us_1_link</frameName>
+	<radiation>INFRARED</radiation>
+	<fov>0.2967</fov>
+      </plugin>
       </sensor>
   </gazebo>
 
-  <gazebo>
+<gazebo>
+  <plugin name="ros_control" filename="libgazebo_ros_control.so">
+    <legacyModeNS>false</legacyModeNS>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  </plugin>
+</gazebo>
+<gazebo>
     <plugin name="mpo_500_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <odometryRate>20.0</odometryRate>
+      <odometryRate>100.0</odometryRate>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
 
-
-
-
 </robot>
-
 
 

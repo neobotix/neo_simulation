@@ -1,0 +1,32 @@
+mpo_500_omni_wheel_front_left_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_500_omni_wheel_front_left_joint
+    # pid: {p: 100.0, i: 0.01, d: 10.0}
+
+mpo_500_omni_wheel_front_right_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_500_omni_wheel_front_right_joint
+    # pid: {p: 100.0, i: 0.01, d: 10.0}
+
+mpo_500_omni_wheel_back_left_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_500_omni_wheel_back_left_joint
+    # pid: {p: 100.0, i: 0.01, d: 10.0}
+
+mpo_500_omni_wheel_back_right_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_500_omni_wheel_back_right_joint
+    # pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# wheel_controller:
+#   type: velocity_controllers/JointTrajectoryController
+#   joints:
+#      - mpo_500_omni_wheel_front_left_joint
+#      - mpo_500_omni_wheel_front_right_joint
+#      - mpo_500_omni_wheel_back_left_joint
+#      - mpo_500_omni_wheel_back_right_joint
+#   gains:
+#     mpo_500_omni_wheel_front_left_joint:  {p: 100,  d: 1, i: 1, i_clamp: 1}
+#     mpo_500_omni_wheel_front_right_joint: {p: 100,  d: 1, i: 1, i_clamp: 1}
+#     mpo_500_omni_wheel_back_left_joint: {p: 100,  d: 1, i: 1, i_clamp: 1}
+#     mpo_500_omni_wheel_back_right_joint: {p: 100,  d: 1, i: 1, i_clamp: 1}

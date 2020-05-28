@@ -22,27 +22,29 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/ultrasonic.xacro" /> -->
 
   <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_500/xacros/camera.xacro" />  -->
-  
 
 
-  <!-- Base Macro-->
-  <xacro:mpo_500_base name="base_link">
+  <link name="base_link" />
+
+  <!-- Base link macro -->
+  <xacro:mpo_500_base name="base_footprint" parent="base_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:mpo_500_base>
 
   <!-- Wheel Macro -->
-  <xacro:omni_wheel_250 name="wheel_front_left" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_front_left" parent="base_footprint">
     <origin xyz="0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_front_right" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_front_right" parent="base_footprint">
     <origin xyz="0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_back_left" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_back_left" parent="base_footprint">
     <origin xyz="-0.25 0.28 0.13" rpy="0 0 0" />
   </xacro:omni_wheel_250>
 
-  <xacro:omni_wheel_250 name="wheel_back_right" parent="base_link">
+  <xacro:omni_wheel_250 name="mpo_500_omni_wheel_back_right" parent="base_footprint">
     <origin xyz="-0.25 -0.28 0.13" rpy="0 0 3.14" />
   </xacro:omni_wheel_250>
 
@@ -55,18 +57,22 @@
     <origin xyz="-0.442 0 0.372" rpy="0 0 3.14" />
   </xacro:sick_laser_v0>
 
-      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
- <!-- Comment or uncomment based on your requirement -->
-<!--   <xacro:imu name="imu_1" parent="base_link">
+  <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
+  <!-- Comment or uncomment based on your requirement -->
+  <!-->
+  <xacro:imu name="imu" parent="base_link">
     <origin xyz="0.100 0 0.300" rpy="0 0 3.14" />
-  </xacro:imu> -->
+  </xacro:imu>
+  <-->
 
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
   <!-- SENSOR 1 --> 
-  <!-- xacro:us_sensor name="us_1" parent="base_link">
-    <origin xyz="0.100 0 0.300" rpy="0 3.14 3.14" />
-  </xacro:us_sensor-->
+  <!-->
+  <xacro:us_sensor name="us_1" parent="base_link">
+    <origin xyz="0.100 0 0.500" rpy="0 3.14 3.14" />
+  </xacro:us_sensor>
+  <-->
   <!-- SENSOR 2 --> 
   <!-- xacro:us_sensor name="us_2" parent="base_link">
     <origin xyz="0.110 0 0.300" rpy="0 3.14 3.14" />
@@ -128,10 +134,45 @@
     <origin xyz="0.230 0 0.300" rpy="0 3.14 3.14" />
   </xacro:us_sensor-->
     
-      <!--Camera  -->
+  <!--Camera  -->
 <!-- <xacro:camera name="camera" parent="base_link">
     <origin xyz="0 0 0.38" rpy="0 0 0" />
   </xacro:camera> -->
 
+  <transmission name="mpo_500_omni_wheel_front_left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_front_left_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_front_left_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_front_right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_front_right_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_front_right_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_back_left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_back_left_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_back_left_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mpo_500_omni_wheel_back_right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mpo_500_omni_wheel_back_right_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mpo_500_omni_wheel_back_right_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>
-

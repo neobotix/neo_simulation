@@ -1,0 +1,142 @@
+mpo_700_caster_front_left_controller:
+    type: position_controllers/JointPositionController
+    joint: mpo_700_caster_front_left_joint
+
+mpo_700_caster_front_right_controller:
+    type: position_controllers/JointPositionController
+    joint: mpo_700_caster_front_right_joint
+
+mpo_700_caster_back_left_controller:
+    type: position_controllers/JointPositionController
+    joint: mpo_700_caster_back_left_joint
+
+mpo_700_caster_back_right_controller:
+    type: position_controllers/JointPositionController
+    joint: mpo_700_caster_back_right_joint
+
+mpo_700_wheel_front_left_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_700_wheel_front_left_joint
+
+mpo_700_wheel_front_right_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_700_wheel_front_right_joint
+
+mpo_700_wheel_back_left_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_700_wheel_back_left_joint
+
+mpo_700_wheel_back_right_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: mpo_700_wheel_back_right_joint
+
+
+# mpo_700_head_1_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - mpo_700_head_1_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     mpo_700_head_1_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     mpo_700_head_1_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# mpo_700_head_2_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - mpo_700_head_2_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     mpo_700_head_2_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     mpo_700_head_2_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# mpo_700_head_3_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - mpo_700_head_3_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     mpo_700_head_3_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     mpo_700_head_3_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# wheel_0_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - wheel_0_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     wheel_0_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     wheel_0_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# wheel_1_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - wheel_1_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     wheel_1_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     wheel_1_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# wheel_2_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - wheel_2_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     wheel_2_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     wheel_2_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+# wheel_3_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints:
+#    - wheel_3_joint
+#   constraints:
+#     goal_time: 0.6
+#     stopped_velocity_tolerance: 0.05
+#     wheel_3_joint: {trajectory: 0.1, goal: 0.1}
+#   gains:
+#     wheel_3_joint:
+#         d: 0
+#         i: 0
+#         i_clamp: 1
+#         p: 10
+
+
+# stop_trajectory_duration: 0.5
+# state_publish_rate:  50
+# action_monitor_rate: 10
