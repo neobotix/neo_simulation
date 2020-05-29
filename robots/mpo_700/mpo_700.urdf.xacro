@@ -12,7 +12,7 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/micro_scan.xacro" /> 
 
   <!-- Depth camera -->
-  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" />  -->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" /> 
 
   <!--Ultrasonics, cameras and IMU's  -->
 
@@ -170,9 +170,9 @@
   <-->
 
   <!-- Depth Camera -->
-<!--   <xacro:depth_camera name="camera" parent="base_link">
+  <xacro:depth_camera name="camera" parent="base_link">
     <origin xyz="0.228 0 0.461" rpy="0 0 0" />
-  </xacro:depth_camera> -->
+  </xacro:depth_camera>
 
   <transmission name="mpo_700_caster_front_left">
     <type>transmission_interface/SimpleTransmission</type>
