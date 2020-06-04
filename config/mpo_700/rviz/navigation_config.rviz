@@ -8,8 +8,9 @@ Panels:
         - /Status1
         - /Range1
         - /Imu1
+        - /Camera1
       Splitter Ratio: 0.5
-    Tree Height: 755
+    Tree Height: 721
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -64,11 +65,24 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
+        base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         lidar_1_link:
           Alpha: 1
           Show Axes: false
@@ -311,6 +325,109 @@ Visualization Manager:
       Topic: /imu
       Unreliable: false
       Value: false
+    - Class: rviz/Camera
+      Enabled: false
+      Image Rendering: background and overlay
+      Image Topic: /camera/depth/image_raw
+      Name: Camera
+      Overlay Alpha: 0.5
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+      Visibility:
+        FootPrintPolygon: true
+        GlobalCostMap: true
+        GlobalPath: true
+        Grid: true
+        Imu: true
+        LaserScan: true
+        LocalCostMap: true
+        LocalPath: true
+        Map: true
+        MarkerArray: true
+        Pose: true
+        PoseArray: true
+        Range: true
+        RobotModel: true
+        TF: true
+        Value: true
+      Zoom Factor: 1
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        ar_marker_0:
+          Value: true
+        ar_marker_255:
+          Value: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera_link:
+          Value: true
+        camera_link_optical:
+          Value: true
+        lidar_1_link:
+          Value: true
+        lidar_2_link:
+          Value: true
+        map:
+          Value: true
+        mpo_700_caster_back_left_link:
+          Value: true
+        mpo_700_caster_back_right_link:
+          Value: true
+        mpo_700_caster_front_left_link:
+          Value: true
+        mpo_700_caster_front_right_link:
+          Value: true
+        mpo_700_wheel_back_left_link:
+          Value: true
+        mpo_700_wheel_back_right_link:
+          Value: true
+        mpo_700_wheel_front_left_link:
+          Value: true
+        mpo_700_wheel_front_right_link:
+          Value: true
+        odom:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                mpo_700_caster_back_left_link:
+                  mpo_700_wheel_back_left_link:
+                    {}
+                mpo_700_caster_back_right_link:
+                  mpo_700_wheel_back_right_link:
+                    {}
+                mpo_700_caster_front_left_link:
+                  mpo_700_wheel_front_left_link:
+                    {}
+                mpo_700_caster_front_right_link:
+                  mpo_700_wheel_front_right_link:
+                    {}
+              camera_link:
+                camera_link_optical:
+                  ar_marker_0:
+                    {}
+                  ar_marker_255:
+                    {}
+              lidar_1_link:
+                {}
+              lidar_2_link:
+                {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -339,33 +456,35 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 8.789670944213867
+      Distance: 7.602903366088867
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 4.1296539306640625
-        Y: 5.715925693511963
-        Z: 0.022548791021108627
+        X: -4.9205098152160645
+        Y: 2.336714029312134
+        Z: 0.1717616617679596
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.1097965240478516
+      Pitch: 0.10479675978422165
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.7116515636444092
+      Yaw: 4.799830913543701
     Saved: ~
 Window Geometry:
+  Camera:
+    collapsed: false
   Displays:
     collapsed: false
-  Height: 1052
+  Height: 1025
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000037efc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000037e000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015c0000037efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d0000037e000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000004ae0000037e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000035ffc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005d00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f0000035f000000cc00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000c00430061006d00650072006102000002350000015f0000024900000165000000010000015c0000035ffc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003f0000035f000000a900fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073d0000003efc0100000002fb0000000800540069006d006501000000000000073d000002df00fffffffb0000000800540069006d006501000000000000045000000000000000000000046b0000035f00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -374,6 +493,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1920
-  X: 0
-  Y: 0
+  Width: 1853
+  X: 67
+  Y: 27
