@@ -50,6 +50,15 @@
   mpo_700_caster_back_right_controller  mpo_700_wheel_front_left_controller
   mpo_700_wheel_front_right_controller   mpo_700_wheel_back_left_controller 
   mpo_700_wheel_back_right_controller " respawn="false" output="screen"/>
+
+    <!-- Launching kinematics node -->
+
+  <!-- upload parameters -->
+  <rosparam command="load" ns="kinematics_omnidrive" file="$(find neo_kinematics_omnidrive)/launch/test_setup.yaml"/>
+
+  <!-- start nodes -->
+  <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_simulation_node" ns="kinematics_omnidrive" name="neo_omnidrive_simulation_node" respawn="false" />
+
 <!---=================================================================================================================================================================-->
  
   <!--if arg scan-unifier is set to true-->
