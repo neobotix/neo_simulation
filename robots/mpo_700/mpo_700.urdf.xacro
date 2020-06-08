@@ -21,6 +21,7 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/imu.xacro" />
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/ultrasonic.xacro" />
   <-->
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/docking_adapter.xacro" />
 
   <!--Gazebo  -->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_gazebo.xacro" />
@@ -85,6 +86,10 @@
   <!--<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />--> <!-- Scanners on the rear -->
     <origin xyz="-0.338 -0.288 0.223" rpy="3.14 0 3.93" /> <!-- Scanners on the side -->
   </xacro:sick_laser_v0>
+
+  <xacro:docking_adapter name="docking_adapter" parent="base_link">
+    <origin xyz="0.300 0 0.320" rpy="0 0 1.57" />
+  </xacro:docking_adapter>
 
      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
@@ -168,6 +173,7 @@
     <origin xyz="0 0 0.38" rpy="0 0 0" />
   </xacro:camera>
   <-->
+
 
   <!-- Depth Camera -->
   <xacro:depth_camera name="camera" parent="base_link">
