@@ -5,7 +5,7 @@
   <arg name="world_name_global" default="worlds/empty.world"/>
   
   <!--To launch RVIZ set the value to true-->
-  <arg name="rviz" value="true"/>
+  <arg name="rviz" value="false"/>
 
   <!--To launch scanunifier set the value to true-->
   <arg name="scanunifier" value="true"/>
@@ -34,17 +34,22 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro '$(find neo_simulation)/robots/mpo_700/mpo_700.urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mpo_700/mpo_700.urdf.xacro'"/>
   <include file="$(find neo_simulation)/config/controller/launch/controller_utils.launch"/>
 
   <node name="mpo_700_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mpo_700" />
+  
+  <!--To publish Joint and Robot state-->
+<!--   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+  <param name="rate" value="100.0"/>
+  </node> -->
 
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
-	<param name="publish_frequency" value="100.0"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+  <param name="publish_frequency" value="100.0"/>
   </node>
 
-  <!-- Wheel controller -->
+ <!-- Wheel controller -->
   <rosparam file="$(find neo_simulation)/config/controller/mpo_700_wheel_controller.yaml" command="load"/>
   <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn mpo_700_caster_front_left_controller mpo_700_caster_front_right_controller mpo_700_caster_back_left_controller 
   mpo_700_caster_back_right_controller  mpo_700_wheel_front_left_controller
@@ -58,13 +63,12 @@
 
   <!-- start nodes -->
   <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_simulation_node" ns="kinematics_omnidrive" name="neo_omnidrive_simulation_node" respawn="false" />
-
 <!---=================================================================================================================================================================-->
  
   <!--if arg scan-unifier is set to true-->
 
  <group if="$(arg scanunifier)">
- 	<include file="$(find neo_simulation)/config/mpo_700/scan_unifier/mpo_700_scan_unifier.launch"/>
+  <include file="$(find neo_simulation)/config/mpo_700/scan_unifier/mpo_700_scan_unifier.launch"/>
  </group>   
 
 <!---=================================================================================================================================================================-->
@@ -77,17 +81,6 @@
    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_keyboard"  output="screen">
   </node>
  </group>
-
-  <!-- start neo teleop node -->
-<!--   <node pkg="neo_teleop" type="neo_teleop" name="neo_teleop_node" ns="neo_teleop" output="screen">
-
-  </node> -->
-
-  <!-- run joystick -->
-<!--   <node pkg="joy" type="joy_node" name="joy_node" output="screen" >
-    <param name="dev" type="string" value="/dev/input/js0" />
-    <param name="deadzone" value="0.12" />
-  </node> -->
 
 <!---=================================================================================================================================================================-->
 

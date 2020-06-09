@@ -91,7 +91,7 @@ NeoLocalPlanner:
   max_backup_dist : 0
 
   # Minimal distance for stopping [m]
-  min_stop_dist : 0.3
+  min_stop_dist : 0.2
 
   # If robot has differential drive, holonomic otherwise
   differential_drive : false

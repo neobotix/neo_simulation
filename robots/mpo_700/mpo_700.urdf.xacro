@@ -88,7 +88,7 @@
   </xacro:sick_laser_v0>
 
   <xacro:docking_adapter name="docking_adapter" parent="base_link">
-    <origin xyz="0.300 0 0.320" rpy="0 0 1.57" />
+    <origin xyz="-0.300 0 0.320" rpy="0 0 -1.57" />
   </xacro:docking_adapter>
 
      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
@@ -177,7 +177,7 @@
 
   <!-- Depth Camera -->
   <xacro:depth_camera name="camera" parent="base_link">
-    <origin xyz="0.228 0 0.461" rpy="0 0 0" />
+    <origin xyz="-0.228 0.015 0.461" rpy="0 0 3.14159" />
   </xacro:depth_camera>
 
   <transmission name="mpo_700_caster_front_left">

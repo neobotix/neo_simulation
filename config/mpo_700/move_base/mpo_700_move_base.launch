@@ -28,10 +28,10 @@
     <-->
 
     <!-- Teb -->
-    
-  <!--   <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
-    <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/teb_local_planner/teb_planner.yaml" command="load" /> -->
-    <!--><-->
+    <!-->
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
+    <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/teb_local_planner/teb_planner.yaml" command="load" />
+    <-->
 
     <!-- DWA -->
     <!-->
@@ -40,9 +40,9 @@
     <-->
 
     <!-- NeoLocalPlanner -->
-        <param name="base_local_planner" value="neo_local_planner/NeoLocalPlanner"/>
+    <param name="base_local_planner" value="neo_local_planner/NeoLocalPlanner"/>
     <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/neo_local_planner/neo_planner.yaml" command="load" />
-    
+
     <!-- Common -->
     <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/move_base/move_base.yaml" command="load" />
 

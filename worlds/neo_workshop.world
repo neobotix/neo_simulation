@@ -50,37 +50,37 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>11816 546000000</sim_time>
-      <real_time>59 888062145</real_time>
-      <wall_time>1591691285 574513517</wall_time>
-      <iterations>5979</iterations>
+      <sim_time>12005 196000000</sim_time>
+      <real_time>84 459866879</real_time>
+      <wall_time>1591712751 846544367</wall_time>
+      <iterations>7439</iterations>
       <model name='Ar_tags'>
-        <pose frame=''>-5.73083 -3.12315 0.558495 -1.57939 0.005995 -1.6128</pose>
+        <pose frame=''>-5.51952 -3.12933 0.450068 -1.57939 0.005995 -1.6128</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.73083 -3.12315 0.558495 -1.57939 0.005995 -1.6128</pose>
+          <pose frame=''>-5.51952 -3.12933 0.450068 -1.57939 0.005995 -1.6128</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_clone'>
-        <pose frame=''>-5.09952 -0.976549 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
+        <pose frame=''>-5.09952 -0.976552 -0.000853 -4.6e-05 7.3e-05 5e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-5.09952 -0.976549 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
+          <pose frame=''>-5.09952 -0.976552 -0.000853 -4.6e-05 7.3e-05 5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_clone_clone'>
-        <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
+        <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 5e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
+          <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
@@ -105,13 +105,13 @@
         </link>
       </model>
       <model name='dockin_station'>
-        <pose frame=''>-5.75458 -3.12693 0.794955 0.010427 1.7e-05 -1.58928</pose>
+        <pose frame=''>-5.75632 -3.12737 0.794926 0.013783 -1.5e-05 -1.577</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.75458 -3.12693 0.794955 0.010427 1.7e-05 -1.58928</pose>
+          <pose frame=''>-5.75632 -3.12737 0.794926 0.013783 -1.5e-05 -1.577</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.239602 -0.200555 -1.0292 0.250231 0.264498 0.147922</acceleration>
-          <wrench>0.239602 -0.200555 -1.0292 0 -0 0</wrench>
+          <acceleration>0.007654 -0.604424 0.136047 0.759972 -0.034528 0.020751</acceleration>
+          <wrench>0.007654 -0.604424 0.136047 0 -0 0</wrench>
         </link>
       </model>
       <model name='door_3d'>
@@ -748,7 +748,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-2.53439 -2.30011 1.1642 0 0.057797 -2.75823</pose>
+        <pose frame=''>-2.90973 -2.54206 2.16065 -0 0.565797 3.05296</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

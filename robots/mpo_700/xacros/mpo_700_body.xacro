@@ -12,7 +12,7 @@
    </joint>
     <link name="${name}">
     <inertial>
-      <mass value="90"/>
+      <mass value="140"/>
       <origin xyz="0 0 0"/>
       <inertia ixx="7.8" ixy="0.0" ixz="0" 
                iyy="7.8" iyz="0.0" 
