@@ -6,8 +6,8 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://docking_station/meshes/d1.dae</uri>
-            <scale>0.01 0.01 0.01</scale>
+            <uri>model://docking_station/meshes/d1_back1.dae</uri>
+            <scale>0.001 0.001 0.0015</scale>
           </mesh>
         </geometry>
         <cast_shadows>1</cast_shadows>
@@ -19,8 +19,8 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://docking_station/meshes/d1.dae</uri>
-            <scale>0.01 0.01 0.01</scale>
+            <uri>model://docking_station/meshes/d1_back1.dae</uri>
+            <scale>0.001 0.001 0.0015</scale>
           </mesh>
         </geometry>
        </collision>

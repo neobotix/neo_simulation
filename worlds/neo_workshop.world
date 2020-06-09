@@ -50,38 +50,38 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>11756 756000000</sim_time>
-      <real_time>112 344430719</real_time>
-      <wall_time>1591305533 420034196</wall_time>
-      <iterations>11206</iterations>
+      <sim_time>11816 546000000</sim_time>
+      <real_time>59 888062145</real_time>
+      <wall_time>1591691285 574513517</wall_time>
+      <iterations>5979</iterations>
       <model name='Ar_tags'>
-        <pose frame=''>-5.74121 -2.81432 0.416678 -1.57939 0.005995 -1.6128</pose>
+        <pose frame=''>-5.73083 -3.12315 0.558495 -1.57939 0.005995 -1.6128</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.74121 -2.81432 0.416678 -1.57939 0.005995 -1.6128</pose>
+          <pose frame=''>-5.73083 -3.12315 0.558495 -1.57939 0.005995 -1.6128</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_clone'>
-        <pose frame=''>-5.09952 -0.976548 0 0 -0 3e-06</pose>
+        <pose frame=''>-5.09952 -0.976549 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-5.09952 -0.976548 0 0 -0 3e-06</pose>
+          <pose frame=''>-5.09952 -0.976549 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.7e-05 3e-05 9.94927 -0.324889 0.397089 -4.9e-05</acceleration>
-          <wrench>1.7e-05 3e-05 9.94927 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_clone_clone'>
-        <pose frame=''>-3.16254 -4.5019 0 0 -0 3e-06</pose>
+        <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-3.16254 -4.5019 0 0 -0 3e-06</pose>
+          <pose frame=''>-3.16254 -4.5019 -0.000853 -4.6e-05 7.3e-05 4e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.7e-05 3e-05 9.94927 -0.324889 0.397089 -4.9e-05</acceleration>
-          <wrench>1.7e-05 3e-05 9.94927 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='cafe_table'>
@@ -105,13 +105,13 @@
         </link>
       </model>
       <model name='dockin_station'>
-        <pose frame=''>-5.75627 -2.81559 0.529072 -1.56901 -0.000161 -1.56897</pose>
+        <pose frame=''>-5.75458 -3.12693 0.794955 0.010427 1.7e-05 -1.58928</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.75627 -2.81559 0.529072 -1.56901 -0.000161 -1.56897</pose>
+          <pose frame=''>-5.75458 -3.12693 0.794955 0.010427 1.7e-05 -1.58928</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>0.239602 -0.200555 -1.0292 0.250231 0.264498 0.147922</acceleration>
+          <wrench>0.239602 -0.200555 -1.0292 0 -0 0</wrench>
         </link>
       </model>
       <model name='door_3d'>
@@ -748,7 +748,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-3.52139 -4.04555 0.581 0 -0.054203 2.38496</pose>
+        <pose frame=''>-2.53439 -2.30011 1.1642 0 0.057797 -2.75823</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3930,8 +3930,8 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://docking_station/meshes/d1.dae</uri>
-              <scale>0.01 0.01 0.01</scale>
+              <uri>model://docking_station/meshes/d1_back1.dae</uri>
+              <scale>0.001 0.001 0.0015</scale>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -3943,8 +3943,8 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://docking_station/meshes/d1.dae</uri>
-              <scale>0.01 0.01 0.01</scale>
+              <uri>model://docking_station/meshes/d1_back1.dae</uri>
+              <scale>0.001 0.001 0.0015</scale>
             </mesh>
           </geometry>
           <surface>
@@ -3962,6 +3962,7 @@
         </collision>
         <self_collide>0</self_collide>
         <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
           <inertia>
             <ixx>1</ixx>
             <ixy>0</ixy>
@@ -3975,7 +3976,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>-5.11646 -3.72922 0 0 -0 0</pose>
+      <pose frame=''>-5.26187 -3.133 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
