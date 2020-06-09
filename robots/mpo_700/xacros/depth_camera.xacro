@@ -33,7 +33,7 @@
 			    <visual>
 			      <origin xyz="0 -0.0175 0" rpy="1.570796 0 1.570796"/>
 			      <geometry>
-			      	<mesh filename="package://neo_mpo_700/robot_model/mpo_700/meshes/d435.dae"/>
+			      	<mesh filename="package://neo_simulation/robots/mpo_700/meshes/d435.dae"/>
 			      </geometry>
 			      <material name="red">
 			      	<color rgba="1 0 0 1" />
