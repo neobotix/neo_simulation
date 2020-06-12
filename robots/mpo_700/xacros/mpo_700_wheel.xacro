@@ -30,8 +30,7 @@
     <collision>
      <origin xyz="0 0 0" rpy="0 0 0" />
      <geometry>
-      <sphere radius="0.09" />
-        <!-- <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-WHEEL.dae" scale="0.001 0.001 0.001"/> -->
+        <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-WHEEL.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>
