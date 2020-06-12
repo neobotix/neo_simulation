@@ -35,6 +35,8 @@
   <!-- Depth camera -->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" /> 
 
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/docking_adapter.xacro" />
+
   <!-- Base Macro-->
 <link name="base_link" />
 
@@ -166,6 +168,11 @@
   <xacro:depth_camera name="camera" parent="base_link">
     <origin xyz="-0.228 0.015 0.461" rpy="0 0 3.14159" />
   </xacro:depth_camera>
+
+  <!-- Docking station -->
+    <xacro:docking_adapter name="docking_adapter" parent="base_link">
+    <origin xyz="-0.300 0 0.320" rpy="0 0 -1.57" />
+  </xacro:docking_adapter>
 
    <transmission name="mpo_700_caster_front_left">
     <type>transmission_interface/SimpleTransmission</type>
