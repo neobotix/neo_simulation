@@ -81,15 +81,15 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>11885 996000000</sim_time>
-      <real_time>181 99144059</real_time>
-      <wall_time>1591972855 536618073</wall_time>
-      <iterations>18045</iterations>
-      <model name='Ar_tags'>
-        <pose frame=''>-5.53275 -3.22614 0.457017 -1.57183 -0.000838 -1.57622</pose>
+      <sim_time>12030 396000000</sim_time>
+      <real_time>147 679632105</real_time>
+      <wall_time>1592043914 624593464</wall_time>
+      <iterations>14440</iterations>
+      <model name='Ar_tags_nr11'>
+        <pose frame=''>-5.53128 -3.22732 0.466006 -1.55547 0 -1.61318</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.53275 -3.22614 0.457017 -1.57183 -0.000838 -1.57622</pose>
+          <pose frame=''>-5.53128 -3.22732 0.466006 -1.55547 0 -1.61318</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -136,13 +136,13 @@
         </link>
       </model>
       <model name='dockin_station'>
-        <pose frame=''>-5.74825 -3.22858 -0.000867 5e-06 -0.016722 -0.000796</pose>
+        <pose frame=''>-5.74633 -3.22699 0 0 -0.02035 -0.000796</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose frame=''>-5.74825 -3.22858 -0.000867 5e-06 -0.016722 -0.000796</pose>
+          <pose frame=''>-5.74633 -3.22699 0 0 -0.02035 -0.000796</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.119619 0.025762 -9.6804 -0.01103 0.064446 -0.00285</acceleration>
-          <wrench>0.119619 0.025762 -9.6804 0 -0 0</wrench>
+          <acceleration>-0.119197 -0.02572 9.68082 0.011106 -0.064441 0.0028</acceleration>
+          <wrench>-0.119197 -0.02572 9.68082 0 -0 0</wrench>
         </link>
       </model>
       <model name='door_3d'>
@@ -679,7 +679,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-4.53581 -3.17649 0.534917 0 0.249796 2.84091</pose>
+        <pose frame=''>-4.43633 -3.26381 0.651595 0 0.317796 3.00892</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3319,21 +3319,21 @@
       </link>
       <pose frame=''>-5.7581 -3.23057 0 0 -0 0</pose>
     </model>
-    <model name='Ar_tags'>
+    <model name='Ar_tags_nr11'>
       <link name='link_1'>
         <visual name='visual'>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://Ar_tags/meshes/Ar_tag.dae</uri>
+              <uri>model://Ar_tags_nr11/meshes/Ar_tag_nr11.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>model://Ar_tags/materials/scripts</uri>
-              <uri>model://Ar_tags/materials/textures</uri>
-              <name>Ar_tags</name>
+              <uri>model://Ar_tags_nr11/materials/scripts</uri>
+              <uri>model://Ar_tags_nr11/materials/textures</uri>
+              <name>Ar_tags_nr11</name>
             </script>
           </material>
           <cast_shadows>1</cast_shadows>
@@ -3345,7 +3345,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://Ar_tags/meshes/Ar_tag.dae</uri>
+              <uri>model://Ar_tags_nr11/meshes/Ar_tag_nr11.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3368,7 +3368,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>-5.33656 -3.2575 0 0 -0 0</pose>
+      <pose frame=''>-5.26772 -3.22661 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
