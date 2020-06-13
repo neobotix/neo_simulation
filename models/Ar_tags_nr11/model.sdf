@@ -1,15 +1,22 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='dockin_station'>
+  <model name='Ar_tags_nr11'>
     <link name='link_1'>
-        <visual name='visual'>
+      <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://docking_station/meshes/d1_back1.dae</uri>
+            <uri>model://Ar_tags_nr11/meshes/Ar_tag_nr11.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
+       	<material>
+          <script>
+            <uri>model://Ar_tags_nr11/materials/scripts</uri>
+            <uri>model://Ar_tags_nr11/materials/textures</uri>
+            <name>Ar_tags_nr11</name>
+          </script>
+        </material>
         <cast_shadows>1</cast_shadows>
         <transparency>0</transparency>
       </visual>
@@ -19,11 +26,13 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://docking_station/meshes/d1_back1.dae</uri>
-            <scale>1</scale>
+            <uri>model://Ar_tags_nr11/meshes/Ar_tag_nr11.dae</uri>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
        </collision>
     </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
   </model>
 </sdf>
