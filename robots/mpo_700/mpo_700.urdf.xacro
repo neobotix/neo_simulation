@@ -22,9 +22,8 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_gazebo.xacro" />
 
   <!--Caster  -->
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_caster.xacro" />
 
-    <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_caster_left.xacro" />
+  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_caster_left.xacro" />
 
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_caster_right.xacro" />
 
@@ -34,6 +33,8 @@
 
   <!-- Depth camera -->
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" /> 
+
+  <!-- Docking station -->
 
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/docking_adapter.xacro" />
 
