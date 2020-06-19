@@ -3,7 +3,7 @@
 <launch>
       <arg name="model" />
       <arg name="gui" default="False" />
-      <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mm_400/mm_400.urdf.xacro'" />
+      <param name="robot_description" command="$(find xacro)/xacro '$(find neo_simulation)/robots/mm_400/mm_400.urdf.xacro'" />
       <param name="use_gui" value="$(arg gui)"/>
       <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
       <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />

@@ -34,7 +34,7 @@
 <!---=================================================================================================================================================================-->
 
   <!--Robot description to param server-->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_simulation)/robots/mpo_700/mpo_700.urdf.xacro'"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find neo_simulation)/robots/mpo_700/mpo_700.urdf.xacro'"/>
   <include file="$(find neo_simulation)/config/controller/launch/controller_utils.launch"/>
 
   <node name="mpo_700_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
