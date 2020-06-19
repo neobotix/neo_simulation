@@ -3,7 +3,7 @@
 
   <xacro:macro name="mpo_700_caster_right" params="name parent *origin">
    <joint name="${name}_joint" type="revolute">
-    <insert_block name="origin" />
+    <xacro:insert_block name="origin" />
     <axis xyz="0 0 1" />
     <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="6.5"/>
     <joint_properties damping="30" friction="110"/>
