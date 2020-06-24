@@ -7,9 +7,6 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="false"/>
 
-  <!--To launch scanunifier set the value to true-->
-  <arg name="scanunifier" value="true"/>
-
   <!--To move robot using teleop_keyboard-->
   <arg name="software_joystick" value="true"/>
 
@@ -47,12 +44,6 @@
 
 <!---=================================================================================================================================================================-->
  
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
-  <include file="$(find neo_simulation)/config/mmo_500/scan_unifier/mmo_500_scan_unifier.launch"/>
- </group>  
-
 <!-- Wheel controllers -->
   <rosparam file="$(find neo_simulation)/config/controller/mpo_500_wheel_controller.yaml" command="load"/>
   <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" 

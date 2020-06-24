@@ -7,9 +7,6 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="false"/>
 
-  <!--To launch scanunifier set the value to true-->
-  <arg name="scanunifier" value="false"/>
-
   <!--To move robot using teleop_keyboard-->
   <arg name="software_joystick" value="true"/>
 
@@ -50,13 +47,6 @@
 
 <!---=================================================================================================================================================================-->
  
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
- 	<include file="$(find neo_simulation)/config/mp_500/scan_unifier/mp_500_scan_unifier.launch"/>
- </group>   
-
-<!---=================================================================================================================================================================-->
  
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 
  
