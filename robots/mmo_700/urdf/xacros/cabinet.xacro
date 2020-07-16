@@ -24,7 +24,7 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0. 0. 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 -1.5708" />
         <geometry>
             <mesh filename="package://neo_simulation/robots/mmo_500/meshes/cabin.dae" scale="0.001 0.001 0.001"/>
         </geometry>
