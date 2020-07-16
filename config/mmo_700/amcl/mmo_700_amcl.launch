@@ -9,7 +9,7 @@
   </node>
 
   <node pkg="amcl" type="amcl" name="amcl">
-  	<remap from="scan" to="cob_scan_unifier/scan_unified"/>
+  	<remap from="scan" to="lidar_1/scan_filtered"/>
   	<rosparam file="$(find neo_simulation)/config/mmo_700/amcl/amcl_config.yaml" command="load" />
   </node>
 

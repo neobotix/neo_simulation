@@ -1,4 +1,0 @@
-loop_rate: 100
-input_scans:
-- /lidar_1/scan_filtered
-- /lidar_2/scan_filtered
