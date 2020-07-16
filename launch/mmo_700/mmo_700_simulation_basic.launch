@@ -7,9 +7,6 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="false"/>
 
-  <!--To launch scanunifier set the value to true-->
-  <arg name="scanunifier" value="true"/>
-
   <!--To move robot using teleop_keyboard-->
   <arg name="software_joystick" value="true"/>
 
@@ -51,14 +48,6 @@
 
 <rosparam file="$(find neo_simulation)/config/controller/gripper_controller.yaml" command="load"/>
 <node name="gripper_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn gripper_controller" respawn="false" output="screen"/>
-<!---=================================================================================================================================================================-->
- 
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
-  <include file="$(find neo_simulation)/config/mmo_700/scan_unifier/mmo_700_scan_unifier.launch"/>
- </group>   
-
 <!---=================================================================================================================================================================-->
  
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 

@@ -7,9 +7,6 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="false"/>
 
-  <!--To launch scanunifier set the value to true-->
-  <arg name="scanunifier" value="false"/>
-
   <!--To move robot using teleop_keyboard-->
   <arg name="software_joystick" value="true"/>
 
@@ -47,14 +44,6 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
 	<param name="publish_frequency" value="20.0"/>
   </node>
-
-<!---=================================================================================================================================================================-->
- 
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
- 	<include file="$(find neo_simulation)/config/mp_400/scan_unifier/mp_400_scan_unifier.launch"/>
- </group>   
 
 <!---=================================================================================================================================================================-->
  

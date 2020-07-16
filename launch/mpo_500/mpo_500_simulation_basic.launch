@@ -61,14 +61,6 @@
 
 <!---=================================================================================================================================================================-->
  
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
-  <include file="$(find neo_simulation)/config/mpo_500/scan_unifier/mpo_500_scan_unifier.launch"/>
- </group>   
-
-<!---=================================================================================================================================================================-->
- 
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 
  
  <!--if arg software_joystick is set to true-->

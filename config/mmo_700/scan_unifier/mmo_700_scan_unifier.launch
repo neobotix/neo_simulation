@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-	<!-- start node -->
-	<node pkg="cob_scan_unifier" type="scan_unifier_node" name="scan_unifier_node" ns="cob_scan_unifier" respawn="false" output="screen" >
-        <!-- parameters -->
-        <rosparam command="load" file="$(find neo_simulation)/config/mmo_700/scan_unifier/unifier.yaml"/>
-	</node>
-</launch>
-
