@@ -1,22 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mm_400" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-   <gazebo reference="base_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="castor_wheel_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="fixed_wheel_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
 <gazebo reference="mp_400_caster_wheel_front_right_link">
       <kp>35000.0</kp>
       <kd>1000.0</kd>

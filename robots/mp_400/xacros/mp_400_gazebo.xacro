@@ -1,22 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mp_400" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-   <gazebo reference="base_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="castor_wheel_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-  <gazebo reference="fixed_wheel_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
   <!-- Lidar sensor -->
   <gazebo reference="laser_1_link">
       <sensor type="ray" name="laser_1_link">
@@ -152,29 +136,30 @@
     </sensor>
   </gazebo>
   <gazebo>
-    <plugin name="diff_dirve_controller" filename="libgazebo_ros_diff_drive.so">
-        <alwaysOn>true</alwaysOn>
-        <updateRate>40</updateRate>
-        <legacyMode>false</legacyMode>
-	<torque>2</torque>
-        <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
-        <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
-        <wheelSeparation>0.529</wheelSeparation>
-        <wheelDiameter>0.15</wheelDiameter>
-        <commandTopic>cmd_vel</commandTopic>
-        <rosDebugLevel>na</rosDebugLevel>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <robotBaseFrame>base_link</robotBaseFrame>
-        <publishWheelTF>true</publishWheelTF>
-        <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>0.0</wheelAcceleration>
-        <wheelTorque>20</wheelTorque>
-        <odometrySource>world</odometrySource>
-        <publishTf>1</publishTf>
-        <publishOdomTF>true</publishOdomTF>
-    </plugin>
-  </gazebo>
+     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+     <alwaysOn>true</alwaysOn>
+      <updateRate>60</updateRate>
+     <legacyMode>true</legacyMode>
+     <leftJoint>mp_400_fixed_wheel_left_joint</leftJoint>
+     <rightJoint>mp_400_fixed_wheel_right_joint</rightJoint>
+     <wheelSeparation>0.529</wheelSeparation>
+     <wheelDiameter>0.15</wheelDiameter>
+     <torque>2</torque>
+     <commandTopic>cmd_vel</commandTopic>
+     <odometryTopic>odom</odometryTopic>
+     <odometryFrame>odom</odometryFrame>
+     <robotBaseFrame>base_footprint</robotBaseFrame>
+     <publishWheelTF>true</publishWheelTF>
+     <publishWheelJointState>true</publishWheelJointState>
+     <rosDebugLevel>na</rosDebugLevel>
+     <wheelAcceleration>0</wheelAcceleration>
+     <wheelTorque>20</wheelTorque>
+     <odometrySource>world</odometrySource>
+     <publishTf>1</publishTf>
+     <publishOdomTF>true</publishOdomTF>
+  </plugin>
+   </gazebo>
+
 </robot>
 
 

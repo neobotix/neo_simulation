@@ -1,6 +1,29 @@
 <?xml version="1.0"?>
 <robot name="mp_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
+  <gazebo>
+     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+     <alwaysOn>true</alwaysOn>
+      <updateRate>60</updateRate>
+     <legacyMode>true</legacyMode>
+     <leftJoint>wheel_left_joint</leftJoint>
+     <rightJoint>wheel_right_joint</rightJoint>
+     <wheelSeparation>0.592</wheelSeparation>
+     <wheelDiameter>0.260</wheelDiameter>
+     <torque>20</torque>
+     <commandTopic>cmd_vel</commandTopic>
+     <odometryTopic>odom</odometryTopic>
+     <odometryFrame>odom</odometryFrame>
+     <robotBaseFrame>base_link</robotBaseFrame>
+     <publishWheelTF>false</publishWheelTF>
+     <publishWheelJointState>false</publishWheelJointState>
+     <rosDebugLevel>na</rosDebugLevel>
+     <wheelAcceleration>0</wheelAcceleration>
+     <wheelTorque>5</wheelTorque>
+     <odometrySource>world</odometrySource>
+     <publishTf>1</publishTf>
+     <publishOdomTF>True</publishOdomTF>>
+  </plugin>
+  </gazebo>
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_link">
           <pose>0 0 0 0 0 0</pose>
@@ -136,30 +159,7 @@
     </sensor>
   </gazebo>
   
-  <gazebo>
-    <plugin name="diff_dirve_controller" filename="libgazebo_ros_diff_drive.so">
-        <alwaysOn>true</alwaysOn>
-        <updateRate>100</updateRate>
-        <legacyMode>false</legacyMode>
-        <torque>2.5</torque>
-        <leftJoint>mp_500_fixed_wheel_left_joint</leftJoint>
-        <rightJoint>mp_500_fixed_wheel_right_joint</rightJoint>
-        <wheelSeparation>0.592</wheelSeparation>
-        <wheelDiameter>0.260</wheelDiameter>
-        <commandTopic>cmd_vel</commandTopic>
-        <rosDebugLevel>na</rosDebugLevel>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <robotBaseFrame>base_link</robotBaseFrame>
-        <publishWheelTF>true</publishWheelTF>
-        <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>0</wheelAcceleration>
-        <wheelTorque>200</wheelTorque>
-        <odometrySource>world</odometrySource>
-        <publishTf>1</publishTf>
-        <publishOdomTF>true</publishOdomTF>
-    </plugin>
-  </gazebo>
+
 
 <!-- <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">

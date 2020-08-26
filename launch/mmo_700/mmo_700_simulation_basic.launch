@@ -40,6 +40,12 @@
   <param name="publish_frequency" value="20.0"/>
   </node>
 
+ <!-- Wheel controller -->
+  <rosparam file="$(find neo_simulation)/config/controller/mpo_700_wheel_controller.yaml" command="load"/>
+  <node name="wheel_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn mpo_700_caster_front_left_controller mpo_700_caster_front_right_controller mpo_700_caster_back_left_controller 
+  mpo_700_caster_back_right_controller  mpo_700_wheel_front_left_controller
+  mpo_700_wheel_front_right_controller   mpo_700_wheel_back_left_controller 
+  mpo_700_wheel_back_right_controller " respawn="false" output="screen"/>
 
    <include file="$(find neo_simulation)/config/controller/launch/controller_utils.launch"/>
 
@@ -48,6 +54,16 @@
 
 <rosparam file="$(find neo_simulation)/config/controller/gripper_controller.yaml" command="load"/>
 <node name="gripper_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn gripper_controller" respawn="false" output="screen"/>
+
+   <!-- Launching kinematics node for MPO-700 -->
+
+  <!-- upload parameters -->
+  <rosparam command="load" ns="kinematics_omnidrive" file="$(find neo_kinematics_omnidrive)/launch/test_setup.yaml"/>
+
+  <!-- start nodes -->
+  <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_simulation_node" ns="kinematics_omnidrive" name="neo_omnidrive_simulation_node" respawn="false" />
+
+
 <!---=================================================================================================================================================================-->
  
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 

@@ -1,13 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mpo_700" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-   <gazebo reference="base_link">
-    <gravity>true</gravity>
-    <self_collide>false</self_collide>
-  </gazebo>
-
-
   <gazebo reference="lidar_1_link">
       <sensor type="ray" name="lidar_1_sensor">
           <pose>0 0 0 0 0 0</pose>
@@ -111,7 +104,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <odometryRate>150.0</odometryRate>
+      <odometryRate>100.0</odometryRate>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>

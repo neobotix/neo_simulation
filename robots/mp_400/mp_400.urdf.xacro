@@ -34,23 +34,28 @@
 
 
 <!-- Base link macro -->
-  <xacro:mp_400_base name="base_link">
-  </xacro:mp_400_base>
+  <link name="base_link" />
 
-  <!-- Wheel Macro -->
-  <xacro:caster_wheel name="mp_400_caster_wheel_front_left" parent="base_link">
+
+  <xacro:mp_400_base name="base_footprint" parent="base_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+   </xacro:mp_400_base>
+
+
+    <!-- Wheel Macro -->
+  <xacro:caster_wheel name="mp_400_caster_wheel_front_left" parent="base_footprint">
     <origin xyz="0.165 0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-  <xacro:caster_wheel name="mp_400_caster_wheel_back_left" parent="base_link">
+  <xacro:caster_wheel name="mp_400_caster_wheel_back_left" parent="base_footprint">
     <origin xyz="-0.220 0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-  <xacro:caster_wheel name="mp_400_caster_wheel_front_right" parent="base_link">
+  <xacro:caster_wheel name="mp_400_caster_wheel_front_right" parent="base_footprint">
     <origin xyz="0.165 -0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
-   <xacro:caster_wheel name="mp_400_caster_wheel_back_right" parent="base_link">
+   <xacro:caster_wheel name="mp_400_caster_wheel_back_right" parent="base_footprint">
     <origin xyz="-0.220 -0.155 0.036" rpy="0 0 1.57" />
   </xacro:caster_wheel>
 
