@@ -40,7 +40,7 @@
     <-->
 
     <!-- NeoLocalPlanner -->
-        <param name="base_local_planner" value="neo_local_planner/NeoLocalPlanner"/>
+    <param name="base_local_planner" value="neo_local_planner/NeoLocalPlanner"/>
     <rosparam file="$(find neo_simulation)/config/mp_500/move_base/local_planner/neo_local_planner/neo_planner.yaml" command="load" />
     
     <!-- Common -->
