@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="env_map" default="$(find neo_simulation)/maps/$(env MAP_NAME).yaml" />
+
+  <!-- MAP SERVER -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
+  </node>
+  
+  <!-- Topic Relays -->
+  <node pkg="topic_tools" type="relay" ns="/lidar_1" name="relay" args="/lidar_1/scan_filtered /scan" />
+  <node pkg="topic_tools" type="relay" ns="/lidar_2" name="relay" args="/lidar_2/scan_filtered /scan" />
+
+  <!-- Localization Node -->
+  <node pkg="neo_localization" type="neo_localization_node" name="neo_localization_node" output="screen">
+
+    <rosparam file="$(find neo_simulation)/config/mpo_700/neo_localization/neo_localization.yaml" command="load" />
+
+  </node>
+
+</launch>

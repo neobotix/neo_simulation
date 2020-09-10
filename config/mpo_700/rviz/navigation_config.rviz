@@ -6,8 +6,11 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1/Frames1
+        - /Camera1
+        - /Map2
       Splitter Ratio: 0.5
-    Tree Height: 775
+    Tree Height: 446
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -16,7 +19,7 @@ Panels:
       - /2D Nav Goal1
       - /Publish Point1
     Name: Tool Properties
-    Splitter Ratio: 0.588679016
+    Splitter Ratio: 0.5886790156364441
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -27,6 +30,10 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: LaserScan
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -36,7 +43,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.0299999993
+        Line Width: 0.029999999329447746
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -58,57 +65,79 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        mpo_700_head_0_link:
+        camera_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mpo_700_head_1_link:
+        camera_link_gazebo:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        docking_adapter_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mpo_700_head_2_link:
+        lidar_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mpo_700_head_3_link:
+        lidar_2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        sick_laser_back_link:
+        mpo_700_caster_back_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        sick_laser_front_link:
+        mpo_700_caster_back_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_0_link:
+        mpo_700_caster_front_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_1_link:
+        mpo_700_caster_front_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_2_link:
+        mpo_700_wheel_back_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_3_link:
+        mpo_700_wheel_back_right_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mpo_700_wheel_front_left_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mpo_700_wheel_front_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -142,14 +171,14 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.0500000007
+      Size (m): 0.05000000074505806
       Style: Boxes
       Topic: /cob_scan_unifier/scan_unified
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 0.699999988
+    - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
@@ -159,72 +188,6 @@ Visualization Manager:
       Unreliable: false
       Use Timestamp: false
       Value: true
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: false
-      Name: GlobalCostMap
-      Topic: /move_base/global_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: false
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
-      Enabled: true
-      Name: LocalCostMap
-      Topic: /move_base/local_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 17; 40; 255
-      Enabled: true
-      Head Diameter: 0.300000012
-      Head Length: 0.200000003
-      Length: 0.300000012
-      Line Style: Billboards
-      Line Width: 0.0500000007
-      Name: LocalPath
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.0299999993
-      Shaft Diameter: 0.100000001
-      Shaft Length: 0.100000001
-      Topic: /move_base/TebLocalPlannerROS/local_plan
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 255; 79; 56
-      Enabled: true
-      Head Diameter: 0.300000012
-      Head Length: 0.200000003
-      Length: 0.300000012
-      Line Style: Billboards
-      Line Width: 0.0500000007
-      Name: GlobalPath
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.0299999993
-      Shaft Diameter: 0.100000001
-      Shaft Length: 0.100000001
-      Topic: /move_base/NavfnROS/plan
-      Unreliable: false
-      Value: true
     - Alpha: 1
       Class: rviz/Polygon
       Color: 25; 255; 0
@@ -233,58 +196,172 @@ Visualization Manager:
       Topic: /move_base/global_costmap/footprint
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Arrow Length: 0.300000012
-      Axes Length: 0.300000012
-      Axes Radius: 0.00999999978
-      Class: rviz/PoseArray
-      Color: 255; 25; 0
-      Enabled: true
-      Head Length: 0.0700000003
-      Head Radius: 0.0299999993
-      Name: PoseArray
-      Shaft Length: 0.230000004
-      Shaft Radius: 0.00999999978
-      Shape: Arrow (Flat)
-      Topic: /move_base/TebLocalPlannerROS/teb_poses
-      Unreliable: false
-      Value: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera_link:
+          Value: false
+        camera_link_gazebo:
+          Value: true
+        camera_link_optical:
+          Value: false
+        docking_adapter_link:
+          Value: true
+        lidar_1_link:
+          Value: false
+        lidar_2_link:
+          Value: false
+        map:
+          Value: false
+        mpo_700_caster_back_left_link:
+          Value: false
+        mpo_700_caster_back_right_link:
+          Value: false
+        mpo_700_caster_front_left_link:
+          Value: false
+        mpo_700_caster_front_right_link:
+          Value: false
+        mpo_700_wheel_back_left_link:
+          Value: false
+        mpo_700_wheel_back_right_link:
+          Value: false
+        mpo_700_wheel_front_left_link:
+          Value: false
+        mpo_700_wheel_front_right_link:
+          Value: false
+        odom:
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                mpo_700_caster_back_left_link:
+                  mpo_700_wheel_back_left_link:
+                    {}
+                mpo_700_caster_back_right_link:
+                  mpo_700_wheel_back_right_link:
+                    {}
+                mpo_700_caster_front_left_link:
+                  mpo_700_wheel_front_left_link:
+                    {}
+                mpo_700_caster_front_right_link:
+                  mpo_700_wheel_front_right_link:
+                    {}
+              camera_link:
+                camera_link_gazebo:
+                  {}
+                camera_link_optical:
+                  {}
+              docking_adapter_link:
+                {}
+              lidar_1_link:
+                {}
+              lidar_2_link:
+                {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Axes Length: 1
-      Axes Radius: 0.100000001
+      Axes Radius: 0.10000000149011612
       Class: rviz/Pose
       Color: 255; 25; 0
       Enabled: true
-      Head Length: 0.300000012
-      Head Radius: 0.100000001
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
       Name: Pose
       Shaft Length: 1
-      Shaft Radius: 0.0500000007
+      Shaft Radius: 0.05000000074505806
       Shape: Axes
-      Topic: /goal_pose
+      Topic: /ar_pose_filtered
       Unreliable: false
       Value: true
-    - Class: rviz/MarkerArray
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
       Enabled: true
-      Marker Topic: /node/visualization_marker
-      Name: MarkerArray
-      Namespaces:
-        {}
-      Queue Size: 100
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /camera/depth_registered/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Camera
+      Enabled: true
+      Image Rendering: background and overlay
+      Image Topic: /camera/depth/image_raw
+      Name: Camera
+      Overlay Alpha: 0.5
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+      Visibility:
+        FootPrintPolygon: true
+        Grid: true
+        LaserScan: true
+        Map: true
+        PointCloud2: true
+        Pose: true
+        RobotModel: true
+        TF: true
+        Value: true
+      Zoom Factor: 1
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
+      Topic: /move_base/current_goal
+      Unreliable: false
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /move_base/local_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
       Value: true
   Enabled: true
   Global Options:
@@ -301,7 +378,10 @@ Visualization Manager:
     - Class: rviz/FocusCamera
     - Class: rviz/Measure
     - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
       Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
     - Class: rviz/SetGoal
       Topic: /move_base_simple/goal
     - Class: rviz/PublishPoint
@@ -311,33 +391,35 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 12.933053
+      Distance: 8.556631088256836
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.0599999987
+        Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.0797905996
-        Y: 0.504575551
-        Z: 0.509457946
+        X: -6.522294998168945
+        Y: -1.1157103776931763
+        Z: 1.0030392408370972
       Focal Shape Fixed Size: true
-      Focal Shape Size: 0.0500000007
+      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.00999999978
-      Pitch: 0.819796503
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.9347966313362122
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.4898262
+      Yaw: 0.9510648846626282
     Saved: ~
 Window Geometry:
+  Camera:
+    collapsed: false
   Displays:
     collapsed: false
-  Height: 1056
+  Height: 1052
   Hide Left Dock: false
-  Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a00000396fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000396000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015c00000396fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000002800000396000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f0000030000fffffffb0000000800540069006d006501000000000000045000000000000000000000046d0000039600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd0000000400000000000001c10000037efc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000249000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000c00430061006d006500720061010000028c0000012f0000001600fffffffb0000000c00430061006d00650072006101000002f2000000c90000000000000000000000010000015c0000037efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d0000037e000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000005b90000037e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -345,7 +427,7 @@ Window Geometry:
   Tool Properties:
     collapsed: false
   Views:
-    collapsed: false
-  Width: 1855
-  X: 65
-  Y: 24
+    collapsed: true
+  Width: 1920
+  X: 1920
+  Y: 0
