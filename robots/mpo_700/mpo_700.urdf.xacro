@@ -32,11 +32,11 @@
   <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/mpo_700_wheel.xacro" />
 
   <!-- Depth camera -->
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" /> 
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/depth_camera.xacro" />  -->
 
   <!-- Docking station -->
 
-  <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/docking_adapter.xacro" />
+  <!-- <xacro:include filename="$(find neo_simulation)/robots/mpo_700/xacros/docking_adapter.xacro" /> -->
 
   <!-- Base Macro-->
 <link name="base_link" />
@@ -82,12 +82,12 @@
 
 <!-- Sensors -->
 
-  <xacro:sick_laser_v0 name="lidar_1" parent="base_footprint" ros_topic="lidar_1/scan_filtered">
+  <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
   <!--<origin xyz="0.360 0 0.181" rpy="3.14 0 0" />--> 
     <origin xyz="0.338 0.288 0.223" rpy="3.14 0 0.79" /> <!-- Scanners on the side -->
   </xacro:sick_laser_v0>
 
-  <xacro:sick_laser_v0 name="lidar_2" parent="base_footprint" ros_topic="lidar_2/scan_filtered">
+  <xacro:sick_laser_v0 name="lidar_2" parent="base_link" ros_topic="lidar_2/scan_filtered">
   <!--<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />-->
     <origin xyz="-0.338 -0.288 0.223" rpy="3.14 0 3.93" /> <!-- Scanners on the side -->
   </xacro:sick_laser_v0>
@@ -166,14 +166,14 @@
   </xacro:us_sensor-->
     
   <!-- Depth Camera -->
-  <xacro:depth_camera name="camera" parent="base_link">
+<!--   <xacro:depth_camera name="camera" parent="base_link">
     <origin xyz="-0.228 0.015 0.461" rpy="0 0 3.14159" />
-  </xacro:depth_camera>
+  </xacro:depth_camera> -->
 
   <!-- Docking station -->
-    <xacro:docking_adapter name="docking_adapter" parent="base_link">
+<!--     <xacro:docking_adapter name="docking_adapter" parent="base_link">
     <origin xyz="-0.300 0 0.320" rpy="0 0 -1.57" />
-  </xacro:docking_adapter>
+  </xacro:docking_adapter> -->
 
    <transmission name="mpo_700_caster_front_left">
     <type>transmission_interface/SimpleTransmission</type>
