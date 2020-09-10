@@ -7,10 +7,7 @@
   <!--To launch RVIZ set the value to true-->
   <arg name="rviz" value="false"/>
 
-  <!--To launch scanunifier set the value to true-->
-  <arg name="scanunifier" value="true"/>
-
-  <!--To move robot using teleop_keyboard-->
+   <!--To move robot using teleop_keyboard-->
   <arg name="software_joystick" value="true"/>
 
 <!---=================================================================================================================================================================-->
@@ -60,15 +57,7 @@
   <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_simulation_node" ns="kinematics_omnidrive" name="neo_omnidrive_simulation_node" respawn="false" />
 
 <!---=================================================================================================================================================================-->
- 
-  <!--if arg scan-unifier is set to true-->
-
- <group if="$(arg scanunifier)">
- 	<include file="$(find neo_simulation)/config/mpo_700/scan_unifier/mpo_700_scan_unifier.launch"/>
- </group>   
-
-<!---=================================================================================================================================================================-->
- 
+  
  <!--Neo control Package  **To use teleop-keyboard and joystick, neo_control package must be cloned to the workspace**--> 
  
  <!--if arg software_joystick is set to true-->
