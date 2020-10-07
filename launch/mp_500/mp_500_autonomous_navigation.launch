@@ -34,5 +34,16 @@
  	<include file="$(find neo_simulation)/config/mp_500/move_base/mp_500_move_base.launch"/>
  </group> 
 
+  <!-- visualize the segment list -->
+  <node name="visualize_segment_list" pkg="light_scan_sim" type="visualize_segment_list.py" output="screen">
+    <param name="output_topic" value="/map_segment_vis" />
+  </node>
+
+  <!-- The scan simulator -->
+  <node name="light_scan_sim" pkg="light_scan_sim" type="light_scan_sim_node" output="screen">
+    <rosparam file="$(find neo_simulation)/config/mp_500/config.yaml" command="load" />
+  </node>
+
+  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 /map_image /odom 1" />
 
 </launch>
