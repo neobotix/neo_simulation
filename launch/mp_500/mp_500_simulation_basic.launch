@@ -37,12 +37,12 @@
   args="-urdf -param robot_description -model mp_500" />
   
   <!--To publish Joint and Robot state-->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-	<param name="rate" value="60.0" />
-  </node>
+<!--   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+	<param name="rate" value="100.0" />
+  </node> -->
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
-	<param name="publish_frequency" value="60.0" />
+	<param name="publish_frequency" value="100.0" />
   </node>
 
 <!---=================================================================================================================================================================-->

@@ -1,10 +1,11 @@
-footprint: [[0.55,0.33],[-0.55,0.33],[-0.55,-0.33],[0.55,-0.33]]
-inflation_radius: 0.8
-cost_scaling_factor: 4.0
+footprint: [[0.50,0.50],[-0.50,0.50],[-0.50,-0.50],[0.50,-0.50]]
+inflation_layer:
+  inflation_radius: 1
+  cost_scaling_factor: 5
 
 observation_sources: laser_scan_front
 
-laser_scan_front: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 8.0, raytrace_range: 8.0}
+laser_scan_front: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 5.0, raytrace_range: 8.0}
 
 
 

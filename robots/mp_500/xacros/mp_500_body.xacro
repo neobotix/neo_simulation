@@ -31,15 +31,7 @@
   </geometry>
   </collision>
   </link>
-<gazebo reference="${name}_link">
-    <kp>1000.0</kp>
-    <kd>10.0</kd>
-    <mu1>200</mu1>
-    <mu2>100</mu2>
-    <fdir1>0.5 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-    <minDepth>0.0005</minDepth>
-    </gazebo>
+
 
   </xacro:macro>
   
