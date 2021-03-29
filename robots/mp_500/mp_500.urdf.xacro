@@ -55,7 +55,7 @@
  <!--+++++++++++++++++++laserscanner_front_link++++++++++++++++++++++++-->
    <!-- SENSORS --> 
   <xacro:sick_laser_v0 name="lidar_1" parent="base_link" ros_topic="lidar_1/scan_filtered">
-    <origin xyz="0.244 0 0.141" rpy="3.14 0 0" />
+    <origin xyz="0.244 0 0.141" rpy="0 0 0" />
   </xacro:sick_laser_v0>
 
      <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
