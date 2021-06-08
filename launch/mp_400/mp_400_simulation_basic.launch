@@ -35,14 +35,9 @@
 
   <node name="mp_400_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
   args="-urdf -param robot_description -model mp_400" />
-  
-  <!--To publish Joint and Robot state-->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-	<param name="rate" value="20.0"/>
-  </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
-	<param name="publish_frequency" value="20.0"/>
+	<param name="publish_frequency" value="100.0"/>
   </node>
 
 <!---=================================================================================================================================================================-->

@@ -150,7 +150,7 @@
      <odometryFrame>odom</odometryFrame>
      <robotBaseFrame>base_link</robotBaseFrame>
      <publishWheelTF>true</publishWheelTF>
-     <publishWheelJointState>true</publishWheelJointState>
+     <publishWheelJointState>false</publishWheelJointState>
      <rosDebugLevel>na</rosDebugLevel>
      <wheelAcceleration>0</wheelAcceleration>
      <wheelTorque>20</wheelTorque>
