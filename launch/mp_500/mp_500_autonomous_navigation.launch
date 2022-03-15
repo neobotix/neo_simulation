@@ -45,6 +45,6 @@
     <rosparam file="$(find neo_simulation)/config/mp_500/config.yaml" command="load" />
   </node> -->
 
-  <!-- <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 /map_image /odom 1" 
+  <!-- <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 /map_image /odom 1"-->
 
 </launch>
