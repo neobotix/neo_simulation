@@ -134,7 +134,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05000000074505806
       Style: Boxes
-      Topic: /cob_scan_unifier/scan_unified
+      Topic: /lidar_1/scan_filtered
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
