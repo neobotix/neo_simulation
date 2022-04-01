@@ -6,7 +6,7 @@ It comes with the most commonly used configuration but is open for any kind of m
 
 The entire process for the setup is just 3 steps. 
 
-To know more, please find our documentations in https://docs.neobotix.de/
+To know more, please find our documentations in https://neobotix-docs.de/ros/ros1/installation.html#packages-for-simulation
 
 <img src="https://raw.githubusercontent.com/neobotix/neo_simulation/melodic/neo_git.png">
 
