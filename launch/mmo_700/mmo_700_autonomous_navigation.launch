@@ -7,7 +7,10 @@
   <!--To launch amcl-->
   <!--NOTE: Do not forget to configure the correct Map for AMCL-->
   <!--NOTE: Use file neo_simulation/config/mpo_700/amcl/mpo_700_amcl.launch-->
-  <arg name="amcl" value="true"/>
+  <arg name="amcl" value="false"/>
+
+  <!-- To use neo_localization -->
+  <arg name="neo_localization" value="true"/>
 
   <!--To launch move base-->
   <arg name="move_base" value="true"/>
@@ -27,6 +30,10 @@
  <group if="$(arg amcl)">
  	<include file="$(find neo_simulation)/config/mpo_700/amcl/mpo_700_amcl.launch"/>
  </group>
+
+  <group if="$(arg neo_localization)">
+    <include file="$(find neo_simulation)/launch/mpo_700/mpo_700_neo_localization.launch"/>
+  </group>
 
  <!--if arg move_base is set to true-->
 
